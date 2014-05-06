@@ -1,0 +1,114 @@
+{
+	"Anti_Mage"	 :  [
+					{
+					 "name": "Anti_Mage" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+			    ],
+	"Bounty_Hunter" :	[
+					{
+					 "name": "Bounty_Hunter" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Drow_Ranger" :	[
+					{
+					 "name": "Drow_Ranger" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Juggernaut" :	[
+					{
+					 "name": "Juggernaut" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Luna" :	[
+					{
+					 "name": "Luna" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Mirana" :	[
+					{
+					 "name": "Mirana" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Morphling" :	[
+					{
+					 "name": "Morphling" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Phantom_Lancer" :	[
+					{
+					 "name": "Phantom_Lancer" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Vengeful_Spirit" :	[
+					{
+					 "name": "Vengeful_Spirit" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Riki" :	[
+					{
+					 "name": "Riki" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Sniper" :	[
+					{
+					 "name": "Sniper" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Templar_Assassin" :	[
+					{
+					 "name": "Templar_Assassin" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Ursa" :	[
+					{
+					 "name": "Ursa" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Gyrocopter" :	[
+					{
+					 "name": "Gyrocopter" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Naga_Siren" :	[
+					{
+					 "name": "Naga_Siren" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Troll_Warlord" :	[
+					{
+					 "name": "Troll_Warlord" ,
+					 "type": "Agi" ,
+					 "div": "Radiant" 
+					}
+				]
+}

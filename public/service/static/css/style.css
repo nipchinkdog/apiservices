@@ -1,0 +1,57 @@
+body {
+	height: 100%;
+	background: #eee;
+	color: #888;
+	font: 'RobotoRegular';
+	position: relative; /* For scrollyspy */
+	padding-top: 50px; /* Account for fixed navbar */
+}
+ul, li { 
+	list-style: none;
+	margin: 0; 
+	padding: 0; 
+}
+h1, h2 {
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #3498db;
+}
+a:hover {
+	color: #2980b9;
+}
+a:focus {
+	color: #2980b9;
+}
+
+.table {
+	font-size: 12px;
+	margin-bottom: 0;
+}
+.table > thead > tr > th {
+	border-bottom: 1px solid #eee;
+	line-height: normal;
+	font-weight: normal;
+	padding: 10px;
+	padding-left: 0;
+	padding-right: 10px;
+}
+.table > tbody > tr > td {
+	border-bottom: 1px solid #eee;
+	line-height: normal;
+	font-weight: normal;
+	padding: 10px;
+	padding-left: 0;
+	padding-right: 10px;
+}
+
+
+
