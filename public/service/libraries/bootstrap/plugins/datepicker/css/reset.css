@@ -1,0 +1,29 @@
+.datepicker td, .datepicker th {
+    border-radius: 0;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+}
+.datepicker td.active, .datepicker td.active:hover {
+	background: red;
+}
+.datepicker td.active:hover, 
+.datepicker td.active:hover:hover, 
+.datepicker td.active:focus, 
+.datepicker td.active:hover:focus, 
+.datepicker td.active:active, 
+.datepicker td.active:hover:active, 
+.datepicker td.active.active, 
+.datepicker td.active.active:hover, 
+.datepicker td.active.disabled, 
+.datepicker td.active.disabled:hover, 
+.datepicker td.active[disabled], 
+.datepicker td.active[disabled]:hover {
+    background-color: #2980b9;
+    color: #FFFFFF;
+}
+.datepicker td.day:hover {
+    background: #3498db;
+	color: #fff;
+    cursor: pointer;
+}

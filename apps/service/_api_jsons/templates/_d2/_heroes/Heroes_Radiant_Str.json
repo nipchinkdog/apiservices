@@ -1,0 +1,142 @@
+{
+	"Earthshaker"	 :  [
+					{
+					 "name": "Earthshaker" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+			    ],
+	"Sven" :	[
+					{
+					 "name": "Sven" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Tiny" :	[
+					{
+					 "name": "Tiny" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Kunkka" :	[
+					{
+					 "name": "Kunkka" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Beastmaster" :	[
+					{
+					 "name": "Beastmaster" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Dragon_Knight" :	[
+					{
+					 "name": "Dragon_Knight" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Clockwerk" :	[
+					{
+					 "name": "Clockwerk" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Omni_Knight" :	[
+					{
+					 "name": "Omni_Knight" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Huskar" :	[
+					{
+					 "name": "Huskar" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Alchemist" :	[
+					{
+					 "name": "Alchemist" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Brewmaster" :	[
+					{
+					 "name": "Brewmaster" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Treant_Protector" :	[
+					{
+					 "name": "Treant_Protector" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Io" :	[
+					{
+					 "name": "Io" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Centaur_Warrunner" :	[
+					{
+					 "name": "Centaur_Warrunner" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Bristleback" :	[
+					{
+					 "name": "Bristleback" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Tusk" :	[
+					{
+					 "name": "Tusk" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Elder_Titan" :	[
+					{
+					 "name": "Elder_Titan" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Earth_Spirit" :	[
+					{
+					 "name": "Earth_Spirit" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Legion_Commander" :	[
+					{
+					 "name": "Legion_Commander" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Phoenix" :	[
+					{
+					 "name": "Phoenix" ,
+					 "type": "Str" ,
+					 "div": "Radiant" 
+					}
+				]
+}
