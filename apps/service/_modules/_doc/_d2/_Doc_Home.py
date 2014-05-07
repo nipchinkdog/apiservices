@@ -13,7 +13,9 @@ class DocHome(View):
     _api_doc_findbyany = ROOT_URL+'/api/h/findByAny/r/agi'
 
     def get(self, request):
-
+        
+        return HttpResponse('ok xa!')
+        
         #! requests
         api_result = requests.get(self._api_doc_findbyhero)
         #! request response variables
