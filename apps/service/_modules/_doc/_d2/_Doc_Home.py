@@ -14,8 +14,6 @@ class DocHome(View):
 
     def get(self, request):
         
-        return HttpResponse('ok xa!')
-        
         #! requests
         api_result = requests.get(self._api_doc_findbyhero)
         #! request response variables
