@@ -1,3 +1,3 @@
 #! settings
-ROOT_URL = 'http://localhost:8000'
+ROOT_URL = 'http://apiservice.pythonanywhere.com'
 
