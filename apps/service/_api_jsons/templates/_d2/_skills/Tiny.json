@@ -1,0 +1,30 @@
+{
+	"Tiny"	 :  [
+		{ 
+			"sk1": [
+				{
+				"name" : "Avalanche"
+				"desc" : "Bombards an area with rocks, stunning and damaging enemy land units."
+				}
+			],
+			"sk2": [
+				{
+				"name" : "Toss"
+				"desc" : "Grabs a random unit in a 275 radius around Tiny, friend or enemy, and launches it at the target unit or rune to deal damage where they land. If the tossed unit is an enemy, it will take an extra 20%% damage. Toss does more damage as Tiny's size increases."
+				}
+			],
+			"sk3": [
+				{
+				"name" : "Craggy Exterior"
+				"desc" : "Causes damage to bounce back on Tiny's attackers. Enemies that attack Tiny from within 300 units have a chance of being stunned."
+				}
+			],
+			"sk4": [
+				{
+				"name" : "Grow"
+				"desc" : "Tiny gains craggy mass that increases his power at the cost of his attack speed. Increases Tossed unit damage and improves movement speed.Upgradable by Aghanim's Scepter."
+				}
+			]
+		}
+	]
+}

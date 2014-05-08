@@ -1,0 +1,30 @@
+{
+	"Clockwerk"	 :  [
+		{ 
+			"sk1": [
+				{
+				"name" : "Battery Assault"
+				"desc" : "Discharges high-powered shrapnel at random nearby enemy units, dealing minor magical damage and ministun."
+				}
+			],
+			"sk2": [
+				{
+				"name" : "Power Cogs"
+				"desc" : "Forms a barrier of energized cogs around Clockwerk, trapping any units that are near. Enemies outside the trap that touch a cog are knocked back, losing health and mana. Once a cog has delivered a shock, it will power down. Cogs can be destroyed by enemy attacks, but Clockwerk can destroy them with just one."
+				}
+			],
+			"sk3": [
+				{
+				"name" : "Rocket Flare"
+				"desc" : "Fires a global range flare that explodes over a given area, damaging enemies and providing vision for 10 seconds."
+				}
+			],
+			"sk4": [
+				{
+				"name" : "Hookshot"
+				"desc" : "Fires a grappling device rapidly at the target location. If the hook hits a non-neutral unit, Clockwerk launches himself into the target, stunning and dealing damage. Any enemies Clockwerk collides with along the way are subject to damage and stunned. Upgradable by Aghanim's Scepter."
+				}
+			]
+		}
+	]
+}

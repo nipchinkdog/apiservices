@@ -1,0 +1,49 @@
+{
+	"Io"	 :  [
+		{ 
+			"sk1": [
+				{
+				"name" : "Tether"
+				"desc" : "Tether yourself to an allied hero, granting both of you bonus movement speed. When you restore health or mana, your target gains 1.5x the amount. Any enemy unit that crosses the tether is slowed. The tether breaks when the allied unit moves too far away, or Io cancels the tether."
+				}
+			],
+			"sk2": [
+				{
+				"name" : "Break Tether"
+				"desc" : "Break the link to the tethered unit."
+				}
+			],
+			"sk3": [
+				{
+				"name" : "Spirits"
+				"desc" : "Summon five particle spirits that dance in a circle around Io, damaging all that they hit around you. If a particle hits an enemy hero, it explodes, damaging all enemy units in an area around it. Creeps take minor damage from touching a particle spirits, but don't cause them to explode. After the duration, the Spirits will explode."
+				}
+			],
+			"sk4": [
+				{
+				"name" : "Spirits In"
+				"desc" : "Calls the spirits closer to you. Can be toggled on and off."
+				}
+			],
+			"sk5": [
+				{
+				"name" : "Spirits Out"
+				"desc" : "Sends the spirits farther away from you. Can be toggled on and off."
+				}
+			],
+			"sk6": [
+				{
+				"name" : "Overcharge"
+				"desc" : "Io gains bonus attack speed and damage reduction, at the cost of draining HP and mana per second. If Io is Tethered to an ally, that unit also gains the bonuses."
+				}
+			],
+			"sk7": [
+				{
+				"name" : "Relocate"
+				"desc" : "Teleport yourself and any tethered ally to any location on the map. After the spell expires you and any tethered ally will return to where you teleported from."
+				}
+			]
+			
+		}
+	]
+}

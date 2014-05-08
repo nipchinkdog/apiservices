@@ -1,0 +1,30 @@
+{
+	"Dragon_Knight"	 :  [
+		{ 
+			"sk1": [
+				{
+				"name" : "Breathe Fire"
+				"desc" : "Unleashes a breath of fire on enemy units in a line in front of Dragon Knight."
+				}
+			],
+			"sk2": [
+				{
+				"name" : "Dragon Tail"
+				"desc" : "Dragon Knight smites an enemy unit in melee range with his shield, stunning it while dealing minor damage. When in Elder Dragon Form, the cast range increases to 400."
+				}
+			],
+			"sk3": [
+				{
+				"name" : "Dragon Blood"
+				"desc" : "The life blood of the Dragon improves health regeneration and strengthens armor."
+				}
+			],
+			"sk4": [
+				{
+				"name" : "Elder Dragon Form"
+				"desc" : "Dragon Knight can take the form of three powerful elder dragons.Level 1: Green Dragon: Short poison damage over time on attack./ Level 2: Red Dragon: Splash damage on attack./ Level 3: Blue Dragon: Splash damage and frost attack that slows enemy units."
+				}
+			]
+		}
+	]
+}

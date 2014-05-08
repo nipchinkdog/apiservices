@@ -1,0 +1,30 @@
+{
+	"Legion_Commander"	 :  [
+		{ 
+			"sk1": [
+				{
+				"name" : "Overwhelming Odds"
+				"desc" : "Turns the enemies' numbers against them, dealing damage and granting you bonus movement speed per unit or per hero. Deals bonus damage to illusions and summoned units as a percent of their current health."
+				}
+			],
+			"sk2": [
+				{
+				"name" : "Press The Attack"
+				"desc" : "Removes debuffs and disables from the target friendly unit, and grants bonus attack speed and health regen for a short time."
+				}
+			],
+			"sk3": [
+				{
+				"name" : "Moment of Courage"
+				"desc" : "When attacked, Legion Commander has a chance to immediately attack again with bonus lifesteal."
+				}
+			],
+			"sk4": [
+				{
+				"name" : "Duel"
+				"desc" : "Legion Commander and the target enemy hero are forced to attack each other for a short duration. Neither hero can use items or abilities. If either hero dies during the duration, the hero winning the Duel gains permanent bonus damage."
+				}
+			]
+		}
+	]
+}

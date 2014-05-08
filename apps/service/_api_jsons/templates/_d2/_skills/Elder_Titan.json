@@ -1,0 +1,36 @@
+{
+	"Elder_Titan"	 :  [
+		{ 
+			"sk1": [
+				{
+				"name" : "Echo Stomp"
+				"desc" : "Elder Titan and his Astral Spirit both stomp the ground, damaging and knocking nearby enemy units unconscious around their locations. The Elder Titan stomp deals physical damage, while the Spirit stomp deals magical damage. Unconscious enemies will wake if they take damage."
+				}
+			],
+			"sk2": [
+				{
+				"name" : "Astral Spirit"
+				"desc" : "Elder Titan sends forth his Astral Spirit, damaging any units it passes through. When the spirit rejoins the Titan, it grants bonus damage and movement speed for each unit it damaged.The Astral Spirit possesses the Echo Stomp, Return Spirit, and Natural Order abilities."
+				}
+			],
+			"sk3": [
+				{
+				"name" : "Natural Order"
+				"desc" : "Reduces all elements to their basic levels, removing base armor and magic resistance from nearby enemy units."
+				}
+			],
+			"sk4": [
+				{
+				"name" : "Return Astral Spirit"
+				"desc" : "Returns the Astral Spirit to Elder Titan."
+				}
+			],
+			"sk4": [
+				{
+				"name" : "Earth Splitter"
+				"desc" : "Sends forth a jagged crack in front of Elder Titan. After 3 seconds, the crack implodes, slowing movement while dealing damage to each enemy based on their maximum life."
+				}
+			]
+		}
+	]
+}

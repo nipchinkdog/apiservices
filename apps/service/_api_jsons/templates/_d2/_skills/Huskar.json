@@ -1,0 +1,30 @@
+{
+	"Huskar"	 :  [
+		{ 
+			"sk1": [
+				{
+				"name" : "Inner Vitality"
+				"desc" : "Unlocks the regenerative power of a friendly unit, with healing based upon its primary attribute. If the target is below 40%% it will heal faster. Lasts 16 seconds."
+				}
+			],
+			"sk2": [
+				{
+				"name" : "Burning Spear"
+				"desc" : "Huskar sets his spears aflame, dealing damage over time with his regular attack. Multiple attacks will stack additional damage. Each attack drains some of Huskar's health. Lasts 8 seconds."
+				}
+			],
+			"sk3": [
+				{
+				"name" : "Berserker's Blood"
+				"desc" : "Huskar's injuries feed his power, giving increased attack speed and magic resistance based on missing health."
+				}
+			],
+			"sk4": [
+				{
+				"name" : "Life Break"
+				"desc" : "Huskar draws upon his health to break an enemy's life, leaping at a target within attack range to inflict a percentage of that hero's current HP, and slow at the cost of his own vitality. While leaping, Huskar is magic immune. Slow lasts 5 seconds.Upgradable by Aghanim's Scepter."
+				}
+			]
+		}
+	]
+}

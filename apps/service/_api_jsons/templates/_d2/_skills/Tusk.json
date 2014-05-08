@@ -1,0 +1,36 @@
+{
+	"Tusk"	 :  [
+		{ 
+			"sk1": [
+				{
+				"name" : "Ice Shards"
+				"desc" : "Tusk compresses shards of ice into a ball of frozen energy that damages all enemies it comes in contact with. If the ball comes in contact with an enemy hero or reaches its maximum range the shards are released, creating a barrier that lasts for 5 seconds."
+				}
+			],
+			"sk2": [
+				{
+				"name" : "Snowball"
+				"desc" : "Tusk begins rolling into a snowball, automatically gathering allied Heroes within a %snowball_windup_radius% radius. Allies within a 400 radius can also be added to the snowball by right-clicking on them. Once launched, any enemies caught in the snowball's path will be stunned and take damage. Each allied Hero in the snowball will add to its speed and damage."
+				}
+			],
+			"sk3": [
+				{
+				"name" : "Frozen Sigil"
+				"desc" : "Tusk summons a Frozen Sigil by calling upon the deepest cold of winter. The Sigil creates a snowstorm which slows all enemy units within 600 range."
+				}
+			],
+			"sk4": [
+				{
+				"name" : "Walrus PUNCH!"
+				"desc" : "Tusk prepares his mighty Walrus Punch; his next attack will do a critical strike and launch the victim into the air. The victim will be slowed upon landing and take damage."
+				}
+			],
+			"sk5": [
+				{
+				"name" : "Launch Snowball"
+				"desc" : "Launch the snowball toward the target."
+				}
+			]
+		}
+	]
+}

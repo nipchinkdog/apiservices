@@ -1,0 +1,30 @@
+{
+	"Bristleback"	 :  [
+		{ 
+			"sk1": [
+				{
+				"name" : "Viscous Nasal Goo"
+				"desc" : "Covers a target in snot, causing it to have reduced armor and movement speed. Multiple casts stack and refresh the duration."
+				}
+			],
+			"sk2": [
+				{
+				"name" : "Quill Spray"
+				"desc" : "Sprays enemy units with quills dealing damage in an area of effect around Bristleback. Deals bonus damage for every time a unit was hit by Quill Spray in the last 14 seconds."
+				}
+			],
+			"sk3": [
+				{
+				"name" : "Bristleback"
+				"desc" : "Bristleback takes less damage if hit on the sides or rear. If Bristleback takes 250 damage from the rear, he releases a Quill Spray of the current level."
+				}
+			],
+			"sk4": [
+				{
+				"name" : "Warpath"
+				"desc" : "Bristleback works himself up into a fury every time he casts a spell, increasing his movement speed and damage."
+				}
+			]
+		}
+	]
+}

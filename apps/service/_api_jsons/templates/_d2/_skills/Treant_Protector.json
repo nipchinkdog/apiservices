@@ -1,0 +1,30 @@
+{
+	"Treant_Protector"	 :  [
+		{ 
+			"sk1": [
+				{
+				"name" : "Nature's Guise"
+				"desc" : "Causes the targeted unit to blend in with the forest, becoming invisible to enemies and gaining a movement speed bonus when near a tree. If the unit moves away from a tree or the spell is cast on a unit with no nearby trees, Nature's Guise is lost. Treant Protector can cast spells and remain invisible under Nature's Guise."
+				}
+			],
+			"sk2": [
+				{
+				"name" : "Leech Seed"
+				"desc" : "Treant plants a life-sapping seed in an enemy unit, draining its health, while simultaneously slowing it. The seed heals friendly units around it equal to the amount drained. Pulses 6 times."
+				}
+			],
+			"sk3": [
+				{
+				"name" : "Living Armor"
+				"desc" : "Infuses the target hero or structure with a protective coating which grants bonus regeneration. Also blocks some damage from all sources . Dispels when a number of damage instances are taken."
+				}
+			],
+			"sk4": [
+				{
+				"name" : "Overgrowth"
+				"desc" : "Summons an overgrowth of vines and branches around Treant that prevent afflicted enemies from moving, blinking, going invisible, or attacking."
+				}
+			]
+		}
+	]
+}

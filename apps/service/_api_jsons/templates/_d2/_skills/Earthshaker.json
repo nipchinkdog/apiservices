@@ -1,0 +1,30 @@
+{
+	"Earthshaker"	 :  [
+		{ 
+			"sk1": [
+				{
+				"name" : "Fissure"
+				"desc" : "Slams the ground with a mighty totem, fissuring the earth while stunning and damaging enemy units in a line. Creates an impassable ridge of stone."
+				}
+			],
+			"sk2": [
+				{
+				"name" : "Enchant Totem"
+				"desc" : "Empowers Earthshaker's totem, causing it to deal extra damage on the next attack."
+				}
+			],
+			"sk3": [
+				{
+				"name" : "Aftershock"
+				"desc" : "Causes the earth to shake underfoot, adding additional damage and stuns to nearby enemy units when Earthshaker casts his abilities."
+				}
+			],
+			"sk4": [
+				{
+				"name" : "Echo Slam"
+				"desc" : "Shockwaves travel through the ground, damaging enemy units. Each enemy hit causes an echo to damage nearby units.Upgradable by Aghanim's Scepter."
+				}
+			]
+		}
+	]
+}
