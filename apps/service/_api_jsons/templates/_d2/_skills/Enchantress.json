@@ -22,7 +22,7 @@
 			"sk4": [
 				{
 				"name" : "Impetus"
-				"desc" : "Places an enchantment on each attack while activated, causing it to deal additional damage based on how far away the target is. The farther the target, the greater the damage dealt.\n\nImpetus is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.\n\nUpgradable by Aghanim's Scepter."
+				"desc" : "Places an enchantment on each attack while activated, causing it to deal additional damage based on how far away the target is. The farther the target, the greater the damage dealt.Impetus is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

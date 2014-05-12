@@ -16,13 +16,13 @@
 			"sk3": [
 				{
 				"name" : "Liquid Fire"
-				"desc" : "Jakiro burns his enemies in an area of effect with fire added to his attack, while slowing their attacks.\n\nLiquid Fire is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
+				"desc" : "Jakiro burns his enemies in an area of effect with fire added to his attack, while slowing their attacks.Liquid Fire is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Macropyre"
-				"desc" : "Jakiro lays down a line of flame in front of him, each dealing damage per second to enemy units in a wide area of effect.\n\nUpgradable by Aghanim's Scepter."
+				"desc" : "Jakiro lays down a line of flame in front of him, each dealing damage per second to enemy units in a wide area of effect.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

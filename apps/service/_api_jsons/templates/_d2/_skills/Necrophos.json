@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Necrophos"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Death Pulse"
+				"desc" : "Necrophos releases a wave of death around him, dealing damage to enemy units and healing allied units."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Heartstopper Aura"
+				"desc" : "Necrophos stills the hearts of his opponents, causing nearby enemy units to lose a percentage of their max health over time."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Sadist"
+				"desc" : "Necrophos gains hp and mana regeneration for every unit he kills. Hero kills grant 10x the regen bonus."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Reaper's Scythe"
+				"desc" : "Stuns the target enemy hero, then deals damage based on how much life it is missing. Heroes killed by Reaper's Scythe will have 30%% more time added to their respawn timer. Any kill under this effect is credited to Necrophos.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

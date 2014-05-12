@@ -10,7 +10,7 @@
 			"sk2": [
 				{
 				"name" : "Glaives of Wisdom"
-				"desc" : "Silencer enchants his glaives with his wisdom, dealing additional damage based on his Intelligence. \n\nGlaives of Wisdom is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
+				"desc" : "Silencer enchants his glaives with his wisdom, dealing additional damage based on his Intelligence. Glaives of Wisdom is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
 				}
 			],
 			"sk3": [
@@ -22,7 +22,7 @@
 			"sk4": [
 				{
 				"name" : "Global Silence"
-				"desc" : "Silencer stops all sound, preventing enemy heroes and units on the map from casting spells.\n\nUpgradable by Aghanim's Scepter."
+				"desc" : "Silencer stops all sound, preventing enemy heroes and units on the map from casting spells.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

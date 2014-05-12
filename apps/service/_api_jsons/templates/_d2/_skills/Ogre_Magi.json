@@ -28,7 +28,7 @@
 			"sk5": [
 				{
 				"name" : "Multicast"
-				"desc" : "Enables the Ogre Magi to rapidly cast his spells, giving them greater potency. Gives a chance to cast a spell multiple times in one cast. Increases Fireblast's mana cost and decreases its cooldown, adds an area of effect to Ignite and reduces Bloodlust's cooldown and gives it a chance to cast on random allies around Ogre Magi.\n\nUpgradable by Aghanim's Scepter."
+				"desc" : "Enables the Ogre Magi to rapidly cast his spells, giving them greater potency. Gives a chance to cast a spell multiple times in one cast. Increases Fireblast's mana cost and decreases its cooldown, adds an area of effect to Ignite and reduces Bloodlust's cooldown and gives it a chance to cast on random allies around Ogre Magi.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

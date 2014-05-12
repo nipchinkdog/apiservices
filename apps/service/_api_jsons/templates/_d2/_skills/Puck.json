@@ -22,7 +22,7 @@
 			"sk4": [
 				{
 				"name" : "Dream Coil"
-				"desc" : "Creates a coil of volatile magic that latches onto enemy Heroes, stunning them for .5 seconds and damaging them. If the enemy hero stretches the coil by moving too far away, it snaps, deals damage again and stuns.\n\nUpgradable by Aghanim's Scepter."
+				"desc" : "Creates a coil of volatile magic that latches onto enemy Heroes, stunning them for .5 seconds and damaging them. If the enemy hero stretches the coil by moving too far away, it snaps, deals damage again and stuns.Upgradable by Aghanim's Scepter."
 				}
 			],
 			"sk5": [

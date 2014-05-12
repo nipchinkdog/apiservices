@@ -4,7 +4,7 @@
 			"sk1": [
 				{
 				"name" : "Split Shot"
-				"desc" : "Medusa magically splits her shot into several arrows. These arrows deal a lower percent of her normal damage.\n\nThe extra targets will not receive other attack effects (such as critical strike) and Unique Attack Modifiers."
+				"desc" : "Medusa magically splits her shot into several arrows. These arrows deal a lower percent of her normal damage.The extra targets will not receive other attack effects (such as critical strike) and Unique Attack Modifiers."
 				}
 			],
 			"sk2": [

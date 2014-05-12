@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Enigma"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Malefice"
+				"desc" : "Focuses Enigma's power on a target, causing it to take damage and become repeatedly stunned for multiple instances. An instance strikes every 2 seconds."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Demonic Conversion"
+				"desc" : "Transforms a creep into three fragments of Engima himself. These eidolons are all under Enigma's control, and repeated successful attacks cause them to multiply. When this happens, the eidolons have their health restored."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Midnight Pulse"
+				"desc" : "Steeps an area in dark resonance, damaging enemy units based on their max HP."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Black Hole"
+				"desc" : "CHANNELED - Summons a vortex that sucks in nearby enemy units. Enemies affected by Black Hole cannot move, attack, or cast spells. The closer units get to the center, the more damage is dealt.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

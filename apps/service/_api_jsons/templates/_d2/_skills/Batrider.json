@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Batrider"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Sticky Napalm"
+				"desc" : "Drenches an area in sticky oil, amplifying damage from Batrider's attacks and abilities and slowing the movement speed and turn rate of enemies in the area. Additional casts of Sticky Napalm continue to increase damage, up to 10 stacks."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Flamebreak"
+				"desc" : "Hurls an explosive cocktail that explodes when it reaches the target location, knocking back and dealing damage to enemies in the area."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Firefly"
+				"desc" : "Batrider takes to the skies, laying down a flaming trail from the air. While flying, the trail of fire destroys trees and damages enemies in its path, and Batrider gains the movement capabilities of a flying unit."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Flaming Lasso"
+				"desc" : "Lassoes an enemy and drags them in Batrider's wake. Victims cannot be dragged over impassable terrain. Dragged units cannot move, attack, or use abilities. Teleporting or blinking will break the lasso."
 				}
 			]
 		}

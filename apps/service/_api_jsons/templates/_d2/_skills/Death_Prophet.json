@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Death_Prophet"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Crypt Swarm"
+				"desc" : "Sends a swarm of winged beasts to savage enemy units in front of Death Prophet."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Silence"
+				"desc" : "Prevents enemy units in a target area from casting spells."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Witchcraft"
+				"desc" : "Increases the potency of Death Prophet's spells, while providing a passive movement speed boost. Reduces mana costs and cooldowns of Crypt Swarm and Silence, and adds additional spirits to Exorcism."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Exorcism"
+				"desc" : "Unleashes evil spirits to drain the life of nearby enemy units and structures. At the end of the spell's duration, Death Prophet is healed in proportion to the damage dealt. Lasts 30 seconds."
 				}
 			]
 		}

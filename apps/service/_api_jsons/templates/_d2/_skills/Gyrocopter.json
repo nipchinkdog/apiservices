@@ -22,7 +22,7 @@
 			"sk4": [
 				{
 				"name" : "Call Down"
-				"desc" : "Call down an aerial missile strike on enemy units in a target area. Two missiles arrive in succession, the first dealing major damage and major slow; the second dealing minor damage and minor slow.\n\nUpgradable by Aghanim's Scepter."
+				"desc" : "Call down an aerial missile strike on enemy units in a target area. Two missiles arrive in succession, the first dealing major damage and major slow; the second dealing minor damage and minor slow.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

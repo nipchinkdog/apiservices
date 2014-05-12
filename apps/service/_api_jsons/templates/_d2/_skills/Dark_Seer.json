@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Dark_Seer"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Vacuum"
+				"desc" : "Dark Seer creates a vacuum over the target area that sucks in enemy units, disrupting them and dealing damage."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Ion Shell"
+				"desc" : "Surrounds the target unit with a bristling shield that damages enemy units in an area around it."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Surge"
+				"desc" : "Charges a target friendly unit with power, giving it a brief burst of maximum movement speed."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Wall of Replica"
+				"desc" : "Raises a wall of warping light that damages and creates replicas of any enemy hero who crosses it. Enemy replicas serve at the Dark Seer's will.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

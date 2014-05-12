@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Warlock"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Fatal Bonds"
+				"desc" : "Binds several enemy units together, causing %damage_share_percentage%%% of the damage dealt to one of them to be felt by the others."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Shadow Word"
+				"desc" : "Demnok whispers an incantation, healing a friendly unit or damaging an enemy unit over time."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Upheaval"
+				"desc" : "CHANNELED - A powerful slowing current that grows stronger as it's channelled. Lasts up to 16 seconds, slowing enemies up to 84%%. Enemies are slowed for 3 seconds after leaving the area or the spell ends."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Chaotic Offering"
+				"desc" : "Summons a Golem from the depths, stunning enemies for one second. The Golem lives 60 seconds, takes reduced damage from spells, has Permanent Immolation and Flaming Fists on attack.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

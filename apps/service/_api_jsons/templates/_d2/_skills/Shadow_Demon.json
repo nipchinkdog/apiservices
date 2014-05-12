@@ -1,28 +1,34 @@
 {
-	""	 :  [
+	"Shadow_Demon"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Disruption"
+				"desc" : "Banishes the targeted unit, removing it from play for the duration. Upon returning, two illusions of the unit are created under Shadow Demon's control."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Soul Catcher"
+				"desc" : "Curses a random enemy in an area to take increased damage. The bonus damage is dealt as a separate instance of damage. Units under the effect of Disruption can still be affected by Soul Catcher."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Shadow Poison"
+				"desc" : "Deals damage in a line, and afflicts enemy units with a poison effect. The poison deals 1/2/4/8/16 times the stack damage based on the number of stacks on the target, up to 5 stacks. Additional stacks cause 50 damage each. This deferred damage is dealt when Shadow Poison's duration is expired, or the Release sub-ability is used."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Shadow Poison Release"
+				"desc" : "Releases the poison to do damage on all affected enemies. Units under the effect of Disruption can still be affected by Shadow Poison."
+				}
+			],
+			"sk5": [
+				{
+				"name" : "Demonic Purge"
+				"desc" : "Purges the target enemy unit, removing positive buffs, and slowing the target for the duration. The unit slowly regains its speed until the end of the duration, upon which damage is dealt. Units under the effect of Disruption can still be affected by Demonic Purge.Upgradable with Aghanim's Scepter."
 				}
 			]
 		}

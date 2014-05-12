@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Queen_Of_Pain"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Shadow Strike"
+				"desc" : "Hurls a poisoned dagger which deals large initial damage, and then deals damage over time. The poisoned unit has its movement speed slowed for 15 seconds. An instance of damage is dealt every 3 seconds."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Blink"
+				"desc" : "Short distance teleportation that allows Queen of Pain to move in and out of combat."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Scream Of Pain"
+				"desc" : "The Queen of Pain lets loose a piercing scream around her, damaging nearby enemies."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Sonic Wave"
+				"desc" : "Creates a gigantic wave of sound in front of Queen of Pain, dealing heavy damage to all enemy units in its wake.Upgradable with Aghanim's Scepter."
 				}
 			]
 		}

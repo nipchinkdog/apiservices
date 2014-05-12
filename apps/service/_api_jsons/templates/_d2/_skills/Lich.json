@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Lich"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Frost Blast"
+				"desc" : "Blasts the target enemy unit with damaging frost, dealing area damage and slowing movement and attack rates for 4 seconds. The primary target takes the most damage."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Ice Armor"
+				"desc" : "Creates a shield around the target friendly unit or building, which adds armor and slows attacking units. Has half effect on ranged attackers. Lasts 40 seconds."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Sacrifice"
+				"desc" : "Sacrifices a friendly creep and converts its current hit points into mana for Lich. Grants XP to both enemies and allies."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Chain Frost"
+				"desc" : "Releases an orb of frost that bounces up to 10 times, slowing and damaging enemy units. The first target is mini-stunned.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

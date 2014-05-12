@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Pugna"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Nether Blast"
+				"desc" : "An exploding pulse deals damage to enemies and structures in the area. Deals half damage to structures."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Decrepify"
+				"desc" : "A powerful banishing spell that slows a unit and renders it unable to attack or be attacked. Afflicted units take extra magic damage."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Nether Ward"
+				"desc" : "Pugna places a nether ward that fires mana flares at enemy heroes who dare to cast spells, while also preventing them from regenerating mana. Nether Ward deals damage equal to the damage multiplier times the mana spent by the enemy hero. Lasts 30 seconds."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Life Drain"
+				"desc" : "CHANNELED - While channelling Life Drain, Pugna siphons HP from the target enemy unit. If Pugna has full HP, and the target is a Hero, Life Drain will restore mana instead. Lasts 10 seconds.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

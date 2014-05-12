@@ -22,7 +22,7 @@
 			"sk4": [
 				{
 				"name" : "Haunt"
-				"desc" : "Creates a spectral nemesis to attack each enemy hero after a short delay. At any moment during the duration, Spectre can use Reality to take the place of a given illusion.\n\nHaunt illusions are uncontrollable, take extra damage, and deal less damage than Spectre herself. They move at 400 base movement speed and ignore terrain."
+				"desc" : "Creates a spectral nemesis to attack each enemy hero after a short delay. At any moment during the duration, Spectre can use Reality to take the place of a given illusion.Haunt illusions are uncontrollable, take extra damage, and deal less damage than Spectre herself. They move at 400 base movement speed and ignore terrain."
 				}
 			],
 			"sk5": [

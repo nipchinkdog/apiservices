@@ -4,7 +4,7 @@
 			"sk1": [
 				{
 				"name" : "Illuminate"
-				"desc" : "Channels a ball of light energy, building power the longer it's channeled. Once released, the ball deals damage and gives vision in a line. The longer it is channeled, the more damage is dealt.\n\nUpgradable by Aghanim's Scepter, allowing Illuminate to heal allies for 75%% of its damage values."
+				"desc" : "Channels a ball of light energy, building power the longer it's channeled. Once released, the ball deals damage and gives vision in a line. The longer it is channeled, the more damage is dealt.Upgradable by Aghanim's Scepter, allowing Illuminate to heal allies for 75%% of its damage values."
 				}
 			],
 			"sk2": [
@@ -34,7 +34,7 @@
 			"sk6": [
 				{
 				"name" : "Spirit Form"
-				"desc" : "Ezalor temporarily turns his body luminescent, gaining various abilities. Illuminate is now channeled by a separate spirit, and gains the Blinding Light and Recall abilities.\n\nUpgradable by Aghanim's Scepter."
+				"desc" : "Ezalor temporarily turns his body luminescent, gaining various abilities. Illuminate is now channeled by a separate spirit, and gains the Blinding Light and Recall abilities.Upgradable by Aghanim's Scepter."
 				}
 			],
 			"sk7": [

@@ -16,7 +16,7 @@
 			"sk3": [
 				{
 				"name" : "Geminate Attack"
-				"desc" : "Allows Weaver to dispatch two swarms, attacking an enemy twice.\n\nThe extra attack will not trigger other attack effects (such as critical strike) and overrides Unique Attack Modifiers."
+				"desc" : "Allows Weaver to dispatch two swarms, attacking an enemy twice.The extra attack will not trigger other attack effects (such as critical strike) and overrides Unique Attack Modifiers."
 				}
 			],
 			"sk4": [

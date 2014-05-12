@@ -1,28 +1,34 @@
 {
-	""	 :  [
+	"Bane"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Enfeeble"
+				"desc" : "Weakens an enemy unit, reducing its physical damage. Lasts 20 seconds."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Brain Sap"
+				"desc" : "Feasts on the vital energies of an enemy unit, dealing damage and gaining health equal to the damage dealt."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Nightmare"
+				"desc" : "Puts the target enemy or friendly Hero to sleep and deals damage per second. Sleeping units are awakened when attacked, but the Nightmare passes to the attacking unit. The nightmared unit instantly wakes up if it takes damage."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Nightmare End"
+				"desc" : "Wakes you up from a nightmare."
+				}
+			],
+			"sk5": [
+				{
+				"name" : "Fiend's Grip"
+				"desc" : "CHANNELED - Grips an enemy unit, disabling it and causing heavy damage over time, while stealing mana every second based on the unit's maximum mana.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}
