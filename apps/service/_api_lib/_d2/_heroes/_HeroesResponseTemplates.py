@@ -9,11 +9,12 @@ class HeroesResponseTemplate(object):
         self.Heroes_Data = Heroes
         
 
-    def _GetTemplate(self, heroes_data, pictures_data):
+    def _GetTemplate(self, heroes_data, pictures_data, skills_data):
         self.List.append({
                           'hero' : heroes_data['name'],
                           'info' : heroes_data,
                           'avatar' : pictures_data,
+                          'skills' : skills_data,
                         })
         
         List = sorted(self.List, key=lambda k: (k['hero']))
@@ -27,9 +28,10 @@ class HeroesResponseTemplate(object):
         Pictures_init = HeroesPictures(self.Heroes_Data['name'], 
                                        self.Heroes_Data['type'])
         self.Pictures_Data = Pictures_init.Pictures()
+        self.Skills_Data = Pictures_init.Skills()
 
         #! construct data
-        return self._GetTemplate(self.Heroes_Data, self.Pictures_Data)
+        return self._GetTemplate(self.Heroes_Data, self.Pictures_Data, self.Skills_Data)
 
         
     def _GetHeroesListTemplate(self):
@@ -39,8 +41,9 @@ class HeroesResponseTemplate(object):
             Pictures_init = HeroesPictures(self.Heroes_Data[hero][0]['name'], 
                                            self.Heroes_Data[hero][0]['type'])
             self.Pictures_Data = Pictures_init.Pictures()
+            self.Skills_Data = Pictures_init.Skills()
     
             #! construct data
-            self._GetTemplate(self.Heroes_Data[hero][0], self.Pictures_Data)
+            self._GetTemplate(self.Heroes_Data[hero][0], self.Pictures_Data, self.Skills_Data)
         
         return self.List

@@ -29,7 +29,7 @@
 				],
 	"Keeper_Of_The_Light" :	[
 					{
-					 "name": "Keeper_of_the_Light" ,
+					 "name": "Keeper_Of_The_Light" ,
 					 "type": "Int" ,
 					 "div": "Radiant" 
 					}

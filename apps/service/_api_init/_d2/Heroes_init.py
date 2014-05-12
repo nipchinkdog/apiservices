@@ -25,8 +25,7 @@ Heroes_Str_All = dict( Heroes_Dire_Str.items() + Heroes_Radiant_Str.items() )
 Heroes_Overall = dict( Heroes_Dire_All.items() + Heroes_Radiant_All.items() )
 
 root_url = '_d2/_skills/'
-Heroes_Skills = []
+Heroes_Skills = {}
 for hero in Heroes_Overall:
     Skills = simplejson.loads( render_to_string(root_url + hero +'.json'))
-    Heroes_Skills.append(Skills)
-print Heroes_Skills
+    Heroes_Skills.update(Skills)

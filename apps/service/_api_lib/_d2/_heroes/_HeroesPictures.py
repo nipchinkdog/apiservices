@@ -1,3 +1,8 @@
+#! json config files
+#! variable assignments
+#! ex: Dire/Radiant/Str/Int/Agi
+from apps.service._api_init._d2.Heroes_init import *
+
 from apps.service._imports.Settings_init import *
 
 class HeroesPictures():
@@ -15,6 +20,7 @@ class HeroesPictures():
         
         self.root = ROOT_URL + '/static/service/media/_src/_d2/_Heroes'
         self.ico = ROOT_URL + '/static/service/media/_src/_d2/_MiniHeroes/'
+        self.skill = ROOT_URL + '/static/service/media/_src/_d2/_Skills'
 
         
         #! Sizes
@@ -33,11 +39,47 @@ class HeroesPictures():
         self.HeroSmall = self.root + self.small + self.Class + self.Hero + self.ext
         self.HeroXSmall = self.root + self.xsmall + self.Class + self.Hero + self.ext
         self.HeroIcon = self.ico + self.Hero.lower() + self.ext
-        self.List = {'lg' : self.HeroLarge, 'md' : self.HeroMedium, 'sm' : self.HeroSmall, 'xs' : self.HeroXSmall, 'ico' : self.HeroIcon}
+        self.List = {
+                    'lg' : self.HeroLarge, 
+                    'md' : self.HeroMedium, 
+                    'sm' : self.HeroSmall, 
+                    'xs' : self.HeroXSmall, 
+                    'ico' : self.HeroIcon
+                    }
         return self.List   
     
     def Skills(self):
-        pass
+        Skills = []
+        Icons = []
+        for skills in Heroes_Skills[self.Hero]:
+            for index in range(0, len(skills)):
+                index = str(index+1)
+                skill = skills['sk' + index ]
+                sk = 'skill_' + index
+                
+                #! pre format filename
+                self.HeroSkillFile = self.Hero + '_' + skill[0]['name']
+                self.HeroSkillFile = self.HeroSkillFile.replace (' ', '_')
+                self.HeroSkillFile = self.HeroSkillFile.title()
+                
+                self.SkillLarge = self.skill + self.large + '/' + self.HeroSkillFile + self.ext
+                self.SkillMedium = self.skill + self.medium + '/' + self.HeroSkillFile + self.ext
+                self.SkillSmall = self.skill + self.small + '/' + self.HeroSkillFile + self.ext
+                self.SkillXSmall = self.skill + self.xsmall + '/' + self.HeroSkillFile + self.ext
+                
+                Icons = {
+                          'lg' : self.SkillLarge,
+                          'md' : self.SkillMedium,
+                          'sm' : self.SkillSmall,
+                          'xs' : self.SkillXSmall,
+                        }
+                Skills.append({
+                               sk : skill[0]['name'],
+                               'desc' : skill[0]['desc'],
+                               'icons' : Icons
+                                })
+        return Skills
+                
     
     
     
