@@ -3,32 +3,32 @@
 		{ 
 			"sk1": [
 				{
-				"name" : "Acid Spray",
-				"desc" : "Sprays high-pressure acid across a target area. Enemy units who step across the contaminated terrain take mixed damage per second and have their armor reduced."
+				"name" : "Acid Spray"
+				,"desc" : "Sprays high-pressure acid across a target area. Enemy units who step across the contaminated terrain take mixed damage per second and have their armor reduced."
 				}
 			],
 			"sk2": [
 				{
-				"name" : "Unstable Concoction",
-				"desc" : "Alchemist brews up an unstable concoction that he can throw at an enemy hero, to stun and deal damage in an area around the explosion. The longer the concoction brews, the more damage it deals and the longer the stun. After 5 seconds, the brew reaches its maximum damage and stun time. However, after 5.5 seconds, the concoction will explode on Alchemist himself if not thrown."
+				"name" : "Unstable Concoction"
+				,"desc" : "Alchemist brews up an unstable concoction that he can throw at an enemy hero, to stun and deal damage in an area around the explosion. The longer the concoction brews, the more damage it deals and the longer the stun. After 5 seconds, the brew reaches its maximum damage and stun time. However, after 5.5 seconds, the concoction will explode on Alchemist himself if not thrown."
 				}
 			],
 			"sk3": [
 				{
-				"name" : "Greevil's Greed",
-				"desc" : "Alchemist gets bonus gold for killing creeps; the bonus stacks if the creeps are killed within a period of time, after which the count is reset. The bonus gold is capped at 30 gold."
+				"name" : "Greevil's Greed"
+				,"desc" : "Alchemist gets bonus gold for killing creeps; the bonus stacks if the creeps are killed within a period of time, after which the count is reset. The bonus gold is capped at 30 gold."
 				}
 			],
 			"sk4": [
 				{
-				"name" : "Chemical Rage",
-				"desc" : "Alchemist causes his Ogre to enter a chemically induced rage, reducing base attack cooldown and increasing movement speed and regeneration."
+				"name" : "Chemical Rage"
+				,"desc" : "Alchemist causes his Ogre to enter a chemically induced rage, reducing base attack cooldown and increasing movement speed and regeneration."
 				}
 			],
 			"sk5": [
 				{
-				"name" : "Unstable Concoction Throw",
-				"desc" : "Throw it before it blows up!"
+				"name" : "Unstable Concoction Throw"
+				,"desc" : "Throw it before it blows up!"
 				}
 			]
 			

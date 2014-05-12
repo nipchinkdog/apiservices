@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Poison Attack"
-				"desc" : "Intensifies Viper's venom, adding an effect to his normal attack that slows attack and movement speed while dealing damage over time.Poison Attack is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
+				,"desc" : "Intensifies Viper's venom, adding an effect to his normal attack that slows attack and movement speed while dealing damage over time.Poison Attack is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Nethertoxin"
-				"desc" : "Nethertoxin causes Viper's normal attack to deal bonus damage to units based on how much health they are missing. The bonus damage doubles for each 20%% of health missing from the target. Nethertoxin deals half damage to creeps and buildings."
+				,"desc" : "Nethertoxin causes Viper's normal attack to deal bonus damage to units based on how much health they are missing. The bonus damage doubles for each 20%% of health missing from the target. Nethertoxin deals half damage to creeps and buildings."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Corrosive Skin"
-				"desc" : "Viper exudes an infectious toxin that damages and slows any enemy that damages it. The acid exudate also increases Viper's resistance to spells."
+				,"desc" : "Viper exudes an infectious toxin that damages and slows any enemy that damages it. The acid exudate also increases Viper's resistance to spells."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Viper Strike"
-				"desc" : "Viper slows the targeted enemy unit's movement and attack speed while also dealing poison damage over time. The slowing effect reduces over the duration of the poison.Upgradable by Aghanim's Scepter."
+				,"desc" : "Viper slows the targeted enemy unit's movement and attack speed while also dealing poison damage over time. The slowing effect reduces over the duration of the poison.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

@@ -4,31 +4,31 @@
 			"sk1": [
 				{
 				"name" : "Searing Chains"
-				"desc" : "Ember Spirit unleashes fiery bolas that wrap around nearby enemies, anchoring them in place and dealing damage each second."
+				,"desc" : "Ember Spirit unleashes fiery bolas that wrap around nearby enemies, anchoring them in place and dealing damage each second."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Sleight of Fist"
-				"desc" : "Ember Spirit dashes around with blazing speed, attacking all enemies in the targeted area of effect, then returning to his start location. Deals bonus damage to heroes, and less damage to creeps."
+				,"desc" : "Ember Spirit dashes around with blazing speed, attacking all enemies in the targeted area of effect, then returning to his start location. Deals bonus damage to heroes, and less damage to creeps."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Flame Guard"
-				"desc" : "Ember Spirit surrounds himself with a ring of fire that consumes incoming magic damage, leaving him unharmed. Flame Guard deals damage per second in an area around Ember Spirit while Flame Guard is active. If the shield is broken, the damage is also lost."
+				,"desc" : "Ember Spirit surrounds himself with a ring of fire that consumes incoming magic damage, leaving him unharmed. Flame Guard deals damage per second in an area around Ember Spirit while Flame Guard is active. If the shield is broken, the damage is also lost."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Fire Remnant"
-				"desc" : "Ember Spirit generates Fire Remnant charges every 35 seconds, with a max of 3 charges. Releasing a charge sends a Fire Remnant that runs to the target location at 2.5x Ember Spirit's speed. Using Activate Fire Remnant, Ember Spirit can dash out to his Remnants, exploding them for area of effect damage. The targeted Remnant will be arrived at last."
+				,"desc" : "Ember Spirit generates Fire Remnant charges every 35 seconds, with a max of 3 charges. Releasing a charge sends a Fire Remnant that runs to the target location at 2.5x Ember Spirit's speed. Using Activate Fire Remnant, Ember Spirit can dash out to his Remnants, exploding them for area of effect damage. The targeted Remnant will be arrived at last."
 				}
 			],
 			"sk5": [
 				{
 				"name" : "Activate Fire Remnant"
-				"desc" : "Select the Fire Remnant to arrive at."
+				,"desc" : "Select the Fire Remnant to arrive at."
 				}
 			]
 		}

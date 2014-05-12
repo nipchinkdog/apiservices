@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Plasma Field"
-				"desc" : "Releases a wave of energetic plasma that grows in power as it expands, but also zaps on contraction, dealing damage to enemy units caught in its path. Damage increases with distance from Razor."
+				,"desc" : "Releases a wave of energetic plasma that grows in power as it expands, but also zaps on contraction, dealing damage to enemy units caught in its path. Damage increases with distance from Razor."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Static Link"
-				"desc" : "Creates a charged link between Razor and an enemy Hero, stealing damage from the target and giving it to Razor."
+				,"desc" : "Creates a charged link between Razor and an enemy Hero, stealing damage from the target and giving it to Razor."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Unstable Current"
-				"desc" : "Razor moves with increased speed, and any abilites targeted at him are instantly countered with a jolt of electricity which damages, slows, and purges buffs from enemies."
+				,"desc" : "Razor moves with increased speed, and any abilites targeted at him are instantly countered with a jolt of electricity which damages, slows, and purges buffs from enemies."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Eye of the Storm"
-				"desc" : "A powerful lightning storm strikes out at enemy units with the lowest health, dealing damage and reducing their armor.Upgradable by Aghanim's Scepter."
+				,"desc" : "A powerful lightning storm strikes out at enemy units with the lowest health, dealing damage and reducing their armor.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

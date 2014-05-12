@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Spirit Lance"
-				"desc" : "Casts a magical spirit lance on a target enemy unit that damages and slows, while a Phantom is summoned to attack the unit."
+				,"desc" : "Casts a magical spirit lance on a target enemy unit that damages and slows, while a Phantom is summoned to attack the unit."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Doppelwalk"
-				"desc" : "Renders Phantom Lancer invisible, while generating a duplicate image to confuse enemies."
+				,"desc" : "Renders Phantom Lancer invisible, while generating a duplicate image to confuse enemies."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Juxtapose"
-				"desc" : "Phantom Lancer's attacks have a chance to create illusions to confuse enemies. Phantom Lancer himself counts as one towards the max images."
+				,"desc" : "Phantom Lancer's attacks have a chance to create illusions to confuse enemies. Phantom Lancer himself counts as one towards the max images."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Phantom Edge"
-				"desc" : "Phantom Lancer hones his abilities. Improves chance of Juxtaposing, and the Juxtapose illusions can now create their own illusions. Phantom Edge also increases Phantom Lancer's magic resistance."
+				,"desc" : "Phantom Lancer hones his abilities. Improves chance of Juxtaposing, and the Juxtapose illusions can now create their own illusions. Phantom Edge also increases Phantom Lancer's magic resistance."
 				}
 			]
 		}

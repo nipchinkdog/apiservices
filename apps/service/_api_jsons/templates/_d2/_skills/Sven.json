@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Storm Hammer"
-				"desc" : "Sven unleashes his magical gauntlet that deals damage and stuns enemy units."
+				,"desc" : "Sven unleashes his magical gauntlet that deals damage and stuns enemy units."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Great Cleave"
-				"desc" : "Sven strikes with great force, cleaving all nearby enemy units with his attack."
+				,"desc" : "Sven strikes with great force, cleaving all nearby enemy units with his attack."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Warcry"
-				"desc" : "Sven's Warcry heartens his allies for battle, increasing their movement speed and armor. Lasts 7 seconds."
+				,"desc" : "Sven's Warcry heartens his allies for battle, increasing their movement speed and armor. Lasts 7 seconds."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "God's Strength"
-				"desc" : "Sven channels his rogue strength, granting bonus damage for 25 seconds."
+				,"desc" : "Sven channels his rogue strength, granting bonus damage for 25 seconds."
 				}
 			]
 		}

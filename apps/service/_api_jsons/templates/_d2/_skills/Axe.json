@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Berserker's Call"
-				"desc" : "Axe taunts nearby enemy units, forcing them to attack him, while he gains bonus armor during the duration."
+				,"desc" : "Axe taunts nearby enemy units, forcing them to attack him, while he gains bonus armor during the duration."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Battle Hunger"
-				"desc" : "Enrages an enemy unit, causing it to be slowed and take damage over time until it kills another unit or the duration ends. Axe gains movement speed for each unit affected with Battle Hunger."
+				,"desc" : "Enrages an enemy unit, causing it to be slowed and take damage over time until it kills another unit or the duration ends. Axe gains movement speed for each unit affected with Battle Hunger."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Counter Helix"
-				"desc" : "When attacked, Axe performs a helix counter attack, dealing damage to all nearby enemies."
+				,"desc" : "When attacked, Axe performs a helix counter attack, dealing damage to all nearby enemies."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Culling Blade"
-				"desc" : "Axe spots weakness and strikes, dealing moderate damage but instantly killing an enemy unit with low health. When an enemy hero is killed in this way, the cooldown is reset. Axe and nearby allied units gain bonus movement speed.Upgradable by Aghanim's Scepter."
+				,"desc" : "Axe spots weakness and strikes, dealing moderate damage but instantly killing an enemy unit with low health. When an enemy hero is killed in this way, the cooldown is reset. Axe and nearby allied units gain bonus movement speed.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

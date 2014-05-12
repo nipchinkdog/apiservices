@@ -4,31 +4,31 @@
 			"sk1": [
 				{
 				"name" : "Whirling Death"
-				"desc" : "Timbersaw whirls extremely sharp edges, damaging enemies and destroying trees around him in an area. If an enemy hero is affected, it loses some of its primary attribute for a short duration. Whirling Death will deal Pure damage if a tree is cut down in the process."
+				,"desc" : "Timbersaw whirls extremely sharp edges, damaging enemies and destroying trees around him in an area. If an enemy hero is affected, it loses some of its primary attribute for a short duration. Whirling Death will deal Pure damage if a tree is cut down in the process."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Timber Chain"
-				"desc" : "Timbersaw fires a chain that embeds itself in the first tree it hits, pulling him towards it. Any enemy in the path takes damage."
+				,"desc" : "Timbersaw fires a chain that embeds itself in the first tree it hits, pulling him towards it. Any enemy in the path takes damage."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Reactive Armor"
-				"desc" : "Each time Timbersaw is attacked, he gains increased health regen and armor."
+				,"desc" : "Each time Timbersaw is attacked, he gains increased health regen and armor."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Chakram"
-				"desc" : "Fires your main saw blade at the target location where it will spin in place, dealing damage in an area around it. Additionally, for each 5%% of health missing, enemies caught in the saw blade move more slowly. The blade deals damage and cuts down trees in its path when fired and retracted. While active the ability costs mana, and you lose the ability to attack."
+				,"desc" : "Fires your main saw blade at the target location where it will spin in place, dealing damage in an area around it. Additionally, for each 5%% of health missing, enemies caught in the saw blade move more slowly. The blade deals damage and cuts down trees in its path when fired and retracted. While active the ability costs mana, and you lose the ability to attack."
 				}
 			],
 			"sk5": [
 				{
 				"name" : "Return Chakram"
-				"desc" : "Returns the Chakram to Timbersaw."
+				,"desc" : "Returns the Chakram to Timbersaw."
 				}
 			]
 			

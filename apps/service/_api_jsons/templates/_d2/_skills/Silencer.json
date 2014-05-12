@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Curse of the Silent"
-				"desc" : "Curses the target area, causing enemy Heroes to take damage and lose mana until they cast a spell."
+				,"desc" : "Curses the target area, causing enemy Heroes to take damage and lose mana until they cast a spell."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Glaives of Wisdom"
-				"desc" : "Silencer enchants his glaives with his wisdom, dealing additional damage based on his Intelligence. Glaives of Wisdom is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
+				,"desc" : "Silencer enchants his glaives with his wisdom, dealing additional damage based on his Intelligence. Glaives of Wisdom is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Last Word"
-				"desc" : "Enchants a target damaging and silencing them if they cast a spell. If the enchantment expires the target will be disarmed in addition to being damaged and silenced."
+				,"desc" : "Enchants a target damaging and silencing them if they cast a spell. If the enchantment expires the target will be disarmed in addition to being damaged and silenced."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Global Silence"
-				"desc" : "Silencer stops all sound, preventing enemy heroes and units on the map from casting spells.Upgradable by Aghanim's Scepter."
+				,"desc" : "Silencer stops all sound, preventing enemy heroes and units on the map from casting spells.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

@@ -34,4 +34,11 @@ class HeroesPictures():
         self.HeroXSmall = self.root + self.xsmall + self.Class + self.Hero + self.ext
         self.HeroIcon = self.ico + self.Hero.lower() + self.ext
         self.List = {'lg' : self.HeroLarge, 'md' : self.HeroMedium, 'sm' : self.HeroSmall, 'xs' : self.HeroXSmall, 'ico' : self.HeroIcon}
-        return self.List        
+        return self.List   
+    
+    def Skills(self):
+        pass
+    
+    
+    
+    

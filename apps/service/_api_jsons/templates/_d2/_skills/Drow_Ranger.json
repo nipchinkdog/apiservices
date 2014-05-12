@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Frost Arrows"
-				"desc" : "Adds a freezing effect to Drow's attacks, slowing enemy movement. Lasts 1.5 seconds on Heroes, and 7 seconds on creeps.Frost Arrows is a Unique Attack Modifier, and does not stack with other Unique Attack Modifier."
+				,"desc" : "Adds a freezing effect to Drow's attacks, slowing enemy movement. Lasts 1.5 seconds on Heroes, and 7 seconds on creeps.Frost Arrows is a Unique Attack Modifier, and does not stack with other Unique Attack Modifier."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Gust"
-				"desc" : "Releases a wave that silences and knocks back enemy units. Knockback distance is relative to how close they are to you."
+				,"desc" : "Releases a wave that silences and knocks back enemy units. Knockback distance is relative to how close they are to you."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Precision Aura"
-				"desc" : "Adds bonus damage to the physical attack of allied, ranged Hero units on the map based on a percentage of Drow's agility. Affects creeps for 30 seconds when cast."
+				,"desc" : "Adds bonus damage to the physical attack of allied, ranged Hero units on the map based on a percentage of Drow's agility. Affects creeps for 30 seconds when cast."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Marksmanship"
-				"desc" : "Drow's experiences in battle improve her accuracy and effectiveness in combat, providing a passive bonus to Agility. Grants no bonus if there are enemy heroes within a 400 AoE."
+				,"desc" : "Drow's experiences in battle improve her accuracy and effectiveness in combat, providing a passive bonus to Agility. Grants no bonus if there are enemy heroes within a 400 AoE."
 				}
 			]
 		}

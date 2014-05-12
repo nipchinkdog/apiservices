@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Smoke Screen"
-				"desc" : "Throws down a smoke bomb, silencing and slowing enemy units in an area while causing them to miss on most attacks. Lasts 6 seconds."
+				,"desc" : "Throws down a smoke bomb, silencing and slowing enemy units in an area while causing them to miss on most attacks. Lasts 6 seconds."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Blink Strike"
-				"desc" : "Teleports behind the target unit, striking for bonus damage if it is an enemy."
+				,"desc" : "Teleports behind the target unit, striking for bonus damage if it is an enemy."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Backstab"
-				"desc" : "If Riki attacks from behind, bonus damage is applied based on his current agility."
+				,"desc" : "If Riki attacks from behind, bonus damage is applied based on his current agility."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Permanent Invisibility"
-				"desc" : "Riki fades into the shadows, staying permanently invisible except while attacking. While silenced, Riki will be visible."
+				,"desc" : "Riki fades into the shadows, staying permanently invisible except while attacking. While silenced, Riki will be visible."
 				}
 			]
 		}

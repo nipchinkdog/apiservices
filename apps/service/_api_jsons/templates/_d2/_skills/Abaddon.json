@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Mist Coil"
-				"desc" : "Abaddon releases a coil of deathly mist that can damage an enemy unit or heal a friendly unit at the cost of some of Abaddon's health."
+				,"desc" : "Abaddon releases a coil of deathly mist that can damage an enemy unit or heal a friendly unit at the cost of some of Abaddon's health."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Aphotic Shield"
-				"desc" : "Summons dark energies around an ally unit, creating a shield that absorbs a set amount of damage before expiring. When the shield is destroyed it will burst and deal damage equal to the amount it could absorb to an area around it. Removes certain types of negative buffs and stuns on cast."
+				,"desc" : "Summons dark energies around an ally unit, creating a shield that absorbs a set amount of damage before expiring. When the shield is destroyed it will burst and deal damage equal to the amount it could absorb to an area around it. Removes certain types of negative buffs and stuns on cast."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Curse of Avernus"
-				"desc" : "Abaddon strikes an enemy with chilling curse on each attack, causing all units who attack the slowed enemy to gain increased movement speed, along with faster attack speed, for a limited time."
+				,"desc" : "Abaddon strikes an enemy with chilling curse on each attack, causing all units who attack the slowed enemy to gain increased movement speed, along with faster attack speed, for a limited time."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Borrowed Time"
-				"desc" : "When activated, all damage dealt to you will heal instead of harm. Most negative buffs will also be removed. If the ability is not on cooldown, it will passively activate if your hitpoints drop below %hp_threshold%.Upgradable by Aghanim's Scepter."
+				,"desc" : "When activated, all damage dealt to you will heal instead of harm. Most negative buffs will also be removed. If the ability is not on cooldown, it will passively activate if your hitpoints drop below %hp_threshold%.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

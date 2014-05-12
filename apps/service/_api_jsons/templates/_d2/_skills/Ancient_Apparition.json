@@ -4,31 +4,31 @@
 			"sk1": [
 				{
 				"name" : "Cold Feet"
-				"desc" : "Places a frozen hex on an enemy unit that deals damage over time, but can be dispelled by moving away from the initial cast point. If the enemy unit doesn't move outside of the given range, it will be stunned and frozen in place after 4 seconds."
+				,"desc" : "Places a frozen hex on an enemy unit that deals damage over time, but can be dispelled by moving away from the initial cast point. If the enemy unit doesn't move outside of the given range, it will be stunned and frozen in place after 4 seconds."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Ice Vortex"
-				"desc" : "Creates a vortex of icy energy that slows movement speed and increases magic damage done in its range. Lasts 16 seconds."
+				,"desc" : "Creates a vortex of icy energy that slows movement speed and increases magic damage done in its range. Lasts 16 seconds."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Chilling Touch"
-				"desc" : "A frigid gust enchants allied heroes, granting them bonus magical damage for a given number of physical attacks, while slowing their attack speed slightly. Ancient Apparition always receives the buff. Lasts 30 seconds."
+				,"desc" : "A frigid gust enchants allied heroes, granting them bonus magical damage for a given number of physical attacks, while slowing their attack speed slightly. Ancient Apparition always receives the buff. Lasts 30 seconds."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Ice Blast"
-				"desc" : "An explosive ball of icy hail that can be used to strike targets anywhere on the map. On first use, Kaldr launches a tracer towards the targeted location. The second use marks the current location of the blast, upon which the actual projectile is launched - the greater the distance, the larger the radius affected. It deals damage to enemy units and applies a frostbite curse to units in and around the area that prevents regeneration or healing. Frostbitten units will take minor damage over time; if the units drop below a certain percentage of hitpoints, they'll instantly shatter.Upgradable by Aghanim's Scepter."
+				,"desc" : "An explosive ball of icy hail that can be used to strike targets anywhere on the map. On first use, Kaldr launches a tracer towards the targeted location. The second use marks the current location of the blast, upon which the actual projectile is launched - the greater the distance, the larger the radius affected. It deals damage to enemy units and applies a frostbite curse to units in and around the area that prevents regeneration or healing. Frostbitten units will take minor damage over time; if the units drop below a certain percentage of hitpoints, they'll instantly shatter.Upgradable by Aghanim's Scepter."
 				}
 			],
 			"sk5": [
 				{
 				"name" : "Release"
-				"desc" : "Releases the ice blast early at its current location."
+				,"desc" : "Releases the ice blast early at its current location."
 				}
 			]
 		}

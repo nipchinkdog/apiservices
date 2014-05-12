@@ -4,31 +4,31 @@
 			"sk1": [
 				{
 				"name" : "Spectral Dagger"
-				"desc" : "Spectre flings a dagger to draw a Shadow Path, dealing damage and slowing the movement speed of any enemies along the trail. Units hit by the dagger also trail a Shadow Path. While treading the path, Spectre phases through otherwise impassable terrain."
+				,"desc" : "Spectre flings a dagger to draw a Shadow Path, dealing damage and slowing the movement speed of any enemies along the trail. Units hit by the dagger also trail a Shadow Path. While treading the path, Spectre phases through otherwise impassable terrain."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Desolate"
-				"desc" : "Deals bonus pure damage when Spectre attacks an enemy hero who is alone."
+				,"desc" : "Deals bonus pure damage when Spectre attacks an enemy hero who is alone."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Dispersion"
-				"desc" : "Damage done to Spectre is reflected on her enemies, leaving her unharmed. The effect lessens with distance."
+				,"desc" : "Damage done to Spectre is reflected on her enemies, leaving her unharmed. The effect lessens with distance."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Haunt"
-				"desc" : "Creates a spectral nemesis to attack each enemy hero after a short delay. At any moment during the duration, Spectre can use Reality to take the place of a given illusion.Haunt illusions are uncontrollable, take extra damage, and deal less damage than Spectre herself. They move at 400 base movement speed and ignore terrain."
+				,"desc" : "Creates a spectral nemesis to attack each enemy hero after a short delay. At any moment during the duration, Spectre can use Reality to take the place of a given illusion.Haunt illusions are uncontrollable, take extra damage, and deal less damage than Spectre herself. They move at 400 base movement speed and ignore terrain."
 				}
 			],
 			"sk5": [
 				{
 				"name" : "Reality"
-				"desc" : "Spectre physically possesses a chosen Haunt."
+				,"desc" : "Spectre physically possesses a chosen Haunt."
 				}
 			]
 		}

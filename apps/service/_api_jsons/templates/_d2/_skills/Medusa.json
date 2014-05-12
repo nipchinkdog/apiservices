@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Split Shot"
-				"desc" : "Medusa magically splits her shot into several arrows. These arrows deal a lower percent of her normal damage.The extra targets will not receive other attack effects (such as critical strike) and Unique Attack Modifiers."
+				,"desc" : "Medusa magically splits her shot into several arrows. These arrows deal a lower percent of her normal damage.The extra targets will not receive other attack effects (such as critical strike) and Unique Attack Modifiers."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Mystic Snake"
-				"desc" : "A mystic snake made of energy jumps from target to target dealing damage and stealing mana. After it reaches its last target, it returns to Medusa to replenish her with mana. The snake deals more damage and steals more mana per jump."
+				,"desc" : "A mystic snake made of energy jumps from target to target dealing damage and stealing mana. After it reaches its last target, it returns to Medusa to replenish her with mana. The snake deals more damage and steals more mana per jump."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Mana Shield"
-				"desc" : "Creates a shield that absorbs 50%% of the incoming damage by using Medusa's mana."
+				,"desc" : "Creates a shield that absorbs 50%% of the incoming damage by using Medusa's mana."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Stone Gaze"
-				"desc" : "Any enemy units looking at Medusa will have their movement and attack speed slowed. If 2 seconds of total time is accumulated looking at Medusa while Stone Gaze is active, that unit will turn to stone. Petrified units are stunned, have 100%% magic resistance, and take bonus physical damage. If the petrified unit is an illusion, it is immediately killed."
+				,"desc" : "Any enemy units looking at Medusa will have their movement and attack speed slowed. If 2 seconds of total time is accumulated looking at Medusa while Stone Gaze is active, that unit will turn to stone. Petrified units are stunned, have 100%% magic resistance, and take bonus physical damage. If the petrified unit is an illusion, it is immediately killed."
 				}
 			]
 		}

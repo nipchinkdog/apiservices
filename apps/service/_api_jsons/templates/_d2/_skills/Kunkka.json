@@ -4,31 +4,31 @@
 			"sk1": [
 				{
 				"name" : "Torrent"
-				"desc" : "Summons a rising torrent that, after a short delay, hurls enemy units into the sky, stunning, dealing damage and slowing movement speed."
+				,"desc" : "Summons a rising torrent that, after a short delay, hurls enemy units into the sky, stunning, dealing damage and slowing movement speed."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Tidebringer"
-				"desc" : "Kunkka's legendary sword grants increased damage and cleaves a large area of effect in front of him for a single strike."
+				,"desc" : "Kunkka's legendary sword grants increased damage and cleaves a large area of effect in front of him for a single strike."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "X Marks The Spot"
-				"desc" : "Targets a friendly or enemy Hero, marks their position with an X, and returns them to it after several seconds. Kunkka can trigger the return at any time during the duration. Lasts twice as long on allied heroes."
+				,"desc" : "Targets a friendly or enemy Hero, marks their position with an X, and returns them to it after several seconds. Kunkka can trigger the return at any time during the duration. Lasts twice as long on allied heroes."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Ghostship"
-				"desc" : "Summons a ghostship to cut a swath through battle, causing damage and stunning enemy units as it crashes through. Allies touched by the ship are doused in Kunkka's Rum, receiving bonus movement speed and a delayed reaction to damage."
+				,"desc" : "Summons a ghostship to cut a swath through battle, causing damage and stunning enemy units as it crashes through. Allies touched by the ship are doused in Kunkka's Rum, receiving bonus movement speed and a delayed reaction to damage."
 				}
 			],
 			"sk5": [
 				{
 				"name" : "Return"
-				"desc" : "Returns the marked hero to the X."
+				,"desc" : "Returns the marked hero to the X."
 				}
 			]
 		}

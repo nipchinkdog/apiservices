@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Grave Chill"
-				"desc" : "Visage drains the movement and attack speed of the targeted unit, gaining it for itself."
+				,"desc" : "Visage drains the movement and attack speed of the targeted unit, gaining it for itself."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Soul Assumption"
-				"desc" : "Visage damages the targeted unit based on the number of soul charges. Visage gains a soul charge when damage taken by all heroes around him reaches the damage threshold."
+				,"desc" : "Visage damages the targeted unit based on the number of soul charges. Visage gains a soul charge when damage taken by all heroes around him reaches the damage threshold."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Gravekeeper's Cloak"
-				"desc" : "Visage generates a layered barrier that protects him from physical and magical attacks. If he receives damage from a player, one layer is removed, and takes time to recover."
+				,"desc" : "Visage generates a layered barrier that protects him from physical and magical attacks. If he receives damage from a player, one layer is removed, and takes time to recover."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Summon Familiars"
-				"desc" : "Conjures up two blind Familiars to fight for Visage. Familiars have high attack power, but each attack drains a charge of damage that recharges slowly over time. Familiars possess the Stone Form ability, that allows them to turn into stone, stunning enemies upon landing. While in Stone Form, Familiars are invulnerable, and rapidly regenerate their health and damage. Familiars grant high bounty when killed.Upgradable by Aghanim's Scepter."
+				,"desc" : "Conjures up two blind Familiars to fight for Visage. Familiars have high attack power, but each attack drains a charge of damage that recharges slowly over time. Familiars possess the Stone Form ability, that allows them to turn into stone, stunning enemies upon landing. While in Stone Form, Familiars are invulnerable, and rapidly regenerate their health and damage. Familiars grant high bounty when killed.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

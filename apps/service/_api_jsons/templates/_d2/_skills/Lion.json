@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Earth Spike"
-				"desc" : "Rock spikes burst from the earth along a straight path. Enemy units are hurled into the air, then are stunned and take damage when they fall."
+				,"desc" : "Rock spikes burst from the earth along a straight path. Enemy units are hurled into the air, then are stunned and take damage when they fall."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Hex"
-				"desc" : "Transforms an enemy unit into a harmless beast, with all special abilities disabled."
+				,"desc" : "Transforms an enemy unit into a harmless beast, with all special abilities disabled."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Mana Drain"
-				"desc" : "CHANNELED - Absorbs the magical energies of a target enemy unit by taking mana from it every second."
+				,"desc" : "CHANNELED - Absorbs the magical energies of a target enemy unit by taking mana from it every second."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Finger of Death"
-				"desc" : "Rips at an enemy unit, trying to turn it inside-out. Deals massive damage.Upgradable with Aghanim's Scepter."
+				,"desc" : "Rips at an enemy unit, trying to turn it inside-out. Deals massive damage.Upgradable with Aghanim's Scepter."
 				}
 			]
 		}

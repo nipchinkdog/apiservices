@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Thunder Clap"
-				"desc" : "Slams the ground, dealing damage and slowing the movement speed and attack rate of nearby enemy land units."
+				,"desc" : "Slams the ground, dealing damage and slowing the movement speed and attack rate of nearby enemy land units."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Drunken Haze"
-				"desc" : "Drenches a small area in alcohol, causing their movement speed to be reduced, and causing their attacks to have a chance to miss."
+				,"desc" : "Drenches a small area in alcohol, causing their movement speed to be reduced, and causing their attacks to have a chance to miss."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Drunken Brawler"
-				"desc" : "Gives a chance to avoid attacks and to deal critical damage. Drunken Brawler will always activate if you have not attacked, or have not been attacked, in the last %last_proc% seconds."
+				,"desc" : "Gives a chance to avoid attacks and to deal critical damage. Drunken Brawler will always activate if you have not attacked, or have not been attacked, in the last %last_proc% seconds."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Primal Split"
-				"desc" : "Splits Brewmaster into elements, forming 3 specialized warriors, adept at survival. If any of them survive until the end of their summoned timer, the Brewmaster is reborn.Upgradable by Aghanim's Scepter."
+				,"desc" : "Splits Brewmaster into elements, forming 3 specialized warriors, adept at survival. If any of them survive until the end of their summoned timer, the Brewmaster is reborn.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Sprint"
-				"desc" : "Slardar moves significantly faster, but takes bonus damage."
+				,"desc" : "Slardar moves significantly faster, but takes bonus damage."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Slithereen Crush"
-				"desc" : "Slams the ground, stunning and damaging nearby enemy land units. After the stun, the affected units are slowed."
+				,"desc" : "Slams the ground, stunning and damaging nearby enemy land units. After the stun, the affected units are slowed."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Bash"
-				"desc" : "Grants a chance that an attack will do bonus damage and stun an enemy. The duration is doubled against creeps."
+				,"desc" : "Grants a chance that an attack will do bonus damage and stun an enemy. The duration is doubled against creeps."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Amplify Damage"
-				"desc" : "Reduces enemy armor to amplify physical damage and provides True Sight of the targeted unit, revealing invisibility."
+				,"desc" : "Reduces enemy armor to amplify physical damage and provides True Sight of the targeted unit, revealing invisibility."
 				}
 			]
 		}

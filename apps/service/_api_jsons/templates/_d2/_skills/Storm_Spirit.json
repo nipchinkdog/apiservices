@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Static Remnant"
-				"desc" : "Creates an explosively charged image of Storm Spirit that lasts 12 seconds and will detonate and deal damage if an enemy unit comes near it."
+				,"desc" : "Creates an explosively charged image of Storm Spirit that lasts 12 seconds and will detonate and deal damage if an enemy unit comes near it."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Electric Vortex"
-				"desc" : "A vortex that pulls an enemy unit to Storm Spirit's location, it also slows the Storm Spirit by 50%% for 3 seconds."
+				,"desc" : "A vortex that pulls an enemy unit to Storm Spirit's location, it also slows the Storm Spirit by 50%% for 3 seconds."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Overload"
-				"desc" : "Casting a spell creates an electrical charge, which is released in a burst on his next attack, dealing damage and slowing nearby enemies."
+				,"desc" : "Casting a spell creates an electrical charge, which is released in a burst on his next attack, dealing damage and slowing nearby enemies."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Ball Lightning"
-				"desc" : "Storm Spirit becomes volatile electricity, charging across the battlefield until he depletes his mana or reaches his target. The mana activation cost is 15+7%% of his total mana pool, and the cost per 100 units traveled is 10+1%% of his total mana pool. Damage is expressed in damage per 100 units traveled."
+				,"desc" : "Storm Spirit becomes volatile electricity, charging across the battlefield until he depletes his mana or reaches his target. The mana activation cost is 15+7%% of his total mana pool, and the cost per 100 units traveled is 10+1%% of his total mana pool. Damage is expressed in damage per 100 units traveled."
 				}
 			]
 		}

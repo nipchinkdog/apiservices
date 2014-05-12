@@ -4,31 +4,31 @@
 			"sk1": [
 				{
 				"name" : "Rage"
-				"desc" : "Launch into a maddened rage, becoming immune to magic spells and gaining increased attack speed."
+				,"desc" : "Launch into a maddened rage, becoming immune to magic spells and gaining increased attack speed."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Feast"
-				"desc" : "Regenerates a portion of the attacked enemy's current HP and deals the same portion of damage per attack."
+				,"desc" : "Regenerates a portion of the attacked enemy's current HP and deals the same portion of damage per attack."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Open Wounds"
-				"desc" : "Lifestealer rends an enemy unit, slowing the victim's movespeed and allowing all allies to lifesteal on that unit. All damage dealt will steal life, including damage from spells. The victim recovers movement speed over the duration."
+				,"desc" : "Lifestealer rends an enemy unit, slowing the victim's movespeed and allowing all allies to lifesteal on that unit. All damage dealt will steal life, including damage from spells. The victim recovers movement speed over the duration."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Infest"
-				"desc" : "Lifestealer will infest the body of the target unit, lying dormant and undetectable inside. When he reveals himself, he deals damage to all nearby enemy units. If the unit is a creep, he will devour it first, gaining health equal to the unit's current HP. Does not work on enemy Heroes."
+				,"desc" : "Lifestealer will infest the body of the target unit, lying dormant and undetectable inside. When he reveals himself, he deals damage to all nearby enemy units. If the unit is a creep, he will devour it first, gaining health equal to the unit's current HP. Does not work on enemy Heroes."
 				}
 			],
 			"sk5": [
 				{
 				"name" : "Consume"
-				"desc" : "Lifestealer eats the host body from the inside out."
+				,"desc" : "Lifestealer eats the host body from the inside out."
 				}
 			]
 			

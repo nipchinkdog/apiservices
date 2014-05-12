@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Rocket Barrage"
-				"desc" : "Launches a salvo of rockets at nearby enemy units in a radius around the Gyrocopter. Lasts 3 seconds."
+				,"desc" : "Launches a salvo of rockets at nearby enemy units in a radius around the Gyrocopter. Lasts 3 seconds."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Homing Missile"
-				"desc" : "Fires a homing missile to seek the targeted enemy unit. The missile gains speed over time, dealing damage and stunning when it impacts the target. Homing Missile deals greater damage the further it has traveled. Enemy units can destroy the missile before it reaches its target."
+				,"desc" : "Fires a homing missile to seek the targeted enemy unit. The missile gains speed over time, dealing damage and stunning when it impacts the target. Homing Missile deals greater damage the further it has traveled. Enemy units can destroy the missile before it reaches its target."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Flak Cannon"
-				"desc" : ""
+				,"desc" : ""
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Call Down"
-				"desc" : "Call down an aerial missile strike on enemy units in a target area. Two missiles arrive in succession, the first dealing major damage and major slow; the second dealing minor damage and minor slow.Upgradable by Aghanim's Scepter."
+				,"desc" : "Call down an aerial missile strike on enemy units in a target area. Two missiles arrive in succession, the first dealing major damage and major slow; the second dealing minor damage and minor slow.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

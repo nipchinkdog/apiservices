@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Void"
-				"desc" : "Creates a damaging void that slows an enemy unit and deals damage. Void also mini-stuns, interrupting channeling abilities. The slowing effect lasts longer at night."
+				,"desc" : "Creates a damaging void that slows an enemy unit and deals damage. Void also mini-stuns, interrupting channeling abilities. The slowing effect lasts longer at night."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Crippling Fear"
-				"desc" : "Night Stalker horrifies the target enemy Hero, causing it to miss attacks and become silenced. The effect lasts longer at night."
+				,"desc" : "Night Stalker horrifies the target enemy Hero, causing it to miss attacks and become silenced. The effect lasts longer at night."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Hunter in the Night"
-				"desc" : "Night Stalker is in his element at night, attacking and moving with great swiftness."
+				,"desc" : "Night Stalker is in his element at night, attacking and moving with great swiftness."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Darkness"
-				"desc" : "Night Stalker smothers the sun and summons instant darkness, so that he might use his powers at their fullest. While Darkness is in effect, enemy units and buildings have their vision range reduced. When used at night, it extends night time by Darkness' duration.Upgradable by Aghanim's Scepter."
+				,"desc" : "Night Stalker smothers the sun and summons instant darkness, so that he might use his powers at their fullest. While Darkness is in effect, enemy units and buildings have their vision range reduced. When used at night, it extends night time by Darkness' duration.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

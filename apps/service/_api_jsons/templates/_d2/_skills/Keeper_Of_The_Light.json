@@ -4,49 +4,49 @@
 			"sk1": [
 				{
 				"name" : "Illuminate"
-				"desc" : "Channels a ball of light energy, building power the longer it's channeled. Once released, the ball deals damage and gives vision in a line. The longer it is channeled, the more damage is dealt.Upgradable by Aghanim's Scepter, allowing Illuminate to heal allies for 75%% of its damage values."
+				,"desc" : "Channels a ball of light energy, building power the longer it's channeled. Once released, the ball deals damage and gives vision in a line. The longer it is channeled, the more damage is dealt.Upgradable by Aghanim's Scepter, allowing Illuminate to heal allies for 75%% of its damage values."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Mana Leak"
-				"desc" : "Weakens an enemy's magical essence, causing them to lose mana as they move. If the enemy loses all of its mana, it will be stunned."
+				,"desc" : "Weakens an enemy's magical essence, causing them to lose mana as they move. If the enemy loses all of its mana, it will be stunned."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Chakra Magic"
-				"desc" : "Restores mana to the target unit."
+				,"desc" : "Restores mana to the target unit."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Recall"
-				"desc" : "After a short delay, teleports the targeted friendly hero to your location. If the targeted friendly hero takes player based damage during this time, the ability is interrupted."
+				,"desc" : "After a short delay, teleports the targeted friendly hero to your location. If the targeted friendly hero takes player based damage during this time, the ability is interrupted."
 				}
 			],
 			"sk5": [
 				{
 				"name" : "Blinding Light"
-				"desc" : "A blinding light flashes over the targeted area, knocking back and blinding the units in the area, causing them to miss attacks."
+				,"desc" : "A blinding light flashes over the targeted area, knocking back and blinding the units in the area, causing them to miss attacks."
 				}
 			],
 			"sk6": [
 				{
 				"name" : "Spirit Form"
-				"desc" : "Ezalor temporarily turns his body luminescent, gaining various abilities. Illuminate is now channeled by a separate spirit, and gains the Blinding Light and Recall abilities.Upgradable by Aghanim's Scepter."
+				,"desc" : "Ezalor temporarily turns his body luminescent, gaining various abilities. Illuminate is now channeled by a separate spirit, and gains the Blinding Light and Recall abilities.Upgradable by Aghanim's Scepter."
 				}
 			],
 			"sk7": [
 				{
 				"name" : "Illuminate"
-				"desc" : "Channels a ball of light energy, building power the longer it's channeled. Once released, the ball deals damage and gives vision in a line. The longer it is channeled, the more damage dealt."
+				,"desc" : "Channels a ball of light energy, building power the longer it's channeled. Once released, the ball deals damage and gives vision in a line. The longer it is channeled, the more damage dealt."
 				}
 			],
 			"sk8": [
 				{
 				"name" : "Illuminate End"
-				"desc" : "Release the channel early."
+				,"desc" : "Release the channel early."
 				}
 			],
 		}

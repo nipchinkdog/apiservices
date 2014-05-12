@@ -4,49 +4,49 @@
 			"sk1": [
 				{
 				"name" : "Icarus Dive"
-				"desc" : "Phoenix dives forward in an arc with a fixed distance in the targeted direction, dealing damage over time and slowing the movement speed of any units he comes into contact with, and then orbiting back to his original position. If Phoenix casts Supernova, the dive ends."
+				,"desc" : "Phoenix dives forward in an arc with a fixed distance in the targeted direction, dealing damage over time and slowing the movement speed of any units he comes into contact with, and then orbiting back to his original position. If Phoenix casts Supernova, the dive ends."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Fire Spirits"
-				"desc" : "Summons 4 fire spirits that circle around you. Each spirit can be launched independently at a targeted area of effect. Affected enemy units take damage over time and have their attack speed greatly reduced."
+				,"desc" : "Summons 4 fire spirits that circle around you. Each spirit can be launched independently at a targeted area of effect. Affected enemy units take damage over time and have their attack speed greatly reduced."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Sun Ray"
-				"desc" : "Drawing from its own inner fire, Phoenix expels a huge beam of light at the cost of its own life energy. The beam damages enemies for a percentage of their life and heals allies for half the amount. Damage scales up to twice the initial damage as the beam fires."
+				,"desc" : "Drawing from its own inner fire, Phoenix expels a huge beam of light at the cost of its own life energy. The beam damages enemies for a percentage of their life and heals allies for half the amount. Damage scales up to twice the initial damage as the beam fires."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Supernova"
-				"desc" : "The Phoenix willingly ends its current life for the chance to be reborn. Transforms into a burning sun that scorches enemies in a huge area. The sun can be destroyed by attacks from enemy Heroes. After %tooltip_duration% seconds the sun explodes, stunning all nearby enemies while restoring Phoenix to full health and mana with refreshed abilities."
+				,"desc" : "The Phoenix willingly ends its current life for the chance to be reborn. Transforms into a burning sun that scorches enemies in a huge area. The sun can be destroyed by attacks from enemy Heroes. After %tooltip_duration% seconds the sun explodes, stunning all nearby enemies while restoring Phoenix to full health and mana with refreshed abilities."
 				}
 			],
 			"sk5": [
 				{
 				"name" : "Launch Fire Spirit"
-				"desc" : "Each spirit can be launched independently at a targeted area of effect. Affected enemy units take damage over time and have their attack speed greatly reduced."
+				,"desc" : "Each spirit can be launched independently at a targeted area of effect. Affected enemy units take damage over time and have their attack speed greatly reduced."
 				}
 			],
 			"sk6": [
 				{
 				"name" : "Stop Icarus Dive"
-				"desc" : "Immediately cancels the dive."
+				,"desc" : "Immediately cancels the dive."
 				}
 			],
 			"sk7": [
 				{
 				"name" : "Stop Sun Ray"
-				"desc" : "Immediately stops the Sun Ray."
+				,"desc" : "Immediately stops the Sun Ray."
 				}
 			],
 			"sk8": [
 				{
 				"name" : "Toggle Movement"
-				"desc" : "Toggles slow forward movement during Sun Ray firing."
+				,"desc" : "Toggles slow forward movement during Sun Ray firing."
 				}
 			]
 			

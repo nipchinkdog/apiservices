@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Spirit Bear"
-				"desc" : "Summons a powerful Spirit Bear companion that can equip items. If the bear moves 1100 distance away from the Lone Druid, it cannot attack. If the Spirit Bear dies, the Lone Druid suffers composite damage as backlash. As the bear increases in levels, it can learn the Return, Entangling Claws, and Demolish abilities. Spirit Bear does not benefit from attributes."
+				,"desc" : "Summons a powerful Spirit Bear companion that can equip items. If the bear moves 1100 distance away from the Lone Druid, it cannot attack. If the Spirit Bear dies, the Lone Druid suffers composite damage as backlash. As the bear increases in levels, it can learn the Return, Entangling Claws, and Demolish abilities. Spirit Bear does not benefit from attributes."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Rabid"
-				"desc" : "Increases the attack and movement speed of Lone Druid and the Spirit Bear."
+				,"desc" : "Increases the attack and movement speed of Lone Druid and the Spirit Bear."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Synergy"
-				"desc" : "Increases the Lone Druid's synergy with his Spirit Bear and himself, upgrading attributes and abilities."
+				,"desc" : "Increases the Lone Druid's synergy with his Spirit Bear and himself, upgrading attributes and abilities."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "True Form"
-				"desc" : "Lone Druid learns to morph himself into a raging bear, losing his ranged advantage and some base movement speed, but gaining melee power as well as the Battle Cry ability. He can morph freely between druid and bear form."
+				,"desc" : "Lone Druid learns to morph himself into a raging bear, losing his ranged advantage and some base movement speed, but gaining melee power as well as the Battle Cry ability. He can morph freely between druid and bear form."
 				}
 			]
 		}

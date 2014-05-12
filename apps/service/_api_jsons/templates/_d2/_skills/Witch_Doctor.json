@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Paralyzing Cask"
-				"desc" : "Launches a cask of paralyzing powder that ricochets between enemy units, stunning and damaging those it hits."
+				,"desc" : "Launches a cask of paralyzing powder that ricochets between enemy units, stunning and damaging those it hits."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Voodoo Restoration"
-				"desc" : "Witch Doctor focuses his magic to heal nearby allied units."
+				,"desc" : "Witch Doctor focuses his magic to heal nearby allied units."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Maledict"
-				"desc" : "Curses all enemy Heroes in an area, causing them to take damage every 4 seconds, adding bonus damage for every 100 HP lost since the curse began."
+				,"desc" : "Curses all enemy Heroes in an area, causing them to take damage every 4 seconds, adding bonus damage for every 100 HP lost since the curse began."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Death Ward"
-				"desc" : "CHANNELED - Summons a deadly ward to attack enemy heroes. The Death Ward has attack range of 700, and attacks every .22 seconds. Level 3 Death Ward bounces once. Lasts 8 seconds.Upgradable by Aghanim's Scepter."
+				,"desc" : "CHANNELED - Summons a deadly ward to attack enemy heroes. The Death Ward has attack range of 700, and attacks every .22 seconds. Level 3 Death Ward bounces once. Lasts 8 seconds.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

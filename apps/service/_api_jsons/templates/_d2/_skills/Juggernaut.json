@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Blade Fury"
-				"desc" : "Causes a bladestorm of destructive force around Juggernaut, rendering him immune to magic and dealing damage to nearby enemy units. Lasts 5 seconds."
+				,"desc" : "Causes a bladestorm of destructive force around Juggernaut, rendering him immune to magic and dealing damage to nearby enemy units. Lasts 5 seconds."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Healing Ward"
-				"desc" : "Summons a Healing Ward that heals all nearby allied units, based on their max hit points. The Healing Ward can move at 450 movement speed after being summoned. Lasts 25 seconds."
+				,"desc" : "Summons a Healing Ward that heals all nearby allied units, based on their max hit points. The Healing Ward can move at 450 movement speed after being summoned. Lasts 25 seconds."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Blade Dance"
-				"desc" : "Gives Juggernaut a chance to deal double damage on each attack."
+				,"desc" : "Gives Juggernaut a chance to deal double damage on each attack."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Omnislash"
-				"desc" : "Juggernaut leaps towards the target enemy unit with a damaging attack, and then slashes other nearby enemy units, dealing between 175-250 damage per slash. Juggernaut is invulnerable for the duration.Upgradable by Aghanim's Scepter."
+				,"desc" : "Juggernaut leaps towards the target enemy unit with a damaging attack, and then slashes other nearby enemy units, dealing between 175-250 damage per slash. Juggernaut is invulnerable for the duration.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

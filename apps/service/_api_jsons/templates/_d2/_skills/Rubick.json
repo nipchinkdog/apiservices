@@ -4,31 +4,31 @@
 			"sk1": [
 				{
 				"name" : "Telekinesis"
-				"desc" : "Rubick uses his telekinetic powers to lift the enemy into the air briefly and then hurls them back at the ground. The unit lands on the ground with such force that it stuns nearby enemies."
+				,"desc" : "Rubick uses his telekinetic powers to lift the enemy into the air briefly and then hurls them back at the ground. The unit lands on the ground with such force that it stuns nearby enemies."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Telekinesis Land"
-				"desc" : "Chooses the location the target will land when Telekinesis finishes."
+				,"desc" : "Chooses the location the target will land when Telekinesis finishes."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Fade Bolt"
-				"desc" : "Rubick creates a powerful stream of arcane energy that travels between enemy units, dealing damage and reducing their attack damage. Each jump deals less damage."
+				,"desc" : "Rubick creates a powerful stream of arcane energy that travels between enemy units, dealing damage and reducing their attack damage. Each jump deals less damage."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Null Field"
-				"desc" : "Rubick's mastery of the arcane protects allied heroes against weaker magics, granting them magic resistance."
+				,"desc" : "Rubick's mastery of the arcane protects allied heroes against weaker magics, granting them magic resistance."
 				}
 			],
 			"sk5": [
 				{
 				"name" : "Spell Steal"
-				"desc" : "Rubick studies the trace magical essence of one enemy hero, learning the secrets of the last spell the hero cast. Rubick can use this spell as his own for several minutes or until he dies.Upgradable by Aghanim's Scepter."
+				,"desc" : "Rubick studies the trace magical essence of one enemy hero, learning the secrets of the last spell the hero cast. Rubick can use this spell as his own for several minutes or until he dies.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

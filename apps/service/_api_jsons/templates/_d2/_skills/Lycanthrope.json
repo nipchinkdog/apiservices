@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Summon Wolves"
-				"desc" : "Summons two wolves to fight for Lycan. Level 2-4 wolves have Critical Strike, level 3-4 wolves have permanent invisibility, and level 4 wolves have 15 HP regen."
+				,"desc" : "Summons two wolves to fight for Lycan. Level 2-4 wolves have Critical Strike, level 3-4 wolves have permanent invisibility, and level 4 wolves have 15 HP regen."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Howl"
-				"desc" : "Grants bonus damage to Lycan, all allied heroes and all units under their control."
+				,"desc" : "Grants bonus damage to Lycan, all allied heroes and all units under their control."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Feral Impulse"
-				"desc" : "Increases the damage and attack speed of Lycan and all units under his control."
+				,"desc" : "Increases the damage and attack speed of Lycan and all units under his control."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Shapeshift"
-				"desc" : "Lycan assumes his true form, increasing his combat capabilities. During Shapeshift, Lycan and all units under his control move at maximum speed and cannot be slowed."
+				,"desc" : "Lycan assumes his true form, increasing his combat capabilities. During Shapeshift, Lycan and all units under his control move at maximum speed and cannot be slowed."
 				}
 			]
 		}

@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Meat Hook"
-				"desc" : "Launches a bloody hook at a unit or location. The hook will snag the first unit it encounters, dragging the unit back to Pudge and dealing damage if it is an enemy."
+				,"desc" : "Launches a bloody hook at a unit or location. The hook will snag the first unit it encounters, dragging the unit back to Pudge and dealing damage if it is an enemy."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Rot"
-				"desc" : "A toxic cloud that deals intense damage and slows movement--harming not only enemy units but Pudge himself."
+				,"desc" : "A toxic cloud that deals intense damage and slows movement--harming not only enemy units but Pudge himself."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Flesh Heap"
-				"desc" : "Gives Pudge resistance to magic damage, as well as bonus strength that increases each time Pudge kills an enemy Hero or it dies in his vicinity. Flesh Heap is retroactive, meaning it can gain charges before it is skilled, which then become active."
+				,"desc" : "Gives Pudge resistance to magic damage, as well as bonus strength that increases each time Pudge kills an enemy Hero or it dies in his vicinity. Flesh Heap is retroactive, meaning it can gain charges before it is skilled, which then become active."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Dismember"
-				"desc" : "CHANNELED - Pudge chows down on an enemy unit, disabling it and dealing damage over time. Lasts 3 seconds on Heroes, 6 seconds on creeps.Upgradable by Aghanim's Scepter."
+				,"desc" : "CHANNELED - Pudge chows down on an enemy unit, disabling it and dealing damage over time. Lasts 3 seconds on Heroes, 6 seconds on creeps.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

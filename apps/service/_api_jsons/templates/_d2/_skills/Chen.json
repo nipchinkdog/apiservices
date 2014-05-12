@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Penitence"
-				"desc" : "Forces an enemy unit to move slower and take more damage from attacks and spells."
+				,"desc" : "Forces an enemy unit to move slower and take more damage from attacks and spells."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Test of Faith"
-				"desc" : "Deals random damage to test an enemy unit's faith."
+				,"desc" : "Deals random damage to test an enemy unit's faith."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Holy Persuasion"
-				"desc" : "Gives control of an enemy or neutral creep, and gives it bonus hit points."
+				,"desc" : "Gives control of an enemy or neutral creep, and gives it bonus hit points."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Hand of God"
-				"desc" : "Fully regenerates any creeps under Chen's control and heals all allied heroes on the map.Upgradable by Aghanim's Scepter."
+				,"desc" : "Fully regenerates any creeps under Chen's control and heals all allied heroes on the map.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

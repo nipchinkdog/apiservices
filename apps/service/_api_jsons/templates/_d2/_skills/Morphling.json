@@ -4,31 +4,31 @@
 			"sk1": [
 				{
 				"name" : "Waveform"
-				"desc" : "Morphling dissolves into liquid and surges forward, damaging enemy units in his path. Morphling is invulnerable during Waveform."
+				,"desc" : "Morphling dissolves into liquid and surges forward, damaging enemy units in his path. Morphling is invulnerable during Waveform."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Adaptive Strike"
-				"desc" : "Strikes an enemy unit with a blast of water. If Morphling's agility is 50%% higher than strength, it deals the maximum damage and the minimum stun. If strength is 50%% higher, it deals the maximum stun and minimum damage."
+				,"desc" : "Strikes an enemy unit with a blast of water. If Morphling's agility is 50%% higher than strength, it deals the maximum damage and the minimum stun. If strength is 50%% higher, it deals the maximum stun and minimum damage."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Morph (Agility Gain)"
-				"desc" : "Morphling shifts its form, pulling points from Strength and pouring them into Agility. The process is reversible. Additional points in Morph increase the rate of stat change. Passively grants bonus Agility."
+				,"desc" : "Morphling shifts its form, pulling points from Strength and pouring them into Agility. The process is reversible. Additional points in Morph increase the rate of stat change. Passively grants bonus Agility."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Morph (Strength Gain)"
-				"desc" : "Morphling shifts its form, pulling points from Agility and pouring them into Strength. The process is reversible. Additional points in Morph increase the rate of stat change. Passively grants bonus Strength."
+				,"desc" : "Morphling shifts its form, pulling points from Agility and pouring them into Strength. The process is reversible. Additional points in Morph increase the rate of stat change. Passively grants bonus Strength."
 				}
 			],
 			"sk5": [
 				{
 				"name" : "Replicate"
-				"desc" : "Morphling replicates any hero, friend or foe, dealing 50%% of the original Hero's outgoing damage while taking 100%% of any incoming damage. At any time, Morphling can instantly take the position of the Replicate for 150 mana."
+				,"desc" : "Morphling replicates any hero, friend or foe, dealing 50%% of the original Hero's outgoing damage while taking 100%% of any incoming damage. At any time, Morphling can instantly take the position of the Replicate for 150 mana."
 				}
 			]
 		}

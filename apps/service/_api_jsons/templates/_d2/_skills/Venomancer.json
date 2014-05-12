@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Venomous Gale"
-				"desc" : "Launches a ball of venom in a line, poisoning enemy units so that they take both initial damage and damage over time, as well as suffering slowed movement. Venomous Gale deals damage every 3 seconds over its duration."
+				,"desc" : "Launches a ball of venom in a line, poisoning enemy units so that they take both initial damage and damage over time, as well as suffering slowed movement. Venomous Gale deals damage every 3 seconds over its duration."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Poison Sting"
-				"desc" : "Adds poison damage to Venomancer's normal attacks, slowing movement speed."
+				,"desc" : "Adds poison damage to Venomancer's normal attacks, slowing movement speed."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Plague Ward"
-				"desc" : "Summons a plague ward to attack enemy units and structures. The ward is immune to magic. Wards gain the Poison Sting level from Venomancer, dealing 50%% of the full damage."
+				,"desc" : "Summons a plague ward to attack enemy units and structures. The ward is immune to magic. Wards gain the Poison Sting level from Venomancer, dealing 50%% of the full damage."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Poison Nova"
-				"desc" : "A spreading ring of poison that does damage over time to enemy units around Venomancer. Poison Nova's effect cannot bring units below 1 HP.Upgradable by Aghanim's Scepter."
+				,"desc" : "A spreading ring of poison that does damage over time to enemy units around Venomancer. Poison Nova's effect cannot bring units below 1 HP.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

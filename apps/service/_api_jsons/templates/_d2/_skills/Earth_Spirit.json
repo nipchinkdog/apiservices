@@ -4,31 +4,31 @@
 			"sk1": [
 				{
 				"name" : "Boulder Smash"
-				"desc" : "Earth Spirit smashes the target enemy, ally, or Stone Remnant, knocking it back in the direction he is facing. The knocked back target deals damage to all units it hits. If the target was a Stone Remnant, damaged targets are also stunned, and the travel distance is improved."
+				,"desc" : "Earth Spirit smashes the target enemy, ally, or Stone Remnant, knocking it back in the direction he is facing. The knocked back target deals damage to all units it hits. If the target was a Stone Remnant, damaged targets are also stunned, and the travel distance is improved."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Rolling Boulder"
-				"desc" : "After a 0.6s delay, Earth Spirit becomes a boulder, rolling towards the target position and damaging enemy units, stopping if he collides with an enemy hero or is stunned. If the boulder rolls over a Stone Remnant, the Stone Remnant is consumed and travel distance and speed are improved, and impacted enemies have their movement and attack speed slowed."
+				,"desc" : "After a 0.6s delay, Earth Spirit becomes a boulder, rolling towards the target position and damaging enemy units, stopping if he collides with an enemy hero or is stunned. If the boulder rolls over a Stone Remnant, the Stone Remnant is consumed and travel distance and speed are improved, and impacted enemies have their movement and attack speed slowed."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Geomagnetic Grip"
-				"desc" : "Earth Spirit pulls the target allied unit or Stone Remnant to his location. Enemies struck by the flying target will be silenced, and take damage if the flying target is a Stone Remnant."
+				,"desc" : "Earth Spirit pulls the target allied unit or Stone Remnant to his location. Enemies struck by the flying target will be silenced, and take damage if the flying target is a Stone Remnant."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Stone Remnant"
-				"desc" : "Call a Stone Remnant at the target location. Stones Remnants have no vision and are invulnerable, and can be used with Earth Spirit's abilities. Calling a Stone Remnant consumes a charge, which recharge over time."
+				,"desc" : "Call a Stone Remnant at the target location. Stones Remnants have no vision and are invulnerable, and can be used with Earth Spirit's abilities. Calling a Stone Remnant consumes a charge, which recharge over time."
 				}
 			],
 			"sk5": [
 				{
 				"name" : "Magnetize"
-				"desc" : "Magnetizes units in a small nearby area, causing them to take damage over time for a short duration. Any magnetized heroes cause nearby Stone Remnants to become energized and explode, applying/refreshing the magnetize debuff on all units near the Stone Remnant. This process can repeat multiple times. Stone Remnants are destroyed in this process. If an enemy hero is affected by silence or slows as a result of Geomagnetic Grip or Rolling Boulder, all magnetized heroes share the effects."
+				,"desc" : "Magnetizes units in a small nearby area, causing them to take damage over time for a short duration. Any magnetized heroes cause nearby Stone Remnants to become energized and explode, applying/refreshing the magnetize debuff on all units near the Stone Remnant. This process can repeat multiple times. Stone Remnants are destroyed in this process. If an enemy hero is affected by silence or slows as a result of Geomagnetic Grip or Rolling Boulder, all magnetized heroes share the effects."
 				}
 			]
 			

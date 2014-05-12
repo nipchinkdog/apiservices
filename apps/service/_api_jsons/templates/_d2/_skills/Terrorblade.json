@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Reflection"
-				"desc" : "Terrorblade brings forth an invulnerable dark illusion of the targeted enemy Hero. The enemy Hero is slowed and attacked by the illusion for a short duration."
+				,"desc" : "Terrorblade brings forth an invulnerable dark illusion of the targeted enemy Hero. The enemy Hero is slowed and attacked by the illusion for a short duration."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Conjure Image"
-				"desc" : "Creates an illusion of Terrorblade that deals damage."
+				,"desc" : "Creates an illusion of Terrorblade that deals damage."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Metamorphosis"
-				"desc" : "Terrorblade transforms into a powerful demon with a ranged attack."
+				,"desc" : "Terrorblade transforms into a powerful demon with a ranged attack."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Sunder"
-				"desc" : "Severs the soul from both Terrorblade and a target Hero, then exchanges them, carrying a percentage of each units' life force. The target Hero is also dealt a ministun. Some hit points must remain."
+				,"desc" : "Severs the soul from both Terrorblade and a target Hero, then exchanges them, carrying a percentage of each units' life force. The target Hero is also dealt a ministun. Some hit points must remain."
 				}
 			]
 		}

@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Shadowraze"
-				"desc" : "Shadow Fiend razes the area in front of him, dealing damage to enemy units in an area."
+				,"desc" : "Shadow Fiend razes the area in front of him, dealing damage to enemy units in an area."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Necromastery"
-				"desc" : "Shadow Fiend steals the soul from units he kills, gaining bonus damage. If the killed unit is a hero, he gains 12 souls. On death, he releases half of them from bondage."
+				,"desc" : "Shadow Fiend steals the soul from units he kills, gaining bonus damage. If the killed unit is a hero, he gains 12 souls. On death, he releases half of them from bondage."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Presence of the Dark Lord"
-				"desc" : "Shadow Fiend's presence reduces the armor of nearby enemies."
+				,"desc" : "Shadow Fiend's presence reduces the armor of nearby enemies."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Requiem of Souls"
-				"desc" : "Captured souls are used to deal massive damage, as well as slowing and reducing the attack damage of nearby enemy units. Requiem of Souls creates one wave of damage for every 2 souls stored by Necromastery. The closest enemy units are hit the hardest. Requiem of Souls has a 1.67 second cast time before it is activated. Requiem of Souls is automatically cast when Shadow Fiend dies, independent of its cooldown."
+				,"desc" : "Captured souls are used to deal massive damage, as well as slowing and reducing the attack damage of nearby enemy units. Requiem of Souls creates one wave of damage for every 2 souls stored by Necromastery. The closest enemy units are hit the hardest. Requiem of Souls has a 1.67 second cast time before it is activated. Requiem of Souls is automatically cast when Shadow Fiend dies, independent of its cooldown."
 				}
 			]
 		}

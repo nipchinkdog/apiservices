@@ -4,31 +4,31 @@
 			"sk1": [
 				{
 				"name" : "Illusory Orb"
-				"desc" : "Puck launches magic orb that floats in a straight path, damaging enemy units along the way. At any point, Puck may teleport to the orb's location using Ethereal Jaunt."
+				,"desc" : "Puck launches magic orb that floats in a straight path, damaging enemy units along the way. At any point, Puck may teleport to the orb's location using Ethereal Jaunt."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Waning Rift"
-				"desc" : "Puck releases a burst of faerie dust that deals damage and silences enemy units nearby."
+				,"desc" : "Puck releases a burst of faerie dust that deals damage and silences enemy units nearby."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Phase Shift"
-				"desc" : "Puck briefly shifts into another dimension where it is immune from harm."
+				,"desc" : "Puck briefly shifts into another dimension where it is immune from harm."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Dream Coil"
-				"desc" : "Creates a coil of volatile magic that latches onto enemy Heroes, stunning them for .5 seconds and damaging them. If the enemy hero stretches the coil by moving too far away, it snaps, deals damage again and stuns.Upgradable by Aghanim's Scepter."
+				,"desc" : "Creates a coil of volatile magic that latches onto enemy Heroes, stunning them for .5 seconds and damaging them. If the enemy hero stretches the coil by moving too far away, it snaps, deals damage again and stuns.Upgradable by Aghanim's Scepter."
 				}
 			],
 			"sk5": [
 				{
 				"name" : "Ethereal Jaunt"
-				"desc" : "Teleports Puck to a flying Illusory Orb."
+				,"desc" : "Teleports Puck to a flying Illusory Orb."
 				}
 			]
 		}

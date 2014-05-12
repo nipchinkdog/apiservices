@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Earthbind"
-				"desc" : "Tosses a net at the target point, pinning down all enemy units. Earthbind prevents invisibility, blink, and interrupts channeling."
+				,"desc" : "Tosses a net at the target point, pinning down all enemy units. Earthbind prevents invisibility, blink, and interrupts channeling."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Poof"
-				"desc" : "Drawing mystical energies from the earth, a Meepo can teleport to another Meepo or itself after channeling for 1.5 seconds, dealing damage in both the departure and arrival locations."
+				,"desc" : "Drawing mystical energies from the earth, a Meepo can teleport to another Meepo or itself after channeling for 1.5 seconds, dealing damage in both the departure and arrival locations."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Geostrike"
-				"desc" : "Meepo enchants his weapon to deal damage per second, as well as slow the movement speed of the attacked unit. Geostrikes from multiple Meepos stack."
+				,"desc" : "Meepo enchants his weapon to deal damage per second, as well as slow the movement speed of the attacked unit. Geostrikes from multiple Meepos stack."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Divided We Stand"
-				"desc" : "Meepo summons an imperfect, semi-autonomous duplicate of himself, which can gain gold and experience as he does and shares his experience and abilities. However, the clones cannot wield any items but the boots that Meepo himself wears. If any of the clones die, they all die. Increases the speed at which you respawn. Upgradable by Aghanim's Scepter."
+				,"desc" : "Meepo summons an imperfect, semi-autonomous duplicate of himself, which can gain gold and experience as he does and shares his experience and abilities. However, the clones cannot wield any items but the boots that Meepo himself wears. If any of the clones die, they all die. Increases the speed at which you respawn. Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

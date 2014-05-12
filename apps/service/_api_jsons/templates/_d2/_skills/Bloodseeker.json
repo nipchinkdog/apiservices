@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Bloodrage"
-				"desc" : "Drives a unit into a bloodthirsty rage, during which it has higher attack damage, but cannot cast spells and takes damage every second. Bloodrage dispels the target before applying its buff."
+				,"desc" : "Drives a unit into a bloodthirsty rage, during which it has higher attack damage, but cannot cast spells and takes damage every second. Bloodrage dispels the target before applying its buff."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Blood Bath"
-				"desc" : "Bloodseeker revels in combat, regaining health with every unit he kills or whenever an enemy Hero dies within a 325 radius of Bloodseeker. The health gained is a percentage of the killed unit's maximum HP."
+				,"desc" : "Bloodseeker revels in combat, regaining health with every unit he kills or whenever an enemy Hero dies within a 325 radius of Bloodseeker. The health gained is a percentage of the killed unit's maximum HP."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Thirst"
-				"desc" : "Enables Bloodseeker to sense enemy Heroes with health below a certain percentage wherever they are, giving him vision of that unit, increased movement speed and increased damage. Bonuses stack per Hero. Bloodseeker gains True Sight of enemy Heroes below half their visiblity threshold."
+				,"desc" : "Enables Bloodseeker to sense enemy Heroes with health below a certain percentage wherever they are, giving him vision of that unit, increased movement speed and increased damage. Bonuses stack per Hero. Bloodseeker gains True Sight of enemy Heroes below half their visiblity threshold."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Rupture"
-				"desc" : "Causes an enemy unit's skin to rupture, dealing massive damage. If the unit moves while under the effect of Rupture, it takes a percentage of the distance traveled as damage. The damage is dealt through magic immunity."
+				,"desc" : "Causes an enemy unit's skin to rupture, dealing massive damage. If the unit moves while under the effect of Rupture, it takes a percentage of the distance traveled as damage. The damage is dealt through magic immunity."
 				}
 			]
 		}

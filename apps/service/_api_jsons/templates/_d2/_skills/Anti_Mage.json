@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Mana Break"
-				"desc" : "Burns an opponent's mana on each attack. Mana Break deals 60%% of the mana burned as damage to the target.Mana Break is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
+				,"desc" : "Burns an opponent's mana on each attack. Mana Break deals 60%% of the mana burned as damage to the target.Mana Break is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Blink"
-				"desc" : "Short distance teleportation that allows Anti-Mage to move in and out of combat."
+				,"desc" : "Short distance teleportation that allows Anti-Mage to move in and out of combat."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Spell Shield"
-				"desc" : "Increases Anti-Mage's resistance to magic damage."
+				,"desc" : "Increases Anti-Mage's resistance to magic damage."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Mana Void"
-				"desc" : "For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies. The main target is also mini-stunned."
+				,"desc" : "For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies. The main target is also mini-stunned."
 				}
 			]
 		}

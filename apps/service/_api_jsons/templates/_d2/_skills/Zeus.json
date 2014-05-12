@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Arc Lightning"
-				"desc" : "Hurls a bolt of lightning that leaps through nearby enemy units."
+				,"desc" : "Hurls a bolt of lightning that leaps through nearby enemy units."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Lightning Bolt"
-				"desc" : "Calls down a bolt of lightning to strike an enemy unit, causing damage and a mini-stun. When cast, Lightning Bolt briefly provides unobstructed vision and True Sight around the target in a 750 radius. Can be cast on the ground, affecting the closest enemy hero in 250 range."
+				,"desc" : "Calls down a bolt of lightning to strike an enemy unit, causing damage and a mini-stun. When cast, Lightning Bolt briefly provides unobstructed vision and True Sight around the target in a 750 radius. Can be cast on the ground, affecting the closest enemy hero in 250 range."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Static Field"
-				"desc" : "Zeus shocks all nearby enemy units whenever he casts a spell, causing damage proportional to their current health."
+				,"desc" : "Zeus shocks all nearby enemy units whenever he casts a spell, causing damage proportional to their current health."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Thundergod's Wrath"
-				"desc" : "Strikes all enemy heroes with a bolt of lightning, no matter where they may be. Thundergod's Wrath also provides True Sight around each hero struck. If an enemy hero is invisible, it takes no damage, but the True Sight is still created at that hero's location.Upgradable by Aghanim's Scepter."
+				,"desc" : "Strikes all enemy heroes with a bolt of lightning, no matter where they may be. Thundergod's Wrath also provides True Sight around each hero struck. If an enemy hero is invisible, it takes no damage, but the True Sight is still created at that hero's location.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

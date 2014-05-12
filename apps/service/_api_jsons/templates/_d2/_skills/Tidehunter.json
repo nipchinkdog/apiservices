@@ -4,25 +4,25 @@
 			"sk1": [
 				{
 				"name" : "Gush"
-				"desc" : "Summons a gush of water to damage an enemy unit, reducing their movement speed and armor. Lasts 4 seconds."
+				,"desc" : "Summons a gush of water to damage an enemy unit, reducing their movement speed and armor. Lasts 4 seconds."
 				}
 			],
 			"sk2": [
 				{
 				"name" : "Kraken Shell"
-				"desc" : "Creates a thick armor shell that reduces physical damage and removes negative buffs when damage received reaches a critical threshold.Kraken Shell does not stack with items that provide Damage Block."
+				,"desc" : "Creates a thick armor shell that reduces physical damage and removes negative buffs when damage received reaches a critical threshold.Kraken Shell does not stack with items that provide Damage Block."
 				}
 			],
 			"sk3": [
 				{
 				"name" : "Anchor Smash"
-				"desc" : "Tidehunter swings his mighty anchor to damage nearby enemies and reduce their attack damage."
+				,"desc" : "Tidehunter swings his mighty anchor to damage nearby enemies and reduce their attack damage."
 				}
 			],
 			"sk4": [
 				{
 				"name" : "Ravage"
-				"desc" : "Slams the ground, causing tentacles to erupt in all directions, damaging and stunning all nearby enemy units."
+				,"desc" : "Slams the ground, causing tentacles to erupt in all directions, damaging and stunning all nearby enemy units."
 				}
 			]
 		}
