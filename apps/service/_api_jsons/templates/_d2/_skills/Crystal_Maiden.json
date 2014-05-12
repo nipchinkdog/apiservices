@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Crystal_Maiden"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Crystal Nova"
+				"desc" : "A burst of damaging frost slows enemy movement and attack rate in the targeted area."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Frostbite"
+				"desc" : "Encases an enemy unit in ice, prohibiting movement and attack, while dealing damage per second. Lasts 10 seconds on creeps level 6 or lower."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Arcane Aura"
+				"desc" : "Gives additional mana regeneration to all friendly units on the map. This bonus is doubled on Crystal Maiden."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Freezing Field"
+				"desc" : "CHANNELED - Surrounds Crystal Maiden with random icy explosions that slow enemies and deal massive damage. Lasts 7 seconds.\n\nUpgradable by Aghanim's Scepter."
 				}
 			]
 		}

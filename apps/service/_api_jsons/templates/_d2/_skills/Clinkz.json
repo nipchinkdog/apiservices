@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Clinkz"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Strafe"
+				"desc" : "Clinkz attacks with a barrage of arrows. Dramatically increases attack speed for a short time."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Searing Arrows"
+				"desc" : "Imbues Clinkz's arrows with fire for extra damage.\n\nSearing Arrows is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Skeleton Walk"
+				"desc" : "Clinkz moves invisibly through units until the moment he attacks or uses an ability."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Death Pact"
+				"desc" : "Clinkz consumes the target friendly or enemy creep, gaining a percent of its hitpoints as max health and damage."
 				}
 			]
 		}

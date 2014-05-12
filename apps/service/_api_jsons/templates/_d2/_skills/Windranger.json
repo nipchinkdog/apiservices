@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Windranger"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Shackleshot"
+				"desc" : "Shackles the target to an enemy unit or tree in a line directly behind it. If no unit or tree is present, the stun duration is reduced to 0.75."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Powershot"
+				"desc" : "Windranger charges her bow for up to 1 second for a single powerful shot. The arrow deals damage to enemy units and destroys trees in its path. Damage is greatest on first target, and reduces by 10%% for each target it pierces thereafter. If the channeling is cancelled early, the shot will still occur but deal less damage."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Windrun"
+				"desc" : "Increases movement speed and adds evasion from all physical attacks, while slowing movement of nearby enemies."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Focus Fire"
+				"desc" : "Windranger channels the wind, gaining maximum attack speed on the enemy unit or structure, although with reduced damage, including damage from Unique Attack Modifiers and item effects. Lasts 20 seconds.\n\nUpgradable with Aghanim's Scepter."
 				}
 			]
 		}

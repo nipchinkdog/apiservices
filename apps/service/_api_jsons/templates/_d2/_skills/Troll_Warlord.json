@@ -1,28 +1,34 @@
 {
-	""	 :  [
+	"Troll_Warlord"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Berserker's Rage"
+				"desc" : "Allows the Warlord to use his throwing axes as melee weapons, gaining bonus damage, attack speed, movement speed, hitpoints, armor, and a chance to bash targets on attack. Berserker's Rage also changes the functionality of Whirling Axes."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Whirling Axes (Ranged)"
+				"desc" : "Troll hurls a fistful of five axes in a cone shape over 900 range, slowing and damaging enemy units."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Whirling Axes (Melee)"
+				"desc" : "Troll hurls two axes around him in a close range area of effect, damaging enemy units and causing them to miss some attacks."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Fervor"
+				"desc" : "With each continuous blow on the same target, Troll gains increased attack speed. If Troll changes targets, the stacks drop to zero."
+				}
+			],
+			"sk5": [
+				{
+				"name" : "Battle Trance"
+				"desc" : "Troll's presence on the battlefield increases the attack speed of himself and all allied heroes."
 				}
 			]
 		}

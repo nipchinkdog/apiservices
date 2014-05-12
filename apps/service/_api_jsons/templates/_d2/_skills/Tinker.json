@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Tinker"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Laser"
+				"desc" : "Fires an intense energy beam, dealing damage and blinding the target for 3 seconds, causing it to miss all physical attacks. Its range is doubled with Aghanim's Scepter."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Heat-Seeking Missile"
+				"desc" : "Launches a pair of rockets at the nearest visible enemy heroes within 2500 range. The number of missile targets is doubled with Aghanim's Scepter."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "March of the Machines"
+				"desc" : "Enlists an army of robotic minions to destroy enemy units in an area around Tinker."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Rearm"
+				"desc" : "CHANNELED - Resets the cooldown on most of Tinker's items and abilities."
 				}
 			]
 		}

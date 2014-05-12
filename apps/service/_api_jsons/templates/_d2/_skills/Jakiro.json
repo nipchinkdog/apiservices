@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Jakiro"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Dual Breath"
+				"desc" : "An icy blast followed by a wave of fire launches out in a path in front of Jakiro. The ice slows enemies, while the fire delivers damage over time."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Ice Path"
+				"desc" : "Creates a path of ice that stuns and damages enemies that touch it."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Liquid Fire"
+				"desc" : "Jakiro burns his enemies in an area of effect with fire added to his attack, while slowing their attacks.\n\nLiquid Fire is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Macropyre"
+				"desc" : "Jakiro lays down a line of flame in front of him, each dealing damage per second to enemy units in a wide area of effect.\n\nUpgradable by Aghanim's Scepter."
 				}
 			]
 		}

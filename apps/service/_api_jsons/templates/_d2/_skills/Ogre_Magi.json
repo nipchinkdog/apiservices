@@ -1,28 +1,34 @@
 {
-	""	 :  [
+	"Ogre Magi"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Fireblast"
+				"desc" : "Blasts an enemy unit with a wave of fire, dealing damage and stunning the target."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Ignite"
+				"desc" : "Drenches a target in volatile chemicals, causing it to burst into flames. The target is in immense pain, taking damage and moving more slowly."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Bloodlust"
+				"desc" : "Incites a frenzy in a friendly unit, increasing its movement speed and attack speed."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Unrefined Fireblast"
+				"desc" : "Blasts an enemy unit with a wave of fire, dealing damage and stunning the target."
+				}
+			],
+			"sk5": [
+				{
+				"name" : "Multicast"
+				"desc" : "Enables the Ogre Magi to rapidly cast his spells, giving them greater potency. Gives a chance to cast a spell multiple times in one cast. Increases Fireblast's mana cost and decreases its cooldown, adds an area of effect to Ignite and reduces Bloodlust's cooldown and gives it a chance to cast on random allies around Ogre Magi.\n\nUpgradable by Aghanim's Scepter."
 				}
 			]
 		}

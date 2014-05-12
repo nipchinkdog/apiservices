@@ -3,7 +3,7 @@ from apps.service._imports.Views_init import *
 
 class DocHome(View):
     
-    _template = '_doc/_d2/index.html'
+    _template = '_doc/_d2/index-doc-api.html'
     
     #! doc request example urls
     _api_doc_all = ROOT_URL+'/api/h/all/'

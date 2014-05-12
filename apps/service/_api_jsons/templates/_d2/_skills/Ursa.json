@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Ursa"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Earthshock"
+				"desc" : "Ursa slams the earth, causing a powerful shock to damage and slow all enemy units in a nearby area for 4 seconds."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Overpower"
+				"desc" : "Using his skill in combat, Ursa gains increased attack speed for a number of subsequent attacks."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Fury Swipes"
+				"desc" : "Ursa's claws dig deeper wounds in the enemy, causing consecutive attacks to the same enemy to deal more damage. If the same target is not attacked after 15 seconds, the bonus damage is lost."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Enrage"
+				"desc" : "Ursa goes into a frenzy, gaining a percentage of his current health as bonus damage. Lasts 15 seconds."
 				}
 			]
 		}

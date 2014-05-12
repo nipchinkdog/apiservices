@@ -1,0 +1,30 @@
+{
+	"Enchantress"	 :  [
+		{ 
+			"sk1": [
+				{
+				"name" : "Untouchable"
+				"desc" : "Enchantress beguiles her enemies, slowing their attacks when she is attacked. Lasts 3 seconds."
+				}
+			],
+			"sk2": [
+				{
+				"name" : "Enchant"
+				"desc" : "Enchantress charms an enemy, bringing it under her control (if a creep) or slowing it (if a hero)."
+				}
+			],
+			"sk3": [
+				{
+				"name" : "Nature's Attendants"
+				"desc" : "A cloud of wisps heals Enchantress and any friendly units nearby. Lasts 10 seconds."
+				}
+			],
+			"sk4": [
+				{
+				"name" : "Impetus"
+				"desc" : "Places an enchantment on each attack while activated, causing it to deal additional damage based on how far away the target is. The farther the target, the greater the damage dealt.\n\nImpetus is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.\n\nUpgradable by Aghanim's Scepter."
+				}
+			]
+		}
+	]
+}

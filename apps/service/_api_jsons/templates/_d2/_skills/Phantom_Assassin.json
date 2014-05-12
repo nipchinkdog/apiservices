@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Phantom_Assassin"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Stifling Dagger"
+				"desc" : "Deals minor pure damage and slows the enemy unit's movement speed. Deals half damage to heroes."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Phantom Strike"
+				"desc" : "Teleports to a unit, friendly or enemy, and grants bonus attack speed while attacking if it's an enemy unit."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Blur"
+				"desc" : "The Phantom Assassin becomes hard to see by blurring her body and disappearing from the enemy minimap when near enemy heroes. Some enemy attacks miss."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Coup de Grace"
+				"desc" : "Phantom Assassin refines her combat abilities, gaining a chance of delivering a devastating critical strike to enemy units. Stifling Dagger shares the same critical strike chance."
 				}
 			]
 		}

@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Wraith_King"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Wraithfire Blast"
+				"desc" : "Wraith King sears an enemy unit with spectral fire, dealing damage and stunning, then dealing damage over time and slowing the target."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Vampiric Aura"
+				"desc" : "Nearby friendly units gain hit points based on their damage dealt when attacking enemy units."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Mortal Strike"
+				"desc" : "Wraith King passively gains a chance to deal bonus damage on an attack."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Reincarnation"
+				"desc" : "Wraith King's members regroup after death, allowing him to resurrect when killed in battle. Upon death, enemy units in the area will be slowed by 75%%."
 				}
 			]
 		}

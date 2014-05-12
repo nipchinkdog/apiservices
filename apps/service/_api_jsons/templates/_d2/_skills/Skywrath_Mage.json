@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Skywrath_Mage"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Arcane Bolt"
+				"desc" : "Skywrath launches a slow-moving bolt of arcane magic, dealing damage to an enemy unit based on Skywrath's intelligence."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Concussive Shot"
+				"desc" : "Skywrath sets off a long range shot that hits the closest hero within a long range. Upon impact, it deals damage and slows in an area of effect."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Ancient Seal"
+				"desc" : "Skywrath seals the targeted unit with an ancient rune, silencing it and causing it to take additional damage from spells."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Mystic Flare"
+				"desc" : "Skywrath uses his ultimate magical ability to conjure a precise and violent mystical field that lays waste to his adversaries. Deals massive damage distributed evenly among any Heroes in the area over 2 seconds.\n\nUpgradable by Aghanim's Scepter."
 				}
 			]
 		}

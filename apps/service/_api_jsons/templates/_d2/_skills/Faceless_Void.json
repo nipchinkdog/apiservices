@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Faceless_Void"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Time Walk"
+				"desc" : "Rushes to a target location while slowing the movement and attack speed of all enemies along its path for 3 seconds."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Backtrack"
+				"desc" : "Faceless Void dodges damage by jumping backward in time, eluding both physical and magical attacks."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Time Lock"
+				"desc" : "Adds the chance for an attack to lock an enemy unit in time, stunning it and dealing bonus damage."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Chronosphere"
+				"desc" : "Creates a blister in spacetime, trapping all units caught in its sphere of influence and causes you to move very quickly inside it. Only Faceless Void and any units he controls are unaffected. Invisible units in the sphere will be revealed.\n\nUpgradable by Aghanim's Scepter."
 				}
 			]
 		}

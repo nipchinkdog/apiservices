@@ -61,3 +61,10 @@ ul.doc_api_url .doc_api_detail p.doc_api_request_url {
 	padding: 5px;
 	padding-left: 0;
 }
+
+/* menu */
+ul.doc_api_menu li a { color: ; text-decoration: none; }
+ul.doc_api_menu li a.active { border-bottom: 5px solid #888; }
+ul.doc_api_menu { font-size: 3em; font: 'RobotoCondensed'; font-weight: bold; }
+ul.doc_api_menu li { list-style: none; padding: 10px; margin: 0 30px 0 0; }
+ul.doc_api_menu li { display: inline ; }

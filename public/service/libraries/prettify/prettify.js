@@ -502,7 +502,7 @@ var prettyPrint;
    * It will produce the output:</p>
    * <pre>
    * {
-   *   sourceCode: "print 'Hello '\n  + 'World';",
+   *   sourceCode: "print 'Hello '  + 'World';",
    *   //                     1          2
    *   //           012345678901234 5678901234567
    *   spans: [0, #1, 6, #2, 14, #3, 15, #4]
@@ -542,7 +542,7 @@ var prettyPrint;
         }
         var nodeName = node.nodeName.toLowerCase();
         if ('br' === nodeName || 'li' === nodeName) {
-          chunks[k] = '\n';
+          chunks[k] = '';
           spans[k << 1] = length++;
           spans[(k++ << 1) | 1] = node;
         }
@@ -550,9 +550,9 @@ var prettyPrint;
         var text = node.nodeValue;
         if (text.length) {
           if (!isPreformatted) {
-            text = text.replace(/[ \t\r\n]+/g, ' ');
+            text = text.replace(/[ \t\r]+/g, ' ');
           } else {
-            text = text.replace(/\r\n?/g, '\n');  // Normalize newlines.
+            text = text.replace(/\r?/g, '');  // Normalize newlines.
           }
           // TODO: handle tabs here?
           chunks[k] = text;
@@ -566,7 +566,7 @@ var prettyPrint;
     walk(node);
   
     return {
-      sourceCode: chunks.join('').replace(/\n$/, ''),
+      sourceCode: chunks.join('').replace(/$/, ''),
       spans: spans
     };
   }
@@ -818,7 +818,7 @@ var prettyPrint;
       // 'single-line-string', "single-line-string"
       shortcutStylePatterns.push(
           [PR_STRING,
-           /^(?:\'(?:[^\\\'\r\n]|\\.)*(?:\'|$)|\"(?:[^\\\"\r\n]|\\.)*(?:\"|$))/,
+           /^(?:\'(?:[^\\\'\r]|\\.)*(?:\'|$)|\"(?:[^\\\"\r]|\\.)*(?:\"|$))/,
            null, '"\'']);
     }
     if (options['verbatimStrings']) {
@@ -835,7 +835,7 @@ var prettyPrint;
         } else {
           // Stop C preprocessor declarations at an unclosed open comment
           shortcutStylePatterns.push(
-              [PR_COMMENT, /^#(?:(?:define|e(?:l|nd)if|else|error|ifn?def|include|line|pragma|undef|warning)\b|[^\r\n]*)/,
+              [PR_COMMENT, /^#(?:(?:define|e(?:l|nd)if|else|error|ifn?def|include|line|pragma|undef|warning)\b|[^\r]*)/,
                null, '#']);
         }
         // #include <stdio.h>
@@ -844,11 +844,11 @@ var prettyPrint;
              /^<(?:(?:(?:\.\.\/)*|\/?)(?:[\w-]+(?:\/[\w-]+)+)?[\w-]+\.h(?:h|pp|\+\+)?|[a-z]\w*)>/,
              null]);
       } else {
-        shortcutStylePatterns.push([PR_COMMENT, /^#[^\r\n]*/, null, '#']);
+        shortcutStylePatterns.push([PR_COMMENT, /^#[^\r]*/, null, '#']);
       }
     }
     if (options['cStyleComments']) {
-      fallthroughStylePatterns.push([PR_COMMENT, /^\/\/[^\r\n]*/, null]);
+      fallthroughStylePatterns.push([PR_COMMENT, /^\/\/[^\r]*/, null]);
       fallthroughStylePatterns.push(
           [PR_COMMENT, /^\/\*[\s\S]*?(?:\*\/|$)/, null]);
     }
@@ -859,7 +859,7 @@ var prettyPrint;
        */
       var regexExcls = regexLiterals > 1
         ? ''  // Multiline regex literals
-        : '\n\r';
+        : '\r';
       /**
        * @const
        */
@@ -900,7 +900,7 @@ var prettyPrint;
            null]);
     }
 
-    shortcutStylePatterns.push([PR_PLAIN,       /^\s+/, null, ' \r\n\t\xA0']);
+    shortcutStylePatterns.push([PR_PLAIN,       /^\s+/, null, ' \r\t\xA0']);
 
     var punctuation =
       // The Bash man page says
@@ -990,7 +990,7 @@ var prettyPrint;
    */
   function numberLines(node, opt_startLineNum, isPreformatted) {
     var nocode = /(?:^|\s)nocode(?:\s|$)/;
-    var lineBreak = /\r\n?|\n/;
+    var lineBreak = /\r?|/;
   
     var document = node.ownerDocument;
   
@@ -1127,7 +1127,7 @@ var prettyPrint;
   function recombineTagsAndDecorations(job) {
     var isIE8OrEarlier = /\bMSIE\s(\d+)/.exec(navigator.userAgent);
     isIE8OrEarlier = isIE8OrEarlier && +isIE8OrEarlier[1] <= 8;
-    var newlineRe = /\n/g;
+    var newlineRe = //g;
   
     var source = job.sourceCode;
     var sourceLength = source.length;
@@ -1295,7 +1295,7 @@ var prettyPrint;
   registerLangHandler(
       createSimpleLexer(
           [
-           [PR_PLAIN,        /^[\s]+/, null, ' \t\r\n'],
+           [PR_PLAIN,        /^[\s]+/, null, ' \t\r'],
            [PR_ATTRIB_VALUE, /^(?:\"[^\"]*\"?|\'[^\']*\'?)/, null, '\"\'']
            ],
           [

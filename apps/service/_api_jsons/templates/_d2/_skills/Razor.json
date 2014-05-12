@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Razor"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Plasma Field"
+				"desc" : "Releases a wave of energetic plasma that grows in power as it expands, but also zaps on contraction, dealing damage to enemy units caught in its path. Damage increases with distance from Razor."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Static Link"
+				"desc" : "Creates a charged link between Razor and an enemy Hero, stealing damage from the target and giving it to Razor."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Unstable Current"
+				"desc" : "Razor moves with increased speed, and any abilites targeted at him are instantly countered with a jolt of electricity which damages, slows, and purges buffs from enemies."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Eye of the Storm"
+				"desc" : "A powerful lightning storm strikes out at enemy units with the lowest health, dealing damage and reducing their armor.\n\nUpgradable by Aghanim's Scepter."
 				}
 			]
 		}

@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Chaos_Knight"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Chaos Bolt"
+				"desc" : "Throws a mysterious bolt of energy at the target unit. It stuns for a random duration and deals random damage."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Reality Rift"
+				"desc" : "Teleports you, any images you have and the target unit to a random point along the line between the two of you. Gives you bonus attack damage for one attack."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Chaos Strike"
+				"desc" : "Chaos Knight's mojo gives him a chance to deal bonus damage."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Phantasm"
+				"desc" : "Summons several phantasmal copies of the Chaos Knight from alternate dimensions. There is a 50%% chance an extra phantasm will be summoned. The phantasms deal full damage, but take double damage."
 				}
 			]
 		}

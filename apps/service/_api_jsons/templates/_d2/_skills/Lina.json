@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Lina"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Dragon Slave"
+				"desc" : "Lina channels the breath of a dragon, sending out a wave of fire that scorches every enemy in its path."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Light Strike Array"
+				"desc" : "Summons a column of flames that damages and stuns enemies."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Fiery Soul"
+				"desc" : "Grants bonus attack and movement speed each time Lina casts a spell. Stacks with itself. Lasts 9 seconds."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Laguna Blade"
+				"desc" : "Fires off a bolt of lightning at a single enemy unit, dealing massive damage.\n\nUpgradable with Aghanim's Scepter."
 				}
 			]
 		}

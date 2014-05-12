@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Naga_Siren"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Mirror Image"
+				"desc" : "Creates three images of Naga Siren under her control."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Ensnare"
+				"desc" : "Interrupts the target and traps them in place, preventing movement or blinking."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Rip Tide"
+				"desc" : "The Naga Siren and her images hit all nearby units with a damaging wave of water that lowers armor for 8 seconds."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Song Of The Siren"
+				"desc" : "All enemies in range of the Naga Siren are put into a magical stasis where they cannot act or be attacked. Using Song of the Siren again will end the duration early."
 				}
 			]
 		}

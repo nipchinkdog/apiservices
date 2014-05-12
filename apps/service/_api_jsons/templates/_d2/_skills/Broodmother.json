@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Broodmother"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Spawn Spiderlings"
+				"desc" : "Broodmother injects her young into an enemy unit, dealing damage. The spiderlings will hatch if the target is killed while under this influence."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Spin Web"
+				"desc" : "Throws out a web that renders Broodmother invisible, grants a passive movement speed increase, gives free movement, and boosts regeneration while in its vicinity. Free movement is disabled for %damage_time% seconds if damage is taken. Webs never expire. When the maximum limit of webs is exceeded, the oldest web disappears."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Incapacitating Bite"
+				"desc" : "Broodmother's venom cripples enemy units, causing her attacks to slow and giving the affected unit a chance to miss its attacks.\n\nIncapacitating Bite is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Insatiable Hunger"
+				"desc" : "A violent lust for vital fluids increases Broodmother's attack damage and gives her a vampiric attack."
 				}
 			]
 		}

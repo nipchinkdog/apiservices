@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Undying"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Decay"
+				"desc" : "Undying saps the life from enemy Heroes in an area, dealing damage and stealing Strength for the duration."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Soul Rip"
+				"desc" : "Redirects the flow of energy through a target friendly or enemy unit, healing or damaging it depending on how many units are near Undying. Each counted unit takes damage."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Tombstone"
+				"desc" : "Summons a tombstone at the target point. Zombies will frequently spawn next to every enemy unit in the area around the Tombstone, and attack them. Zombies have the Deathlust ability, which causes their attacks to slow the target, and if the target reaches below a certain amount of health, increases the attack and movement speed of the zombie."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Flesh Golem"
+				"desc" : "Undying transforms into a horrifying flesh golem that possesses a Plague Aura. This aura slows all enemy units within 750 range and amplifies the damage they take; the closer to Undying, the more damage. When a plagued unit dies, Undying is healed equal to a percentage of that unit's maximum health.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

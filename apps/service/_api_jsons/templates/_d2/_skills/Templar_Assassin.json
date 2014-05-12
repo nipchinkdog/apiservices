@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Templar_Assassin"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Refraction"
+				"desc" : "Templar Assassin becomes highly elusive, avoiding damage while gaining a bonus to her damage. These effects are separate, and have a limited number of instances"
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Meld"
+				"desc" : "Templar Assassin conceals herself, gaining invisibility while remaining still. On the next attacked enemy unit, Lanaya will reduce its armor and deal bonus damage to it."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Psi Blades"
+				"desc" : "Templar Assassin's psi blades slice through the attacked unit, splitting and damaging enemy units directly behind it, while gaining bonus attack range."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Psionic Trap"
+				"desc" : "Templar Assassin places mystical traps that invisibly monitor enemy movement. When sprung at her command, they exert a slowing influence of 30%% in the area. Traps charge up to slow an additional 5%% every second, up to 50%%."
 				}
 			]
 		}

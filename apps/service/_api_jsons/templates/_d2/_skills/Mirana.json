@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Mirana"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Starstorm"
+				"desc" : "Calls down a wave of meteors to damage nearby enemy units. One random enemy unit in 175 range will take a second hit for 75%% of the damage."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Sacred Arrow"
+				"desc" : "Fires an arrow with deadly precision, stunning and dealing damage to the first enemy unit it strikes. Stun duration increases based on distance to target, ranging from %arrow_min_stun% to %arrow_max_stun% seconds. Bonus damage up to 100 will be added based on the distance the arrow travelled to the target."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Leap"
+				"desc" : "Mirana leaps forward into battle, empowering allied units with a ferocious roar that grants bonus attack and movement speed. Speed bonus lasts 10 seconds."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Moonlight Shadow"
+				"desc" : "Turns Mirana and all allied heroes invisible. If Invisibility is broken, it will restore after fade delay if the shadow's duration has not expired. Silence will stop Moonlight Shadow."
 				}
 			]
 		}

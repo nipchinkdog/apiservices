@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Spirit_Breaker"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Charge of Darkness"
+				"desc" : "Spirit Breaker fixes his sight on an enemy unit and starts charging through all objects. All enemy units passed through and the targeted unit will be hit by a Greater Bash. If the targeted unit dies, Spirit Breaker will change his target to the nearest enemy unit to that location."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Empowering Haste"
+				"desc" : "Causes the Spirit Breaker to gain power with higher movement speed. His presence increases the movement speed of nearby allied units."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Greater Bash"
+				"desc" : "Gives a chance to stun and knockback an enemy unit on an attack, as well as gaining bonus movement speed after a bash occurs. Deals a percentage of movement speed as damage."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Nether Strike"
+				"desc" : "Spirit Breaker slips into the nether realm, reappearing next to his hapless victim. Upon reappearing, a Greater Bash of the current level occurs and deals bonus damage.Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

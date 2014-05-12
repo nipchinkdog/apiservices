@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Doom"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Devour"
+				"desc" : "Consumes an enemy or neutral creep, acquiring any special abilities that it possessed."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Scorched Earth"
+				"desc" : "Carpets the nearby earth in flames, damaging enemies while Doom gains bonus HP regen and increased movement speed."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Lvl Death"
+				"desc" : "Dissipates a piece of an enemy Hero's soul, mini-stunning and dealing bonus damage equal to 20%% of the target's maximum health when the enemy's level is a multiple of a specific number or 25."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Doom"
+				"desc" : "Inflicts a curse that prevents an enemy Hero from casting spells or using items, while taking damage over time. Doom also disables most passive abilities and removes positive buffs on cast. Upgradable by Aghanim's Scepter."
 				}
 			]
 		}

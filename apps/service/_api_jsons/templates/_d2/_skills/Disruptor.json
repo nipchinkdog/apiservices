@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Disruptor"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Thunder Strike"
+				"desc" : "Repeatedly strikes the targeted unit with lightning. Each strike damages nearby enemy units in a small radius."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Glimpse"
+				"desc" : "Teleports the target hero back to where it was 4 seconds ago. Instantly kills illusions."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Kinetic Field"
+				"desc" : "After a short formation time, creates a circular barrier of kinetic energy that enemies can't pass."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Static Storm"
+				"desc" : "Creates a damaging static storm that also silences all enemy units in the area for the duration. The damage starts off weak, but increases in power over the duration.\n\nUpgradable by Aghanim's Scepter."
 				}
 			]
 		}

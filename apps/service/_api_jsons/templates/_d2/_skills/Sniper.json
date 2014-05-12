@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Sniper"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Shrapnel"
+				"desc" : "Fires a ball of shrapnel that showers the target area in explosive pellets. Enemies are subject to damage and slowed movement. Reveals the targeted area."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Headshot"
+				"desc" : "Sniper increases his accuracy, giving a chance to deal extra damage and mini-stun. Headshot procs cannot be evaded."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Take Aim"
+				"desc" : "Extends the attack range of Sniper's rifle."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Assassinate"
+				"desc" : "Sniper locks onto a target enemy unit, and after 1.7 seconds, fires a devastating shot that deals damage at long range, and mini-stuns the target."
 				}
 			]
 		}

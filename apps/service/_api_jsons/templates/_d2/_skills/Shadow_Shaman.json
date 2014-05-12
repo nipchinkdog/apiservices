@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Shadow Shaman"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Ether Shock"
+				"desc" : "Creates a cone of ethereal energy that strikes multiple enemy units."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Hex"
+				"desc" : "Transforms an enemy unit into a harmless creature, disabling their attacks and abilities."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Shackles"
+				"desc" : "CHANNELED - Magically binds an enemy unit so that it cannot move or attack, while dealing damage over time."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Mass Serpent Ward"
+				"desc" : "Summons 10 serpent wards to attack enemy units and structures. The wards are immune to magic, and have a small area of splash damage that increases per level.\n\nUpgradable by Aghanim's Scepter."
 				}
 			]
 		}

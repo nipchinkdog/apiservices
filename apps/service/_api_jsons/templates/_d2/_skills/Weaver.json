@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Weaver"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "The Swarm"
+				"desc" : "Weaver launches a swarm of 12 young Weavers that latch on any enemy unit in their path, attacking and reducing armor until it is killed."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Shukuchi"
+				"desc" : "Weaver shifts out of visibility, gaining the ability to move at maximum speed through physical units--doing harm to any enemies it passes through."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Geminate Attack"
+				"desc" : "Allows Weaver to dispatch two swarms, attacking an enemy twice.\n\nThe extra attack will not trigger other attack effects (such as critical strike) and overrides Unique Attack Modifiers."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Time Lapse"
+				"desc" : "Weaver warps backward to whatever position it was in five seconds earlier--regaining the HP and mana from that time. No effect on cooldown, gold or experience."
 				}
 			]
 		}

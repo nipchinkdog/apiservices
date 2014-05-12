@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Chen"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Penitence"
+				"desc" : "Forces an enemy unit to move slower and take more damage from attacks and spells."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Test of Faith"
+				"desc" : "Deals random damage to test an enemy unit's faith."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Holy Persuasion"
+				"desc" : "Gives control of an enemy or neutral creep, and gives it bonus hit points."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Hand of God"
+				"desc" : "Fully regenerates any creeps under Chen's control and heals all allied heroes on the map.\n\nUpgradable by Aghanim's Scepter."
 				}
 			]
 		}

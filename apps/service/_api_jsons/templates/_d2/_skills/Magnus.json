@@ -1,28 +1,28 @@
 {
-	""	 :  [
+	"Magnus"	 :  [
 		{ 
 			"sk1": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Shockwave"
+				"desc" : "Magnus sends out a wave of force, damaging enemy units in a line."
 				}
 			],
 			"sk2": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Empower"
+				"desc" : "Gives an allied unit bonus damage and cleave on attack."
 				}
 			],
 			"sk3": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Skewer"
+				"desc" : "Magnus rushes forward, goring enemy units on his massive tusk. Heroes hit on the way will be dragged to the destination, then damaged and slowed."
 				}
 			],
 			"sk4": [
 				{
-				"name" : ""
-				"desc" : ""
+				"name" : "Reverse Polarity"
+				"desc" : "Magnus changes properties of matter, sucking all nearby enemies in front of him and stunning them with a powerful slam and dealing damage."
 				}
 			]
 		}
