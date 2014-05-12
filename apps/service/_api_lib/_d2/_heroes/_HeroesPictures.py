@@ -14,6 +14,7 @@ class HeroesPictures():
         #! OS path
         
         self.root = ROOT_URL + '/static/service/media/_src/_d2/_Heroes'
+        self.ico = ROOT_URL + '/static/service/media/_src/_d2/_MiniHeroes/'
 
         
         #! Sizes
@@ -26,13 +27,11 @@ class HeroesPictures():
         self.Class = '/_Class_' + HeroClass + '/'
 
     
-    
-      
-
     def Pictures(self):
         self.HeroLarge = self.root + self.large + self.Class + self.Hero + self.ext
         self.HeroMedium = self.root + self.medium + self.Class + self.Hero + self.ext
         self.HeroSmall = self.root + self.small + self.Class + self.Hero + self.ext
         self.HeroXSmall = self.root + self.xsmall + self.Class + self.Hero + self.ext
-        self.List = {'lg' : self.HeroLarge, 'md' : self.HeroMedium, 'sm' : self.HeroSmall, 'xs' : self.HeroXSmall}
+        self.HeroIcon = self.ico + self.Hero.lower() + self.ext
+        self.List = {'lg' : self.HeroLarge, 'md' : self.HeroMedium, 'sm' : self.HeroSmall, 'xs' : self.HeroXSmall, 'ico' : self.HeroIcon}
         return self.List        
