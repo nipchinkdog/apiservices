@@ -1,0 +1,204 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Service</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="{% static "service/libraries/bootstrap/css/bootstrap.css" %}" rel="stylesheet">
+		
+		<!-- style -->
+		<link href="{% static "service/static/css/comm.css" %}" rel="stylesheet">
+		
+		<!-- font -->
+		<link href="{% static "service/static/fonts/roboto/css.css" %}" rel="stylesheet">
+	</head>
+
+	<body>
+		
+		<!-- #! Modal -->
+		<section class="comm-modal-wrpp comm-hide-me">
+			<div class="comm-side-modal-wrpp-close">&nbsp;</div>
+			<div class="comm-side-modal-wrpp">
+				{% include '_comm/create-inner.html' %}
+			</div>
+		</section>
+		
+		<!-- #! Container -->
+		<section class="container">
+			
+			<header class="clearix">
+				<button class="btn btn-primary btn-sm comm-open-modal-share">SHARE A PICK STRATEGY</button>
+			</header>
+			<br/>
+						
+			<!-- list chronological -->
+			<div class="comm-content-wrapp">
+				<h1>TODAY, MAY 19TH</h1>
+				<ul class="comm-clist-wrapp">
+					<li class="clearfix row">
+						<div class="col-md-1 comm-prtr">
+							<div class="pull-left comm-rate">
+								<a href="#" class="glyphicon glyphicon-chevron-up">&nbsp;</a>
+								<span>120</span>
+							</div>
+							<div class="comm-avt pull-left">&nbsp;</div>
+						</div>
+						<div class="col-md-10">
+							<span class="comm-prtr pull-left">
+								<img src="{% static "service/media/_src/_d2/_Heroes/_SSmall/_Class_Str/Axe.png" %}" />
+								<img src="{% static "service/media/_src/_d2/_Heroes/_SSmall/_Class_Str/Abaddon.png" %}" />
+								<img src="{% static "service/media/_src/_d2/_Heroes/_SSmall/_Class_Str/Elder_Titan.png" %}" />
+							</span>
+							<span class="comm-lessmore pull-left glyphicon glyphicon-chevron-left"></span>
+							<span class="comm-prtr pull-left">
+								<img src="{% static "service/media/_src/_d2/_Heroes/_SSmall/_Class_Str/Axe.png" %}" />
+								<img src="{% static "service/media/_src/_d2/_Heroes/_SSmall/_Class_Str/Elder_Titan.png" %}" />
+							</span>
+							<span class="comm-desc pull-left">This is just an early fast game trilane build for strong chemistry.</span>
+							<a href="#" class="comm-comnt pull-left">7 comments</a>
+						</div>
+					</li>
+
+					<li class="clearfix row">
+						<div class="col-md-1 comm-prtr">
+							<div class="pull-left comm-rate">
+								<a href="#" class="glyphicon glyphicon-chevron-up">&nbsp;</a>
+								<span>120</span>
+							</div>
+							<div class="comm-avt pull-left">&nbsp;</div>
+						</div>
+						<div class="col-md-10">
+							<span class="comm-prtr pull-left">
+								<img src="{% static "service/media/_src/_d2/_Heroes/_SSmall/_Class_Str/Axe.png" %}" />
+								<img src="{% static "service/media/_src/_d2/_Heroes/_SSmall/_Class_Str/Abaddon.png" %}" />
+								<img src="{% static "service/media/_src/_d2/_Heroes/_SSmall/_Class_Str/Elder_Titan.png" %}" />
+							</span>
+							<span class="comm-desc pull-left">This is just an early fast game trilane build for strong chemistry.</span>
+							<a href="#" class="comm-comnt pull-left">7 comments</a>
+						</div>
+					</li>
+
+
+				</ul>
+			</div>
+
+			<!-- list chronological -->
+			<div class="comm-content-wrapp">
+				<h1>TODAY, MAY 19TH</h1>
+				<ul class="comm-clist-wrapp">
+					<li class="clearfix row">
+						<div class="col-md-1 comm-prtr">
+							<div class="pull-left comm-rate">
+								<a href="#" class="glyphicon glyphicon-chevron-up">&nbsp;</a>
+								<span>120</span>
+							</div>
+							<div class="comm-avt pull-left">&nbsp;</div>
+						</div>
+						<div class="col-md-10">
+							<span class="comm-prtr pull-left">
+								<img src="{% static "service/media/_src/_d2/_Heroes/_SSmall/_Class_Str/Axe.png" %}" />
+								<img src="{% static "service/media/_src/_d2/_Heroes/_SSmall/_Class_Str/Abaddon.png" %}" />
+								<img src="{% static "service/media/_src/_d2/_Heroes/_SSmall/_Class_Str/Elder_Titan.png" %}" />
+							</span>
+							<span class="comm-desc pull-left">This is just an early fast game trilane build for strong chemistry.</span>
+							<a href="#" class="comm-comnt pull-left">7 comments</a>
+						</div>
+					</li>
+
+					<li class="clearfix row">
+						<div class="col-md-1 comm-prtr">
+							<div class="pull-left comm-rate">
+								<a href="#" class="glyphicon glyphicon-chevron-up">&nbsp;</a>
+								<span>120</span>
+							</div>
+							<div class="comm-avt pull-left">&nbsp;</div>
+						</div>
+						<div class="col-md-10">
+							<span class="comm-prtr pull-left">
+								<img src="{% static "service/media/_src/_d2/_Heroes/_SSmall/_Class_Str/Axe.png" %}" />
+								<img src="{% static "service/media/_src/_d2/_Heroes/_SSmall/_Class_Str/Abaddon.png" %}" />
+								<img src="{% static "service/media/_src/_d2/_Heroes/_SSmall/_Class_Str/Elder_Titan.png" %}" />
+							</span>
+							<span class="comm-desc pull-left">This is just an early fast game trilane build for strong chemistry.</span>
+							<a href="#" class="comm-comnt pull-left">7 comments</a>
+						</div>
+					</li>
+
+
+				</ul>
+			</div>
+			
+			
+		</section>
+		
+	</body>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="{% static "service/libraries/jquery/jquery-2.0.0.min.js" %}"></script>
+	
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="{% static "service/libraries/bootstrap/js/bootstrap.min.js"%} "></script>
+
+	<!-- Plugins -->
+	<script src="{% static "service/libraries/plugins/jquery.lazyload.min.js"%} "></script>
+
+	<script>
+	
+		//#! modal control
+		$('.comm-open-modal-share').on('click', function(){
+			$('.comm-modal-wrpp').show();	
+			$("img.lazy").lazyload({
+			    effect : "fadeIn",
+			    threshold : 5
+			});
+		});
+		$('.comm-side-modal-wrpp-close').on('click', function(){
+			$('.comm-modal-wrpp').hide();	
+		});
+		
+		//#! menu selection
+		$('.comm-prtr-selection-menu').on('click', function(event){
+			//#! check if selected
+			var allclss = '.comm-prtr-selection-menu';
+			var clss =  'comm-prtr-selection-menu-selected';
+			$(allclss).removeClass(clss);
+			$(this).addClass(clss);
+		});
+		$('.comm-trgr-selection-menu').on('click', function(){
+			var data = $(this).attr('data');
+			var json = jQuery.parseJSON(data);
+			$('.comm-selection-wrapp').hide();
+			$(json.target).show();
+		});
+		
+		//#! hero selection
+		$('.comm-prtr-selection-btn').on('click', function(){
+			//#! check if selected
+			var clss =  'comm-prtr-selected';
+			var data = $(this).attr('data');
+			var json = jQuery.parseJSON(data);
+			if($(this).hasClass(clss)){
+				$(this).removeClass(clss);
+				$(json.target).prop('checked', false);
+			}else{
+				$(this).addClass(clss);
+				$(json.target).prop('checked', true);
+			}
+		});
+		
+		
+		$( "#comm-posts-form" ).submit(function( event ) {
+			return true;
+		});		
+		$( "#comm-posts-form-submit-btn" ).click(function() {
+		  $( "#comm-posts-form" ).submit();
+		});		
+	
+
+	</script>
+
+	
+
+</html>

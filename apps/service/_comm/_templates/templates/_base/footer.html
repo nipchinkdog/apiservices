@@ -1,0 +1,236 @@
+{% load staticfiles %}
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{% static "service/libraries/jquery/jquery-2.0.0.min.js" %}"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="{% static "service/libraries/bootstrap/js/bootstrap.min.js"%} "></script>
+
+<!-- Plugins -->
+<script src="{% static "service/libraries/plugins/jquery.lazyload.min.js"%} "></script>
+
+<script src="{% static "service/libraries/angularjs/angular.js" %}"></script>
+<script src="{% static "service/libraries/angularjs/angular-route.js" %}"></script>
+
+
+<script>
+var demoApp = angular.module('demoApp', ['ngRoute']);
+
+//#! config route
+demoApp.config(function($routeProvider){
+            $routeProvider.
+                when('/', {
+	                templateUrl: '/comm/ng_templates/test.html',
+                    controller: 'SimpleController'
+                }).
+                otherwise({
+                    redirectTo: '/'
+                });
+});
+
+//#! factory
+demoApp.factory('SimpleFactory', function($http){
+	
+	var customers = [
+				    {
+				        "info": {
+				            "div": "Dire", 
+				            "type": "Agi", 
+				            "name": "Clinkz"
+				        }, 
+				        "skills": [
+				            {
+				                "skill_1": "Strafe", 
+				                "icons": {
+				                    "lg": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_Large/Clinkz_Strafe.png", 
+				                    "xs": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_XSmall/Clinkz_Strafe.png", 
+				                    "sm": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_Small/Clinkz_Strafe.png", 
+				                    "md": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_Medium/Clinkz_Strafe.png"
+				                }, 
+				                "desc": "Clinkz attacks with a barrage of arrows. Dramatically increases attack speed for a short time."
+				            }, 
+				            {
+				                "icons": {
+				                    "lg": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_Large/Clinkz_Searing_Arrows.png", 
+				                    "xs": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_XSmall/Clinkz_Searing_Arrows.png", 
+				                    "sm": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_Small/Clinkz_Searing_Arrows.png", 
+				                    "md": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_Medium/Clinkz_Searing_Arrows.png"
+				                }, 
+				                "skill_2": "Searing Arrows", 
+				                "desc": "Imbues Clinkz's arrows with fire for extra damage.Searing Arrows is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
+				            }, 
+				            {
+				                "skill_3": "Skeleton Walk", 
+				                "icons": {
+				                    "lg": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_Large/Clinkz_Skeleton_Walk.png", 
+				                    "xs": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_XSmall/Clinkz_Skeleton_Walk.png", 
+				                    "sm": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_Small/Clinkz_Skeleton_Walk.png", 
+				                    "md": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_Medium/Clinkz_Skeleton_Walk.png"
+				                }, 
+				                "desc": "Clinkz moves invisibly through units until the moment he attacks or uses an ability."
+				            }, 
+				            {
+				                "icons": {
+				                    "lg": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_Large/Clinkz_Death_Pact.png", 
+				                    "xs": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_XSmall/Clinkz_Death_Pact.png", 
+				                    "sm": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_Small/Clinkz_Death_Pact.png", 
+				                    "md": "http://localhost:8000/static/service/media/_src/_d2/_Skills/_Medium/Clinkz_Death_Pact.png"
+				                }, 
+				                "skill_4": "Death Pact", 
+				                "desc": "Clinkz consumes the target friendly or enemy creep, gaining a percent of its hitpoints as max health and damage."
+				            }
+				        ], 
+				        "hero": "Clinkz", 
+				        "avatar": {
+				            "lg": "http://localhost:8000/static/service/media/_src/_d2/_Heroes/_Large/_Class_Agi/Clinkz.png", 
+				            "ico": "http://localhost:8000/static/service/media/_src/_d2/_MiniHeroes/clinkz.png", 
+				            "md": "http://localhost:8000/static/service/media/_src/_d2/_Heroes/_Medium/_Class_Agi/Clinkz.png", 
+				            "ssm": "http://localhost:8000/static/service/media/_src/_d2/_Heroes/_SSmall/_Class_Agi/Clinkz.png", 
+				            "sm": "http://localhost:8000/static/service/media/_src/_d2/_Heroes/_Small/_Class_Agi/Clinkz.png", 
+				            "xs": "http://localhost:8000/static/service/media/_src/_d2/_Heroes/_XSmall/_Class_Agi/Clinkz.png"
+				        }, 
+				        "psizes": {
+				            "lg": {
+				                "h": "144", 
+				                "w": "256"
+				            }, 
+				            "ico": {
+				                "h": "32", 
+				                "w": "32"
+				            }, 
+				            "md": {
+				                "h": "99", 
+				                "w": "176"
+				            }, 
+				            "ssm": {
+				                "h": "43", 
+				                "w": "76"
+				            }, 
+				            "sm": {
+				                "h": "54", 
+				                "w": "96"
+				            }, 
+				            "xs": {
+				                "h": "32", 
+				                "w": "56"
+				            }
+				        }
+				    }
+				];	
+		
+	var factory = {};
+	
+	
+	factory.getCustomers = function(){
+		return customers;
+	};
+	
+	factory.getJsonInfo = function(){
+		var obj = {data:null};
+		$http({
+				method: 'GET', 
+				url: '/api/h/all/'
+			}).
+		    success(function(data, status, headers, config) {
+		      obj.data = data;
+		    }).
+		    error(function(data, status, headers, config) {
+		      console.log(status);
+		      // called asynchronously if an error occurs
+		      // or server returns response with an error status.
+		    });
+		 return obj;
+	};
+	
+	factory.postCustomers = function(){
+		
+	};
+	return factory;
+});
+
+//#! controller
+demoApp.controller('SimpleController', function($scope, SimpleFactory){
+
+	$scope.getCustomersCtrl = SimpleFactory.getCustomers();
+	
+	$scope.getJsonInfoCtrlx = SimpleFactory.getJsonInfo();
+	
+	$scope.getClickInfoCtrl = function(){
+		$scope.getJsonInfoCtrl = SimpleFactory.getJsonInfo();
+	};
+	
+});
+
+</script>
+
+<script>
+
+	//#! post image lazy
+	$('.comm-posts-img-lazy').lazyload({
+	    effect : "fadeIn",
+	    threshold : 5
+	});
+
+	//#! modal post/comments
+	$('.comm-open-modal-share').on('click', function(){
+		$('.comm-modal-wrpp').show();	
+		$('.comm-selection-img-lazy').lazyload({
+		    effect : "fadeIn",
+		    threshold : 5
+		});
+	});
+	
+	$('.comm-side-modal-wrpp-close').on('click', function(){
+		$('.comm-modal-wrpp').hide();
+		$('.comm-modal-wrpp-comments').hide();	
+	});
+	
+
+	$('.comm-open-modal-comments').on('click', function(){
+		$('.comm-modal-wrpp-comments').show();	
+		$('.comm-comments-img-lazy').lazyload({
+		    effect : "fadeIn",
+		    threshold : 5
+		});
+	});
+	
+	
+	//#! menu selection
+	$('.comm-prtr-selection-menu').on('click', function(event){
+		//#! check if selected
+		var allclss = '.comm-prtr-selection-menu';
+		var clss =  'comm-prtr-selection-menu-selected';
+		$(allclss).removeClass(clss);
+		$(this).addClass(clss);
+	});
+	$('.comm-trgr-selection-menu').on('click', function(){
+		var data = $(this).attr('data');
+		var json = jQuery.parseJSON(data);
+		$('.comm-selection-wrapp').hide();
+		$(json.target).show();
+	});
+	
+	//#! hero selection
+	$('.comm-prtr-selection-btn').on('click', function(){
+		//#! check if selected
+		var clss =  'comm-prtr-selected';
+		var data = $(this).attr('data');
+		var json = jQuery.parseJSON(data);
+		if($(this).hasClass(clss)){
+			$(this).removeClass(clss);
+			$(json.target).prop('checked', false);
+		}else{
+			$(this).addClass(clss);
+			$(json.target).prop('checked', true);
+		}
+	});
+	
+	
+	$( "#comm-posts-form" ).submit(function( event ) {
+		return true;
+	});		
+	$( "#comm-posts-form-submit-btn" ).click(function() {
+	  $( "#comm-posts-form" ).submit();
+	});		
+
+
+</script>

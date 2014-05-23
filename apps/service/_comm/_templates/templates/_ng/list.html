@@ -1,0 +1,9 @@
+{% verbatim %}
+<button ng-click="getClickInfoCtrl()" class="button">List it</button>
+
+<input type="text" data-ng-model="heroes.info.name" /> {{ heroes.info.name }}
+<br/>
+<div data-ng-repeat="heroes in getJsonInfoCtrl.data | filter: heroes.info.name | orderBy: 'city' | limitTo: 2 ">{{ heroes.info.name }}</div>
+</br/>
+<div data-ng-repeat="heroes in getJsonInfoCtrl.data | 	limitTo: 10 ">{{ heroes.info.name }}</div>
+{% endverbatim %}

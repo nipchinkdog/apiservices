@@ -1,0 +1,32 @@
+{% extends '_base/index.html' %}
+{% load staticfiles %}
+{% block 'comm_lists' %}
+	<!-- list chronological -->
+	{% for sortDate in sorByDatePosts %}
+	<div class="comm-content-wrapp">
+		<h1>{{ sortDate.date }}</h1>
+		<ul class="comm-clist-wrapp">
+			{% for posts in sortDate.data %}
+			<li class="clearfix row">
+				<div class="col-md-1 comm-prtr">
+					<div class="pull-left comm-rate">
+						<a href="#" class="glyphicon glyphicon-chevron-up">&nbsp;</a>
+						<span>120</span>
+					</div>
+					<div class="comm-avt pull-left">&nbsp;</div>
+				</div>
+				<div class="col-md-10">
+					<span class="comm-prtr pull-left">
+						{% for hpic in posts.pic %}
+						<img class="comm-posts-img-lazy" title="{{ hpic.pic }}" data-original="{{ hpic.picture }}" width="{{ hpic.w }}" height="{{ hpic.h }}"/>
+						{% endfor %}
+					</span>
+					<span class="comm-desc pull-left">{{ posts.note }}</span>
+					<a href="#" class="comm-comnt pull-left comm-open-modal-comments">7 comments</a>
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+	{% endfor %}
+{% endblock 'comm_lists' %}

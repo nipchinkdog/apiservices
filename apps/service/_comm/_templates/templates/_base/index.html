@@ -1,0 +1,47 @@
+{% load staticfiles %}
+
+<!DOCTYPE >
+<html data-ng-app="demoApp">
+
+	{% include '_base/header.html' %}
+	
+	<body>
+		
+		<!--  Placeholder -->
+		<div data-ng-view></div>
+		
+		<!-- #! Modal Post -->
+		<section class="comm-modal-wrpp comm-hide-me">
+			<div class="comm-side-modal-wrpp-close">&nbsp;</div>
+			<div class="comm-side-modal-wrpp">
+				{% include '_inner/post.html' %}
+			</div>
+		</section>
+
+		<!-- #! Modal Comments -->
+		<section class="comm-modal-wrpp-comments comm-hide-me">
+			<div class="comm-side-modal-wrpp-close">&nbsp;</div>
+			<div class="comm-side-comment-modal-wrpp">
+				{% include '_inner/comment.html' %}
+			</div>
+		</section>
+		
+		<!-- #! Container -->
+		<section class="container">
+			
+			<header class="clearix">
+				<button class="btn btn-primary btn-sm comm-open-modal-share">SHARE A PICK STRATEGY</button>
+			</header>
+			<br/>
+						
+			<!-- #! list -->
+			{% block 'comm_lists' %}
+			{% endblock 'comm_lists' %}
+
+		</section>
+		
+	</body>
+	
+	{% include '_base/footer.html' %}
+
+</html>

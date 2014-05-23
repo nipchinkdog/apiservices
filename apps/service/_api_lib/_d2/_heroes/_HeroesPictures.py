@@ -27,6 +27,7 @@ class HeroesPictures():
         self.large = '/_Large'
         self.medium = '/_Medium'
         self.small = '/_Small'
+        self.ssmall = '/_SSmall'
         self.xsmall = '/_XSmall'
 
         #! Classes
@@ -37,16 +38,29 @@ class HeroesPictures():
         self.HeroLarge = self.root + self.large + self.Class + self.Hero + self.ext
         self.HeroMedium = self.root + self.medium + self.Class + self.Hero + self.ext
         self.HeroSmall = self.root + self.small + self.Class + self.Hero + self.ext
+        self.HeroSSmall = self.root + self.ssmall + self.Class + self.Hero + self.ext
         self.HeroXSmall = self.root + self.xsmall + self.Class + self.Hero + self.ext
         self.HeroIcon = self.ico + self.Hero.lower() + self.ext
         self.List = {
                     'lg' : self.HeroLarge, 
                     'md' : self.HeroMedium, 
-                    'sm' : self.HeroSmall, 
+                    'sm' : self.HeroSmall,
+                    'ssm' : self.HeroSSmall, 
                     'xs' : self.HeroXSmall, 
-                    'ico' : self.HeroIcon
+                    'ico' : self.HeroIcon,
                     }
         return self.List   
+    
+    def PicturesSizes(self):
+        Sizes = {
+                  'lg' : { 'w' : '256', 'h' : '144' },
+                  'md' : { 'w' : '176', 'h' : '99' },
+                  'sm' : { 'w' : '96', 'h' : '54' },
+                  'ssm' : { 'w' : '76', 'h' : '43' },
+                  'xs' : { 'w' : '56', 'h' : '32' },
+                  'ico' : { 'w' : '32', 'h' : '32' } 
+                  }        
+        return Sizes
     
     def Skills(self):
         Skills = []

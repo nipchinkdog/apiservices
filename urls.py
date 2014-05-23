@@ -18,7 +18,12 @@ urlpatterns = patterns('',
     # url(r'^admin/', include(admin.site.urls)),
 
     url(r'^api/', include('apps.service._api._d2._urls._heroes._main')),
+    url(r'^api/', include('apps.service._api._comm._urls._posts._main')),
+    
     #! doc
     url(r'^doc/', include('apps.service._urls._doc._d2._main')),
+
+    #! comm
+    url(r'^comm/', include('apps.service._comm._urls._main')),
 
 )

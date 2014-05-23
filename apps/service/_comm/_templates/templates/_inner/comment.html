@@ -1,0 +1,51 @@
+<div class="row">
+	
+	<!-- list chronological -->
+	{% for sortDate in sorByDatePosts %}
+	<div class="comm-content-wrapp">
+		<ul class="comm-clist-wrapp">
+			{% for posts in sortDate.data %}
+			<li class="clearfix">
+				<div class="col-md-1  comm-prtr">
+					<div class="comm-avt pull-left">&nbsp;</div>
+				</div>
+				<div class="col-md-10">
+					<span class="comm-prtr">
+						{% for hpic in posts.pic %}
+						<img class="comm-comments-img-lazy" title="{{ hpic.pic }}" data-original="{{ hpic.picture }}" width="{{ hpic.w }}" height="{{ hpic.h }}"/>
+						{% endfor %}
+					</span>
+					<span class="comm-desc">{{ posts.note }}</span>
+				</div>
+				<div class="col-md-12 "><hr/></div>
+			</li>
+			{% endfor %}
+		</ul>
+		
+		
+	</div>
+	{% endfor %}
+	
+
+	<!-- list chronological -->
+	{% for sortDate in sorByDatePosts %}
+	<div class="comm-content-wrapp">
+
+		<h1>12 Comments</h1>
+
+		<ul class="comm-clist-wrapp">
+			{% for posts in sortDate.data %}
+			<li class="clearfix">
+				<div class="col-md-1  comm-prtr">
+					<div class="comm-avt pull-left">&nbsp;</div>
+				</div>
+				<div class="col-md-10 ">
+					<span class="comm-desc pull-left">{{ posts.note }}</span>
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+	{% endfor %}
+
+</div>		

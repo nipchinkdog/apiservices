@@ -1,0 +1,89 @@
+<div class="row comm-select-wrapp">
+	
+	<div class="col-md-12">
+		<h1>Create your pick strategy.</h1>
+	</div>
+	
+	<div class="clearfix"><hr/></div>
+	
+	<div class="col-md-12">
+
+		
+		<!-- #! menu -->
+		<div class="col-md-2">
+			
+			<h1><b>1st</b> &nbsp; PICK YOUR HEROES</h1>
+			<br/>
+			<div data='{"target":"#comm-selection-heroes"}' class="comm-prtr-selection-menu comm-trgr-selection-menu comm-prtr-selection-menu-selected">
+				<span class="glyphicon glyphicon-th"></span>
+			</div>
+				
+			<br/>
+			<h1><b>2nd</b> &nbsp; WRITE A NOTE</h1>
+			<br/>
+			<div data='{"target":"#comm-selection-desc"}' class="comm-prtr-selection-menu comm-trgr-selection-menu">
+				<span class="glyphicon glyphicon-file"></span>
+			</div>
+
+			<br/>
+			<h1><b>3rd</b> &nbsp; SUBMIT THIS STRATEGY</h1>
+			<br/>
+			<div class="">
+				<button id="comm-posts-form-submit-btn" class="btn btn-primary btn-sm col-md-12">SUBMIT PICK</button>
+			</div>
+			
+		</div>
+		
+		
+		<!-- #! notes creation -->
+		<div id="comm-selection-desc" class="col-md-10 comm-selection-wrapp comm-hide-me">
+				<div class="col-md-12">
+	
+					<form id="comm-posts-form" role="form" action="{% url 'comm_posts_add' %}" method="post">
+					  	{% csrf_token %}
+						{% for h in hall %}
+							<input class="comm-hide-me"  type="checkbox" id="{{ h.hero }}" name="heroes" value="{{ h.hero }}">
+						{% endfor %}
+						<div class="form-group">
+						<h1>NOTE</h1>
+						<textarea rows="5" class="form-control" name="notes" id="notes"></textarea>
+						</div>
+					</form>
+	
+				</div>
+		</div>
+		
+		
+		<!-- #! hero selections -->
+		<div id="comm-selection-heroes" class="col-md-10 comm-selection-wrapp">
+
+			<div class="col-md-4">
+				<h1>STRENGTH</h1>
+				<div class="comm-prtr-select">
+					{% for h in hstr %}
+					<img data='{"target":"#{{ h.info.name }}"}' title="{{ h.info.name }}" class="comm-selection-img-lazy comm-prtr-selection-btn" data-original="{{ h.avatar.ssm }}	" width="{{ h.psizes.ssm.w }}" height="{{ h.psizes.ssm.h }}" />
+					{% endfor %}
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h1>AGILITY</h1>
+				<div class="comm-prtr-select">
+					{% for h in hagi %}
+					<img data='{"target":"#{{ h.info.name }}"}' title="{{ h.info.name }}" class="comm-selection-img-lazy comm-prtr-selection-btn" data-original="{{ h.avatar.ssm }}	" width="{{ h.psizes.ssm.w }}" height="{{ h.psizes.ssm.h }}" />
+					{% endfor %}
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h1>INTELLIGENCE</h1>
+				<div class="comm-prtr-select">
+					{% for h in hint %}
+					<img data='{"target":"#{{ h.info.name }}"}' title="{{ h.info.name }}" class="comm-selection-img-lazy comm-prtr-selection-btn" data-original="{{ h.avatar.ssm }}	" width="{{ h.psizes.ssm.w }}" height="{{ h.psizes.ssm.h }}" />
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+
+		
+	</div>
+	
+</div>		

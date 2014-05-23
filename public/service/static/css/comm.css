@@ -1,0 +1,198 @@
+body {
+	height: 100%;
+	background: #fff;
+	color: #888;
+	font: 'RobotoRegular';
+	position: relative; /* For scrollyspy */
+	padding-top: 50px; /* Account for fixed navbar */
+}
+ul, li { 
+	list-style: none;
+	margin: 0; 
+	padding: 0; 
+}
+h1, h2 {
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #3498db;
+}
+a:hover {
+	color: #2980b9;
+}
+a:focus {
+	color: #2980b9;
+}
+
+.table {
+	font-size: 12px;
+	margin-bottom: 0;
+}
+.table > thead > tr > th {
+	border-bottom: 1px solid #eee;
+	line-height: normal;
+	font-weight: normal;
+	padding: 10px;
+	padding-left: 0;
+	padding-right: 10px;
+}
+.table > tbody > tr > td {
+	border-bottom: 1px solid #eee;
+	line-height: normal;
+	font-weight: normal;
+	padding: 10px;
+	padding-left: 0;
+	padding-right: 10px;
+}
+
+/* #! content */
+.comm-content-wrapp {
+	
+}
+.comm-content-wrapp h1 {
+	color: #ccc;
+	font: 1.1em 'RobotoCondensed';
+	font-weight: normal;
+}
+ul.comm-clist-wrapp {  
+	margin: 0 0 0 20px;
+	padding: 20px 0;
+}
+ul.comm-clist-wrapp li {
+	list-style: none;
+	padding: 5px 0;
+}
+
+/* #! selection */
+.comm-prtr-selection-menu { 
+	cursor: pointer;
+	padding: 10px 10px;
+	text-align: center;
+	width: 60px;
+	border-left: 5px solid #fff;
+}
+.comm-prtr-selection-menu:hover {
+	background: #eee;
+	border-left: 5px solid #ddd;
+}
+.comm-prtr-selection-menu span { font-size: 1.8em; }
+.comm-prtr-selection-menu-selected {  
+	border-left: 5px solid #ddd;
+}
+
+.comm-select-wrapp {  }
+.comm-select-wrapp .form-control { font: 1.1em 'RobotoRegular'; padding: 20px 10px; border-radius: 0; }
+.comm-select-wrapp h1 {
+	color: #888;
+	font: .85em 'RobotoCondensed';
+	font-weight: normal;
+	padding: 5px 0;
+}
+.comm-prtr-select { }
+.comm-prtr-select img { cursor: pointer; padding: 0 1px 6px 1px; }
+.comm-prtr-select img.comm-prtr-selected {  
+    -webkit-filter: opacity(20%); /* Webkit */  
+    filter: opacity(20%); /* IE6-9 */  
+    filter: opacity(20%); /* W3C */  
+}  
+
+
+/* #! etc */
+.comm-prtr {  }
+.comm-rate { padding: 0 0; font-size: 1.3em; }
+.comm-rate a { color: #ccc; display: block; margin: 0 auto; }
+.comm-rate a:hover { text-decoration: none; }
+.comm-rate span { font-size: .7em; }
+
+.comm-prtr img { float: left; padding: 0; margin: 0; }
+.comm-lessmore { color: #95a5a6; padding: 10px 0; margin: 0 10px; font-size: 1.6em; }
+.comm-desc { padding: 10px 0 10px 10px; font: 1em 'RobotoRegular'; }
+.comm-comnt { padding: 10px 0 10px 10px; color: #ccc; font: 1em 'RobotoRegular'; }
+.comm-comnt:hover { color: #ddd; text-decoration: none; }
+.comm-avt {
+	background: #ccc;
+	border-radius: 40px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+/* #! modal side */
+.comm-modal-wrpp hr {
+	margin: 10px 0 10px 0;
+}
+.comm-modal-wrpp {
+}
+.comm-side-modal-wrpp-close {
+	background: #fff;
+	opacity: .8;
+	cursor: pointer;
+	position: fixed;
+	display: block;
+	z-index: 1;	
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.comm-side-modal-wrpp { 
+	background: #fff;
+	border-left: 1px solid #ddd;
+	padding: 10px 20px;
+	position: fixed; 
+	right: 0;
+	top: 0;
+	width: 80%;
+	height: 100%;
+	z-index: 100;
+}
+.comm-side-comment-modal-wrpp { 
+	background: #fff;
+	border-left: 1px solid #ddd;
+	padding: 10px 20px;
+	position: fixed; 
+	overflow: scroll;
+	right: 0;
+	top: 0;
+	width: 60%;
+	height: 100%;
+	z-index: 100;
+}
+.comm-modal-wrpp-comments .comm-content-wrapp hr {
+	margin: 5px;
+}
+.comm-modal-wrpp-comments .comm-content-wrapp ul.comm-clist-wrapp {
+	margin: 0 10px;
+}
+
+/* hidden */
+.comm-hide-me { display: none; }
+
+/* #! Reset */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, 
+.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, 
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, 
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, 
+.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, 
+.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, 
+.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, 
+.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, 
+.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, 
+.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, 
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, 
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+position: relative;
+min-height: 1px;
+padding-right: 5px;
+padding-left: 5px;
+}
+.btn { border-radius: 0px; }

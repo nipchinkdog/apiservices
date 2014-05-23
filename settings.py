@@ -131,6 +131,10 @@ INSTALLED_APPS = (
     'apps.service._templates',
     'apps.service._api',
     'apps.service._api_jsons',
+    
+    #! Community
+    'apps.service._comm',
+    'apps.service._comm._templates',
 
 )
 
