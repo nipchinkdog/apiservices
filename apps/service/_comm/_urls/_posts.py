@@ -7,8 +7,6 @@ from apps.service._comm._modules._posts._Posts_Add import *
 from apps.service._comm._modules._posts._Posts_List import *
 
 urlpatterns = patterns('',
-    url(r'^list/$', PostsList.as_view(), name='comm_posts_list'),
+    url(r'^$', PostsList.as_view(), name='comm_posts_list'),
     url(r'^add/$', PostsAdd.as_view(), name='comm_posts_add'),
-    
-    
 )

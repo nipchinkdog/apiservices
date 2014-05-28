@@ -4,7 +4,7 @@ body {
 	color: #888;
 	font: 'RobotoRegular';
 	position: relative; /* For scrollyspy */
-	padding-top: 50px; /* Account for fixed navbar */
+	padding-top: 70px; /* Account for fixed navbar */
 }
 ul, li { 
 	list-style: none;
@@ -107,8 +107,8 @@ ul.comm-clist-wrapp li {
 
 /* #! etc */
 .comm-prtr {  }
-.comm-rate { padding: 0 0; font-size: 1.3em; }
-.comm-rate a { color: #ccc; display: block; margin: 0 auto; }
+.comm-rate { padding: 0 0; margin: 0 10px; font-size: 1.3em; text-align: center; }
+.comm-rate a { color: #ccc; display: block; margin: 0 auto; font-size: .95em; padding: 5px 0; }
 .comm-rate a:hover { text-decoration: none; }
 .comm-rate span { font-size: .7em; }
 
@@ -130,7 +130,11 @@ ul.comm-clist-wrapp li {
 .comm-modal-wrpp hr {
 	margin: 10px 0 10px 0;
 }
-.comm-modal-wrpp {
+.navbar-fixed-top { 
+	z-index: 1 !important;
+}
+.comm-modal-wrpp, .comm-modal-wrpp-comments {
+	z-index: 1032 !important;
 }
 .comm-side-modal-wrpp-close {
 	background: #fff;

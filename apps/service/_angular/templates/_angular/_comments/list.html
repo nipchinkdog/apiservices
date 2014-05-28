@@ -1,0 +1,52 @@
+	{% verbatim %}
+	<!-- Angular -->
+	<!-- loop through post -->
+	<div class="row" data-ng-repeat="datadict in postscomments"> <!-- ng -->
+		
+		<div data-ng-repeat="postinfo in datadict.posts"> <!-- ng -->
+			
+			<div class="comm-content-wrapp" >
+				
+				<ul class="comm-clist-wrapp">
+					<li class="clearfix col-md-12"><h1>{{ postinfo.date }}</h1></li>
+					<li class="clearfix col-md-12">
+						<div class="row">
+						<div class="col-md-2 comm-prtr">
+							<div class="comm-rate pull-left">
+								<a href="#" class="glyphicon glyphicon-chevron-up"></a>
+								<span>120</span>
+							</div>
+							<div class="comm-avt pull-left">&nbsp;</div>
+						</div>
+						<div class="col-md-10">
+							<span class="comm-prtr pull-left">
+								<!-- loop through pics -->
+								<div data-ng-repeat="postpic in  postinfo.pic" class="{{ postpic.css }} pull-left" title="{{ postpic.hero }}" > <!-- ng -->
+								</div>
+							</span>
+							<span class="comm-desc pull-left">{{ postinfo.note }}</span>
+						</div>
+						<div class="col-md-12 "><hr/></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="comm-content-wrapp">
+				<ul class="comm-clist-wrapp">
+					<li class="clearfix col-md-12"><h1>3 comments</h1></li>
+					<li class="clearfix" data-ng-repeat="comments in datadict.comments"> <!-- ng -->
+						<div class="col-md-1  comm-prtr">
+							<div class="comm-avt pull-left">&nbsp;</div>
+						</div>
+						<div class="col-md-10 ">
+							<span class="comm-desc pull-left">{{ comments.note }}</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		
+		</div>
+		
+	</div>
+	{% endverbatim %}

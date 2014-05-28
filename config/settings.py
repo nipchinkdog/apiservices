@@ -152,6 +152,9 @@ INSTALLED_APPS = (
         'apps.service._comm',
         'apps.service._comm._templates',
     
+    #! Angular
+    'apps.service._angular',
+    
 
     #! Third Parties
     'rest_framework',

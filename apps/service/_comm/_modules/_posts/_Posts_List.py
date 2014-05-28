@@ -1,11 +1,10 @@
 from apps.service._imports.Settings_init import * #! variables: ROOT_URL etc
 from apps.service._imports.Views_init import *
 
-#! parser
+#! lib: parser
 from apps.service._api_lib._d2._heroes._HeroesParser import *
-
-#! procedures
-from apps.service._comm._procedures._Posts._ProcPosts import *
+#! lib: posts
+from apps.service._api_lib._comm._posts._ProcPosts import *
 
 
 class PostsList(View):
@@ -25,19 +24,18 @@ class PostsList(View):
     heroes.Heroes_All()
     hall = heroes._GetHeroesListTemplate()
     
-    
-    #! list posts
+
+    #! list post
     init_Posts = ProcPosts()
-    init_Posts.sortByDate()
-    sorByDatePosts = init_Posts._GetTemplate()
+    init_Posts.sortByDatePaginated(2, 2)
+    sortByDatePosts = init_Posts._GetTemplate()
     
-    
-    _template = '_comm/list-posts.html'
+    _template = '_base/index.html'
     def get(self, request, *args, **kwargs):
         return render_to_response(self._template, 
                                   {
                                    #! posts
-                                   'sorByDatePosts' : self.sorByDatePosts,
+                                   'sorByDatePosts' : self.sortByDatePosts,
                                    #! create init
                                    'hstr' : self.hstr,
                                    'hagi' : self.hagi,

@@ -7,9 +7,12 @@ from apps.service._api_lib._comm._posts._ProcPosts import *
 class PostsLimit(APIView):
 
     def get(self, request, format=None, *args, **kwargs):
-        #! list posts
+        page = int(kwargs['page'])
+        limit = int(kwargs['limit'])
+        
+        #! limit posts
         init_Posts = ProcPosts()
-        init_Posts.sortByDate()
-        data = init_Posts._GetTemplate()
-        return Response( data )
+        init_Posts.sortByDatePaginated(page, limit)
+        sortByDatePosts = init_Posts._GetTemplate()
+        return Response( sortByDatePosts )
  

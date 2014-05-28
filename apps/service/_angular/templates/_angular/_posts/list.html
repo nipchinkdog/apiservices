@@ -1,0 +1,53 @@
+	{% verbatim %}
+	
+	<!-- #! Modal Comments -->
+	<section class="comm-modal-wrpp-comments comm-hide-me">
+		<a ui-sref="posts" class="comm-side-modal-wrpp-close"></a>
+		<div class="comm-side-comment-modal-wrpp">
+			<div ui-view='viewComments'>&nbsp;</div> <!-- ng -->
+		</div>
+	</section>
+	
+	
+	<!-- Angular -->
+	<!-- loop through posts date -->
+	<div class="comm-content-wrapp" data-ng-repeat="postdate in posts"> <!-- ng -->
+		<h1>{{ postdate.date }}</h1>
+		<ul class="comm-clist-wrapp">
+			
+			<!-- loop through posts -->
+			<li class="clearfix row" data-ng-repeat="postinfo in postdate.posts"> <!-- ng -->
+				<div class="col-md-1 comm-prtr">
+					<div class="pull-left comm-rate">
+						<a href="#" class="glyphicon glyphicon-chevron-up"></a>
+						<span>120</span>
+					</div>
+					<div class="comm-avt pull-left">&nbsp;</div>
+				</div>
+				<div class="col-md-10">
+					<span class="comm-prtr pull-left">
+						
+						<!-- loop through pics -->
+						<div data-ng-repeat="postpic in  postinfo.pic"	class="{{ postpic.css }} pull-left" title="{{ postpic.hero }}" > <!-- ng -->
+						</div>
+						
+					</span>
+					<span class="comm-desc pull-left">
+						<div class="clearfix">
+							<small data-ng-repeat="tag in  postinfo.tags"> {{ tag.tags }} </small> <!-- ng -->	
+						</div>
+						<div class="clearfix">
+							{{ postinfo.note }}
+							<a ui-sref="posts.comments({id:{{ postinfo.id }}})" class="comm-comnt comm-open-modal-comments"><small>7 comments</small></a>
+						</div>
+					</span>
+				</div>
+			</li>
+			
+		</ul>
+	</div>
+	
+	<button class="btn btn-sm btn-primary" ng-show="loadhasMore()" ng-click="loadApiPostsCtrl()">
+		SHOW MORE
+	</button>
+	{% endverbatim %}

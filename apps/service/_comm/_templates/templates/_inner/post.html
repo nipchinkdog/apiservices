@@ -1,7 +1,7 @@
 <div class="row comm-select-wrapp">
 	
 	<div class="col-md-12">
-		<h1>Create your pick strategy.</h1>
+		<h1>Share a hero pick strategy.</h1>
 	</div>
 	
 	<div class="clearfix"><hr/></div>
@@ -12,24 +12,34 @@
 		<!-- #! menu -->
 		<div class="col-md-2">
 			
-			<h1><b>1st</b> &nbsp; PICK YOUR HEROES</h1>
+			<h1><b>1st</b> &nbsp; Select pick type. (<span><b class="comm-pick-remain">5</b> heroes</span>)</h1>
+			<div>
+				<input value="5" type="hidden" id="comm-pick-limit" />
+				<span><button class="comm-pick-type comm-pick-type-default btn btn-sm btn-success col-md-12" data="5">5 Hero Combo</button></span>
+				<span><button class="comm-pick-type btn btn-sm col-md-12" data="3">Tri Lane</button></span>
+				<span><button class="comm-pick-type btn btn-sm col-md-12" data="2">Dual Lane</button></span>
+				<span><button class="comm-pick-type btn btn-sm col-md-12" data="1">Off Lane</button></span>
+				<span>&nbsp;</span>
+			</div>
+			
+			<h1><b>2nd</b> &nbsp; Select heroes.</h1>
 			<br/>
 			<div data='{"target":"#comm-selection-heroes"}' class="comm-prtr-selection-menu comm-trgr-selection-menu comm-prtr-selection-menu-selected">
 				<span class="glyphicon glyphicon-th"></span>
 			</div>
 				
 			<br/>
-			<h1><b>2nd</b> &nbsp; WRITE A NOTE</h1>
+			<h1><b>3rd</b> &nbsp; Write a short note.</h1>
 			<br/>
 			<div data='{"target":"#comm-selection-desc"}' class="comm-prtr-selection-menu comm-trgr-selection-menu">
 				<span class="glyphicon glyphicon-file"></span>
 			</div>
 
 			<br/>
-			<h1><b>3rd</b> &nbsp; SUBMIT THIS STRATEGY</h1>
+			<h1><b>4th</b> &nbsp; Submit entry.</h1>
 			<br/>
 			<div class="">
-				<button id="comm-posts-form-submit-btn" class="btn btn-primary btn-sm col-md-12">SUBMIT PICK</button>
+				<button id="comm-posts-form-submit-btn" class="btn btn-primary btn-sm col-md-12">SUBMIT</button>
 			</div>
 			
 		</div>
@@ -41,9 +51,18 @@
 	
 					<form id="comm-posts-form" role="form" action="{% url 'comm_posts_add' %}" method="post">
 					  	{% csrf_token %}
+						
+						<!-- pick types -->
+						<input class=" comm-lane-checkboxes comm-lane-checkboxes-default" checked="checked"  type="checkbox" id="lane-5" name="lanes" value="Combo">
+						<input class=" comm-lane-checkboxes"  type="checkbox" id="lane-3" name="lanes" value="Trilane">
+						<input class=" comm-lane-checkboxes"  type="checkbox" id="lane-2" name="lanes" value="Duallane">
+						<input class=" comm-lane-checkboxes"  type="checkbox" id="lane-1" name="lanes" value="Offlane">
+						
+						<!-- heroes -->
 						{% for h in hall %}
-							<input class="comm-hide-me"  type="checkbox" id="{{ h.hero }}" name="heroes" value="{{ h.hero }}">
+						<input class="comm-hide-me comm-hero-checkboxes"  type="checkbox" id="{{ h.hero }}" name="heroes" value="{{ h.hero }}">
 						{% endfor %}
+
 						<div class="form-group">
 						<h1>NOTE</h1>
 						<textarea rows="5" class="form-control" name="notes" id="notes"></textarea>
