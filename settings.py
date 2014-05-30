@@ -113,17 +113,16 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    
+    #! Django
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
-
+    'django.contrib.humanize',
+    
     #! Application    
     'apps.service._templates',
     'apps.service._api',
@@ -139,7 +138,6 @@ INSTALLED_APPS = (
 
     #! Third Parties
     'rest_framework',
-
 )
 
 # A sample logging configuration. The only tangible logging
