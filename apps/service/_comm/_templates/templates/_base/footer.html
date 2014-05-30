@@ -23,12 +23,7 @@
 
 
 <script>
-	//#! post image lazy
-	$('.comm-posts-img-lazy').lazyload({
-	    effect : "fadeIn",
-	    threshold : 5
-	});
-
+	
 	//#! modal post/comments
 	$('.comm-open-modal-share').on('click', function(){
 		$('.comm-modal-wrpp').show();	
@@ -47,10 +42,6 @@
 
 	$('.comm-open-modal-comments').on('click', function(){
 		$('.comm-modal-wrpp-comments').show();	
-		$('.comm-comments-img-lazy').lazyload({
-		    effect : "fadeIn",
-		    threshold : 5
-		});
 	});
 	
 	
@@ -67,6 +58,10 @@
 		var json = jQuery.parseJSON(data);
 		$('.comm-selection-wrapp').hide();
 		$(json.target).show();
+		$('.comm-posts-img-lazy').lazyload({
+		    effect : "fadeIn",
+		    threshold : 5
+		});
 	});
 	
 	//#! reset
@@ -74,7 +69,6 @@
 		//#! pick type button
 		$('.comm-pick-type').removeClass('btn-success');
 		$('.comm-pick-type-default').addClass('btn-success');
-
 		//#! hero checkboxes and images
 		$('.comm-prtr-selection-btn').removeClass('comm-prtr-selected');
 		$('.comm-hero-checkboxes').prop('checked', false);
@@ -83,6 +77,7 @@
 		//#! pick type tagging
 		$('.comm-lane-checkboxes').prop('checked', false);
 		$('.comm-lane-checkboxes-default').prop('checked', true);
+		$('#comm-posts-form-submit-btn').hide();
 	}
 	
 	//#! pick type selection
@@ -118,12 +113,13 @@
 			$('#comm-posts-form-submit-btn').hide();
 		}else{
 			//#! check if zero
-			if (limitValue > 0) {
+			if (limit.val() > 0) {
 				$(this).addClass(clss);
 				$(json.target).prop('checked', true);
 				limit.val(limit.val() - 1);
 				$('.comm-pick-remain').html(limit.val());	
-			}else{
+			}
+			if (limit.val() == 0) {
 				$('#comm-posts-form-submit-btn').show();
 			}
 		}
@@ -137,4 +133,5 @@
 	$( "#comm-posts-form-submit-btn" ).click(function() {
 	  $( "#comm-posts-form" ).submit();
 	});		
+	
 </script>
