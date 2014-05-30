@@ -1,17 +1,17 @@
-# Django settings for service project.
+# Django settings for counterme project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'), 
+    # ('Your Name', 'your_email@example.com'),
 )
 
 MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql.', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'apiservice$services',                      # Or path to database file if using sqlite3.
         'USER': 'apiservice',                      # Not used with sqlite3.
         'PASSWORD': 'apiservice',                  # Not used with sqlite3.
@@ -49,7 +49,7 @@ USE_L10N = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = '/home/apiservice/service/media'
+MEDIA_ROOT = '/home/nipchinkdog/counterme/media'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -60,7 +60,7 @@ MEDIA_URL = '/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = '/home/apiservice/service/public'
+STATIC_ROOT = '/home/nipchinkdog/counterme/static'
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
@@ -87,7 +87,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'w46k5gk&ub&t-#um9!9t9a14)(3u69p4*zgaj=r_-yfzo0d*vp'
+SECRET_KEY = '+4p41=h!l*h$1#grnrnj^(@!y1q&o(t7nnh+w*%-47yd16w@gk'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -106,6 +106,17 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'service.urls'
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.media',
+    'django.core.context_processors.static',
+    'django.core.context_processors.tz',
+    'django.contrib.messages.context_processors.messages',
+    'django.core.context_processors.request',    
+)
+
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
@@ -113,7 +124,6 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-    
     #! Django
     'django.contrib.auth',
     'django.contrib.contenttypes',
