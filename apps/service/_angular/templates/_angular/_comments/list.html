@@ -21,10 +21,10 @@
 							</span>
 							<span class="comm-desc pull-left">
 								<div class="clearfix">
-									<small data-ng-repeat="tag in  postinfo.tags"> <a href="#">{{ tag.tags }}</a> </small> <!-- ng -->	
+									<small data-ng-repeat="tag in  postinfo.tags"> <a href="#" class="comm-post-tags">{{ tag.tags }}</a> </small> <!-- ng -->	
 								</div>
 								<div class="clearfix">
-									{{ postinfo.note }}
+									<span class="comm-post-notes">{{ postinfo.note }}</span>
 								</div>
 							</span>
 						</div>
@@ -39,7 +39,9 @@
 						<div class="col-md-12">
 							<div class="comm-avt pull-left">&nbsp;</div>
 							<span class="pull-left">&nbsp;&nbsp;&nbsp;</span>
-							<span class="comm-desc pull-left">{{ comments.note }}</span>
+							<div class="comm-desc pull-left">
+								<span class="comm-post-notes">{{ comments.note }}</span>
+							</div>
 						</div>
 					</li>
 				</ul>

@@ -34,10 +34,10 @@
 					</span>
 					<span class="comm-desc pull-left">
 						<div class="clearfix">
-							<small data-ng-repeat="tag in  postinfo.tags"> <a href="#">{{ tag.tags }}</a> </small> <!-- ng -->	
+							<small data-ng-repeat="tag in  postinfo.tags"> <a href="#" class="comm-post-tags">{{ tag.tags }}</a> </small> <!-- ng -->	
 						</div>
 						<div class="clearfix">
-							{{ postinfo.note }}
+							<span class="comm-post-notes">{{ postinfo.notelimit }}</span>
 							<a data-ui-sref="posts.comments({id:{{ postinfo.id }}})" class="comm-comnt comm-open-modal-comments"><small>{{ postinfo.comments }} comments</small></a>
 						</div>
 					</span>

@@ -14,6 +14,9 @@ def CountComments(id):
 def CountVotes(id):
     count = CommPostsVotes.objects.filter(posts_id=id)
     return len(count)
+
+def LimitNotes(s, l=270):
+    return s if len(s)<=l else s[0:l-3] + ' ...'
     
 #! get posts
 def TplPosts(Posts):
@@ -24,6 +27,7 @@ def TplPosts(Posts):
                 'id' : post.id,
                 'account' : post.accounts.username,
                 'note' : post.note,
+                'notelimit' : LimitNotes(post.note),
                 'heroes' : post.heroes,
                 'pic' : TplPictures(post.heroes),
                 'tags' : TplTags(post.tags),

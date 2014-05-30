@@ -127,6 +127,8 @@ ul.comm-clist-wrapp li {
 	margin: 0 auto;
 	overflow: hidden;
 }
+.comm-post-tags { font-size: .98em; }
+.comm-post-notes { font-size: .95em; line-height: 17px; }
 
 /* #! modal side */
 .comm-modal-wrpp hr {
