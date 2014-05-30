@@ -21,42 +21,34 @@ class ProcPostsTemplate(object):
         self.PagesCount = int(math.ceil( self.PostsCount / float(self.Limits)))
         
         if not self.Pages > self.PagesCount:
-            if self.Pages == 1:
-                self.Start = self.Pages - 1
-                self.End = self.Pages - 1 + self.Limits
-            else:
-                self.Start = self.Pages - 1 + self.Limits - 1
-                self.End = self.Start + self.Limits
-            
+            self.Start = (self.Pages * self.Limits) - self.Limits
+            self.End = self.Pages * self.Limits
             return [self.Start, self.End]
-            
         else:
             return False
-    
+        
     #! template
     def _GetTemplate(self):
+        List = []
+        ListDate = []
+        DictData = []
         PageConfig = self._GetPaging()
         if PageConfig:
             PageStart = PageConfig[0]
             PageEnd = PageConfig[1]
             self.Posts = self.Posts.order_by('-id')[PageStart: PageEnd]
+            
+            for sort in self.Posts:
+                PostsByDate = CommPosts.objects.filter(date=sort['date']).order_by('-id')
+                #! arrange list by date
+                List.append({
+                          'date' : sort['date'].strftime('%A, %b %d'),
+                          'posts' : TplPosts(PostsByDate) #! tpl helper
+                })
+           
+            return List
         else:
-            self.Posts
-        
-    
-        List = []
-        ListDate = []
-        DictData = []
-        for sort in self.Posts:
-            PostsByDate = CommPosts.objects.filter(date=sort['date']).order_by('-id')
-
-            #! arrange list by date
-            List.append({
-                      'date' : sort['date'].strftime('%A, %b %d'),
-                      'posts' : TplPosts(PostsByDate) #! tpl helper
-            })
-       
-        return List
+            return []
         
 class ProcPosts(ProcPostsTemplate):
 

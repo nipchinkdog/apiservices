@@ -4,5 +4,5 @@ from django.conf.urls import url
 
 urlpatterns = patterns('',
     url(r'', include('apps.service._comm._urls._posts')),
-    #url(r'comments/', include('apps.service._comm._urls._comments')),
+    url(r'', include('apps.service._comm._urls._comments')),
 )

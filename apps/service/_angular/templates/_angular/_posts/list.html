@@ -19,8 +19,8 @@
 			<li class="clearfix row" data-ng-repeat="postinfo in postdate.posts"> <!-- ng -->
 				<div class="col-md-1 comm-prtr">
 					<div class="pull-left comm-rate">
-						<a href="#" class="glyphicon glyphicon-chevron-up"></a>
-						<span>120</span>
+						<a data-dir-upvote data-ng-click="loadApiVote(postinfo.id)" class="glyphicon glyphicon-chevron-up"></a> <!-- ng - directive -->
+						<span>{{ postinfo.votes }}</span>
 					</div>
 					<div class="comm-avt pull-left">&nbsp;</div>
 				</div>
@@ -34,11 +34,11 @@
 					</span>
 					<span class="comm-desc pull-left">
 						<div class="clearfix">
-							<small data-ng-repeat="tag in  postinfo.tags"> {{ tag.tags }} </small> <!-- ng -->	
+							<small data-ng-repeat="tag in  postinfo.tags"> <a href="#">{{ tag.tags }}</a> </small> <!-- ng -->	
 						</div>
 						<div class="clearfix">
 							{{ postinfo.note }}
-							<a ui-sref="posts.comments({id:{{ postinfo.id }}})" class="comm-comnt comm-open-modal-comments"><small>7 comments</small></a>
+							<a data-ui-sref="posts.comments({id:{{ postinfo.id }}})" class="comm-comnt comm-open-modal-comments"><small>{{ postinfo.comments }} comments</small></a>
 						</div>
 					</span>
 				</div>
@@ -47,7 +47,9 @@
 		</ul>
 	</div>
 	
-	<button class="btn btn-sm btn-primary" ng-show="loadhasMore()" ng-click="loadApiPostsCtrl()">
-		SHOW MORE
+	<br/><br/>
+	<button class="btn btn-sm btn-primary" data-ng-show="loadhasMore()" data-ng-click="loadApiPostsCtrl()">
+		show more
 	</button>
+
 	{% endverbatim %}

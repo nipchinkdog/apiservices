@@ -17,8 +17,13 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
 
+    #! angular templates
+    url(r'^angular/', include('apps.service._angular.urls._main')),
+    
+    #! api                   
     url(r'^api/', include('apps.service._api._d2._urls._heroes._main')),
-    url(r'^api/', include('apps.service._api._comm._urls._posts._main')),
+    url(r'^api/comm/', include('apps.service._api._comm._urls._posts._main')),
+    url(r'^api/comm/', include('apps.service._api._comm._urls._comments._main')),
     
     #! doc
     url(r'^doc/', include('apps.service._urls._doc._d2._main')),

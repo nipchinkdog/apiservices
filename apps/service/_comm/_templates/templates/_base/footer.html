@@ -8,149 +8,21 @@
 <!-- Plugins -->
 <script src="{% static "service/libraries/plugins/jquery.lazyload.min.js"%} "></script>
 
+<!-- Heroes Framework -->
+<link href="{% static "service/media/_src/_d2/heroes-css-framework.css" %}" rel="stylesheet">
+
 <script src="{% static "service/libraries/angularjs/angular.js" %}"></script>
 <script src="{% static "service/libraries/angularjs/angular-route.js" %}"></script>
 <script src="{% static "service/libraries/angularjs/angular-ui-router.min.js" %}"></script>
-
-
-<!-- heroes css -->
-<link href="{% static "service/media/_src/_d2/heroes-css-framework.css" %}" rel="stylesheet">
+	<!-- Angular Codes -->
+	<script src="{% static "service/static/ng/ng-Modules.js" %}"></script>
+	<script src="{% static "service/static/ng/ng-Routes.js" %}"></script>
+	<script src="{% static "service/static/ng/ng-Factories.js" %}"></script>
+	<script src="{% static "service/static/ng/ng-Posts.js" %}"></script>
+	<script src="{% static "service/static/ng/ng-Comments.js" %}"></script>
 
 
 <script>
-"use strict";
-var demoApp = angular.module('demoApp', ['ui.router']);
-
-
-//#! factory
-//#! Posts
-demoApp.factory('ApiFactory', function($http) {
-	return {
-        get: function(url) {
-			return $http.get(url).then(function (response) {
-			     if (response.data.error) {
-			         return null;
-			     } else {
-			         //console.log(response.data);
-			         return response.data;
-			     }
-			});
-        }
-    };
-});
-//#! Comments
-
-//#! config route
-demoApp.config(function($stateProvider, $urlRouterProvider) {
-	$urlRouterProvider.otherwise("/posts");
-	$stateProvider
-		.state('posts', {
-			url : '/posts',
-			views : {
-				'viewPosts' : {
-					templateUrl: '/angular/tpl/posts/',
-					controller: 'ApiPostsController'
-				}
-			}
-		})
-		.state('posts.comments', {
-			url : '/:id',
-			views : {
-				'viewComments' : {
-					templateUrl: '/angular/tpl/comments/',
-					controller: 'ApiCommentsController'
-				}
-			}
-		});
-
-		
-});
- 
-//#! controller
-demoApp.controller('ApiPostsController', function($scope, $state, ApiFactory){	
-
-	$scope.loadFetchData = function(){
-		var url = '/api/posts/showByLimit/' + $scope.page + '/' + $scope.limit;
-		ApiFactory.get(url).then(function(data) {
-			$scope.more = data.length === $scope.limit;
-	        $scope.posts = $scope.posts.concat(data);
-	    });
-    };
-    	
-	$scope.loadApiPostsCtrl = function(){
-		$scope.page += 1;
-		$scope.loadFetchData();
-	};
-
-	$scope.loadhasMore = function() {
-        return $scope.more;
-	};
-
-	//# init
-	$scope.page = 1;
-	$scope.limit = 2;
-	$scope.more = true;
-	$scope.posts = [];
-	$scope.loadFetchData();
-	console.log('posts');
-	
-});
-
-
-demoApp.controller('ApiCommentsController', function($scope, $state, $stateParams, ApiFactory){		
-	
-	$scope.loadFetchData = function(){
-		var id = $stateParams.id;
-		var url = '/api/comments/showById/'+ id;
-		ApiFactory.get(url).then(function(data) {
-	        $scope.postscomments = $scope.postscomments.concat(data);
-	    });
-    };
-
-	
-	$scope.loadApiCommentsCtrl = function(){
-		$('.comm-modal-wrpp-comments').show();	
-		$('.comm-side-modal-wrpp-close').on('click', function(){
-			$('.comm-modal-wrpp').hide();
-			$('.comm-modal-wrpp-comments').hide();	
-		});
- 	};
-	
-	//# init
-	$scope.postscomments = [];
-	$scope.loadApiCommentsCtrl();
-	$scope.loadFetchData();
- 	console.log('comments');
- 	
-	
-});
-
-
-/** Ajax Spinner **/
-angular.module('services.SharedServices', []).config(function ($httpProvider) {
-    $httpProvider.responseInterceptors.push('myHttpInterceptor');
-    var spinnerFunction = function (data, headersGetter) {
-        $("#loading").show();
-        return data;
-    };
-    $httpProvider.defaults.transformRequest.push(spinnerFunction);
-}).factory('myHttpInterceptor', function ($q, $window) {
-    return function (promise) {
-        return promise.then(function (response) {
-            $("#loading").hide();
-            return response;
-        }, function (response) {
-            $("#loading").hide();
-            return $q.reject(response);
-        });
-    };
-});
-/** Ajax Spinner **/ 
-
-</script>
-
-<script>
-
 	//#! post image lazy
 	$('.comm-posts-img-lazy').lazyload({
 	    effect : "fadeIn",
@@ -261,6 +133,4 @@ angular.module('services.SharedServices', []).config(function ($httpProvider) {
 	$( "#comm-posts-form-submit-btn" ).click(function() {
 	  $( "#comm-posts-form" ).submit();
 	});		
-
-
 </script>

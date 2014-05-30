@@ -53,10 +53,10 @@
 					  	{% csrf_token %}
 						
 						<!-- pick types -->
-						<input class=" comm-lane-checkboxes comm-lane-checkboxes-default" checked="checked"  type="checkbox" id="lane-5" name="lanes" value="Combo">
-						<input class=" comm-lane-checkboxes"  type="checkbox" id="lane-3" name="lanes" value="Trilane">
-						<input class=" comm-lane-checkboxes"  type="checkbox" id="lane-2" name="lanes" value="Duallane">
-						<input class=" comm-lane-checkboxes"  type="checkbox" id="lane-1" name="lanes" value="Offlane">
+						<input class="comm-hide-me comm-lane-checkboxes comm-lane-checkboxes-default" checked="checked"  type="checkbox" id="lane-5" name="lanes" value="Combo">
+						<input class="comm-hide-me comm-lane-checkboxes"  type="checkbox" id="lane-3" name="lanes" value="Trilane">
+						<input class="comm-hide-me comm-lane-checkboxes"  type="checkbox" id="lane-2" name="lanes" value="Duallane">
+						<input class="comm-hide-me comm-lane-checkboxes"  type="checkbox" id="lane-1" name="lanes" value="Offlane">
 						
 						<!-- heroes -->
 						{% for h in hall %}

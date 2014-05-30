@@ -8,5 +8,5 @@ from apps.service._comm._modules._posts._Posts_List import *
 
 urlpatterns = patterns('',
     url(r'^$', PostsList.as_view(), name='comm_posts_list'),
-    url(r'^add/$', PostsAdd.as_view(), name='comm_posts_add'),
+    url(r'^do/posts/$', PostsAdd.as_view(), name='comm_posts_add'),
 )

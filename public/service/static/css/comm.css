@@ -64,7 +64,7 @@ a:focus {
 }
 ul.comm-clist-wrapp {  
 	margin: 0 0 0 20px;
-	padding: 20px 0;
+	padding: 10px 0;
 }
 ul.comm-clist-wrapp li {
 	list-style: none;
@@ -90,6 +90,7 @@ ul.comm-clist-wrapp li {
 
 .comm-select-wrapp {  }
 .comm-select-wrapp .form-control { font: 1.1em 'RobotoRegular'; padding: 20px 10px; border-radius: 0; }
+.comm-select-wrapp textarea.form-control { padding: 10px 10px; }
 .comm-select-wrapp h1 {
 	color: #888;
 	font: .85em 'RobotoCondensed';
@@ -106,15 +107,15 @@ ul.comm-clist-wrapp li {
 
 
 /* #! etc */
-.comm-prtr {  }
+.comm-prtr { padding: 0 10px 0 0;  }
 .comm-rate { padding: 0 0; margin: 0 10px; font-size: 1.3em; text-align: center; }
-.comm-rate a { color: #ccc; display: block; margin: 0 auto; font-size: .95em; padding: 5px 0; }
+.comm-rate a { color: #ccc; cursor: pointer; display: block; margin: 0 auto; font-size: .95em; padding: 5px 0; }
 .comm-rate a:hover { text-decoration: none; }
-.comm-rate span { font-size: .7em; }
+.comm-rate span { font-size: .57em; }
 
 .comm-prtr img { float: left; padding: 0; margin: 0; }
 .comm-lessmore { color: #95a5a6; padding: 10px 0; margin: 0 10px; font-size: 1.6em; }
-.comm-desc { padding: 10px 0 10px 10px; font: 1em 'RobotoRegular'; }
+.comm-desc { padding: 10px 0 10px 0; font: 1em 'RobotoRegular'; }
 .comm-comnt { padding: 10px 0 10px 10px; color: #ccc; font: 1em 'RobotoRegular'; }
 .comm-comnt:hover { color: #ddd; text-decoration: none; }
 .comm-avt {
@@ -124,6 +125,7 @@ ul.comm-clist-wrapp li {
 	width: 40px;
 	height: 40px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 /* #! modal side */
@@ -167,7 +169,7 @@ ul.comm-clist-wrapp li {
 	overflow: scroll;
 	right: 0;
 	top: 0;
-	width: 60%;
+	width: 65%;
 	height: 100%;
 	z-index: 100;
 }

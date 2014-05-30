@@ -10,6 +10,6 @@ class CommComments(models.Model):
     accounts = models.ForeignKey(CommAccounts, null=True, blank=True)
     posts = models.ForeignKey(CommPosts, null=True, blank=True)
     note = models.CharField(max_length=120L, blank=True)
-    date = models.DateTimeField(null=True, blank=True)
+    date = models.DateTimeField(null=True, blank=True, auto_now=True)
     class Meta:
         db_table = 'comm_comments'
