@@ -101,6 +101,7 @@
 	});
 
 	//#! hero selection
+	$('#comm-posts-form-submit-btn').hide();
 	$('.comm-prtr-selection-btn').on('click', function(){
 		//#! check if selected
 		var clss =  'comm-prtr-selected';
@@ -114,6 +115,7 @@
 			$(json.target).prop('checked', false);
 			limit.val( parseInt(limit.val()) + 1);
 			$('.comm-pick-remain').html(limit.val());
+			$('#comm-posts-form-submit-btn').hide();
 		}else{
 			//#! check if zero
 			if (limitValue > 0) {
@@ -121,6 +123,8 @@
 				$(json.target).prop('checked', true);
 				limit.val(limit.val() - 1);
 				$('.comm-pick-remain').html(limit.val());	
+			}else{
+				$('#comm-posts-form-submit-btn').show();
 			}
 		}
 		
