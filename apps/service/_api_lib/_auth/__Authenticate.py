@@ -36,12 +36,14 @@ class Authenticate(models.Model):
             SessionData['avatar'] = SteamDataResponse['steamavatar']
             SessionData['userid'] = objUser.id
             SessionData['username'] = objUser.username
+            SessionData['ifauth'] = True
             return SessionData
         else:
             SessionData['steamid'] = 0
             SessionData['avatar'] = ROOT_URL + '/static/service/media/_src/_d2/anony.png'
             SessionData['userid'] = 2
             SessionData['username'] = 'Anonymous'
+            SessionData['ifauth'] = False
             return SessionData
         
         

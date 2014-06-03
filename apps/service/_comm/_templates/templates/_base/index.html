@@ -12,7 +12,7 @@
 				<button class="btn btn-primary btn-sm navbar-btn comm-open-modal-share pull-left"><b>SHARE A HERO PICK STRATEGY</b></button>
 				
 				<div class="pull-right">
-				{% if AuthData %}
+				{% if AuthData.ifauth %}
 					<p class="navbar-text navbar-right">
 					 	<small> I said good day, sir! <b>{{ AuthData.username }}</b></small> 
 					</p>
