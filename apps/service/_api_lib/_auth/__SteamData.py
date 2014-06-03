@@ -37,5 +37,3 @@ class SteamData(models.Model):
                 player = player['response']['players'][0]
                 avatar = player.get('avatarmedium')
                 return avatar
-            else:
-                return 'http://localhost:8000/static/service/media/_src/_d2/anony.png'

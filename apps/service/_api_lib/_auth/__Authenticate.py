@@ -1,5 +1,6 @@
 #! Imports
 from apps.service._imports.Sessions_init import *
+from apps.service._imports.Settings_init import *
 
 #! lib: auth
 from apps.service._api_lib._auth.__SteamData import *
@@ -38,7 +39,7 @@ class Authenticate(models.Model):
             return SessionData
         else:
             SessionData['steamid'] = 0
-            SessionData['avatar'] = 'http://localhost:8000/static/service/media/_src/_d2/anony.png'
+            SessionData['avatar'] = ROOT_URL + '/static/service/media/_src/_d2/anony.png'
             SessionData['userid'] = 2
             SessionData['username'] = 'Anonymous'
             return SessionData
