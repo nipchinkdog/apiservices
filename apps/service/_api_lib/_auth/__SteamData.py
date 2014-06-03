@@ -1,5 +1,6 @@
 #! Imports
 from apps.service._imports.Sessions_init import *
+from apps.service._imports.Settings_init import *
 
 class SteamData(models.Model):
     
@@ -36,4 +37,7 @@ class SteamData(models.Model):
             if len(player['response']['players']) > 0:
                 player = player['response']['players'][0]
                 avatar = player.get('avatarmedium')
+                return avatar
+            else:
+                avatar = ROOT_URL + '/static/service/media/_src/_d2/anony.png'
                 return avatar
