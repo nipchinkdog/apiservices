@@ -1,6 +1,9 @@
 #! get tags
 from apps.service._api_lib._comm._posts._TplTags import *
 
+#! lib: auth
+from apps.service._api_lib._auth.__SteamData import *
+
 #! get pictures
 from apps.service._api_lib._comm._posts._TplPictures import *
 
@@ -22,9 +25,18 @@ def LimitNotes(s, l=270):
 def TplPosts(Posts):
     List = []
     for post in Posts:
+        
+        #! steam data
+        initSteamData = SteamData(post.accounts_id)
+        SteamDataResponse = initSteamData.GetData()
+        stmid = SteamDataResponse['steamid']
+        avatar = SteamDataResponse['steamavatar']
+        
         #! arrange list posts
         List.append({
                 'id' : post.id,
+                'steamid' : stmid,
+                'steamavatar' : avatar,
                 'account' : post.accounts.username,
                 'note' : post.note,
                 'notelimit' : LimitNotes(post.note),

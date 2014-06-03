@@ -148,7 +148,52 @@ INSTALLED_APPS = (
 
     #! Third Parties
     'rest_framework',
+
+    #! Social Auth
+    'social_auth',
+    
 )
+
+
+PASSWORD_HASHERS = (
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+    'django.contrib.auth.hashers.BCryptPasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+    'django.contrib.auth.hashers.SHA1PasswordHasher',
+    'django.contrib.auth.hashers.MD5PasswordHasher',
+    'django.contrib.auth.hashers.CryptPasswordHasher',
+)
+
+
+#! Social Auth Settings *******************************************
+AUTHENTICATION_BACKENDS = (
+    'social_auth.backends.steam.SteamBackend',    
+)
+SOCIAL_AUTH_PIPELINE = (
+    'social_auth.backends.pipeline.social.social_auth_user',
+    'social_auth.backends.pipeline.associate.associate_by_email',
+    'social_auth.backends.pipeline.user.get_username',
+    'social_auth.backends.pipeline.user.create_user',
+    'social_auth.backends.pipeline.social.associate_user',
+    'social_auth.backends.pipeline.user.update_user_details',
+)
+STEAM_API_KEY = '9056E2F3B6787E8A6F4E94A7FF03283A'
+LOGIN_URL          = '/login-form/'
+LOGIN_REDIRECT_URL = '/comm/'
+LOGIN_ERROR_URL    = '/login-error/'
+
+SOCIAL_AUTH_DEFAULT_USERNAME = 'new_social_auth_user'
+SOCIAL_AUTH_UID_LENGTH = 16
+SOCIAL_AUTH_ASSOCIATION_HANDLE_LENGTH = 16
+SOCIAL_AUTH_NONCE_SERVER_URL_LENGTH = 16
+SOCIAL_AUTH_ASSOCIATION_SERVER_URL_LENGTH = 16
+SOCIAL_AUTH_ASSOCIATION_HANDLE_LENGTH = 16
+
+SOCIAL_AUTH_ENABLED_BACKENDS = ('steam')
+
+#! Social Auth Settings *******************************************
+
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to

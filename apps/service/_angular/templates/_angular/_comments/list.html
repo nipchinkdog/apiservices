@@ -10,7 +10,7 @@
 				<ul class="comm-clist-wrapp">
 					<li class="clearfix col-md-12">
 						<h1 class="pull-left">{{ postinfo.date }}</h1> 
-						<div class="comm-avt pull-right">&nbsp;</div>
+						<img class="comm-avt pull-right" title="{{ postinfo.account }}" src="{{ postinfo.steamavatar }}">
 					</li>
 					<li class="clearfix col-md-12">
 						<div class="col-md-12">
@@ -37,7 +37,7 @@
 					<li class="clearfix col-md-12"><h1>{{ postcommentscount }} comments</h1></li>
 					<li class="clearfix" data-ng-repeat="comments in postcomments"> <!-- ng -->
 						<div class="col-md-12">
-							<div class="comm-avt pull-left">&nbsp;</div>
+							<img class="comm-avt pull-left" title="{{ comments.account }}" src="{{ comments.steamavatar }}">
 							<span class="pull-left">&nbsp;&nbsp;&nbsp;</span>
 							<div class="comm-desc pull-left">
 								<span class="comm-post-notes">{{ comments.note }}</span>

@@ -22,7 +22,7 @@
 						<a data-dir-upvote data-ng-click="loadApiVote(postinfo.id)" class="glyphicon glyphicon-chevron-up"></a> <!-- ng - directive -->
 						<span>{{ postinfo.votes }}</span>
 					</div>
-					<div class="comm-avt pull-left">&nbsp;</div>
+					<img class="comm-avt pull-left" title="{{ postinfo.account }}" src="{{ postinfo.steamavatar }}">
 				</div>
 				<div class="col-md-10">
 					<span class="comm-prtr pull-left">

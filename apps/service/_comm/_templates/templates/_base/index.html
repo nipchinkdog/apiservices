@@ -2,19 +2,43 @@
 
 <!DOCTYPE >
 <html data-ng-app="demoApp">
-
+	
 	{% include '_base/header.html' %}
 	
 	<body>
 
 		<header class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
-				<button class="btn btn-primary btn-sm navbar-btn comm-open-modal-share"><b>SHARE A HERO PICK STRATEGY</b></button>
+				<button class="btn btn-primary btn-sm navbar-btn comm-open-modal-share pull-left"><b>SHARE A HERO PICK STRATEGY</b></button>
+				
+				<div class="pull-right">
+				{% if AuthData %}
+					<p class="navbar-text navbar-right">
+						<a href="{% url 'socialauth_begin' 'steam' %}" class="navbar-link">
+							<img src="http://localhost:8000/static/service/media/_src/_d2/sits_small.png" />
+						</a>
+					</p>
+					<p class="navbar-text navbar-right"><small>Hi there mate! You might want to login using your steam account.</small></p>
+				{% else %}
+					<p class="navbar-text navbar-right">Hi there mate!</p>
+					<p class="navbar-text navbar-right">
+						<a href="{% url 'socialauth_begin' 'steam' %}" class="navbar-link">
+							<img src="http://localhost:8000/static/service/media/_src/_d2/sits_small.png" />
+						</a>
+					</p>
+				{% endif %}
+				</div>
+				
 			</div>
 		</header>
 		
 		<!-- #! Container -->
 		<section class="container">
+			
+			{{ social_auth.backends.steam }}
+			{% for name in social_auth.backends.steam %}
+			    {{ name }}
+			{% endfor %}			
 			
 			<!-- #! list -->
 			{% block 'comm_lists' %}

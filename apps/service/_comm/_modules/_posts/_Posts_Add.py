@@ -1,6 +1,9 @@
 from apps.service._imports.Settings_init import * #! variables: ROOT_URL etc
 from apps.service._imports.Views_init import *
 
+#! lib: auth
+from apps.service._api_lib._auth.__Authenticate import *
+
 #! imports
 from apps.service._comm._models.__CommPosts import *
 
@@ -19,9 +22,14 @@ class PostsAdd(View):
             Tags = List_Heroes + ',' + List_Lanes
             
             Posts_Notes = request.POST.get('notes')
+
+            #! authentication data
+            initAuth = Authenticate(request)
+            AuthData = initAuth.GetSessionData()
             
             #! init
-            init_ModelPosts = CommPosts(accounts_id = 1,
+            #! 2 anonymous
+            init_ModelPosts = CommPosts(accounts_id = AuthData['userid'],
                                   type = 1,
                                   tags = Tags,
                                   heroes = List_Heroes, 

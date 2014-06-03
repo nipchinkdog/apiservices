@@ -24,4 +24,7 @@ urlpatterns = patterns('',
     #! comm
     url(r'^comm/', include('apps.service._comm._urls._main')),
     
+    #! social auth
+    url(r'auth', include('social_auth.urls')),
+    
 )
