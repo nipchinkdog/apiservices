@@ -14,18 +14,15 @@
 				<div class="pull-right">
 				{% if AuthData %}
 					<p class="navbar-text navbar-right">
+					 	<small> I said good day, sir! <b>{{ AuthData.username }}</b></small> 
+					</p>
+				{% else %}
+					<p class="navbar-text navbar-right">
 						<a href="{% url 'socialauth_begin' 'steam' %}" class="navbar-link">
-							<img src="http://localhost:8000/static/service/media/_src/_d2/sits_small.png" />
+							<img src="http://apiservice.pythonanywhere.com/static/service/media/_src/_d2/sits_small.png" />
 						</a>
 					</p>
 					<p class="navbar-text navbar-right"><small>Hi there mate! You might want to login using your steam account.</small></p>
-				{% else %}
-					<p class="navbar-text navbar-right">Hi there mate!</p>
-					<p class="navbar-text navbar-right">
-						<a href="{% url 'socialauth_begin' 'steam' %}" class="navbar-link">
-							<img src="http://localhost:8000/static/service/media/_src/_d2/sits_small.png" />
-						</a>
-					</p>
 				{% endif %}
 				</div>
 				
