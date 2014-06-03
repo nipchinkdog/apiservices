@@ -188,14 +188,7 @@ PASSWORD_HASHERS = (
 AUTHENTICATION_BACKENDS = (
     'social_auth.backends.steam.SteamBackend',    
 )
-SOCIAL_AUTH_PIPELINE = (
-    'social_auth.backends.pipeline.social.social_auth_user',
-    'social_auth.backends.pipeline.associate.associate_by_email',
-    'social_auth.backends.pipeline.user.get_username',
-    'social_auth.backends.pipeline.user.create_user',
-    'social_auth.backends.pipeline.social.associate_user',
-    'social_auth.backends.pipeline.user.update_user_details',
-)
+
 STEAM_API_KEY = '9056E2F3B6787E8A6F4E94A7FF03283A'
 LOGIN_URL          = '/login-form/'
 LOGIN_REDIRECT_URL = '/comm/'
