@@ -8,15 +8,15 @@ def TplComments(Comments):
 
         #! steam data
         initSteamData = SteamData(comment.accounts_id)
-        SteamDataResponse = initSteamData.GetData()
-        stmid = SteamDataResponse['steamid']
-        avatar = SteamDataResponse['steamavatar']
+        steamDataResponse = initSteamData.GetData()
+        
         
         #! arrange list posts
         List.append({
                 'id' : comment.id,
-                'steamid' : stmid,
-                'steamavatar' : avatar,
+                'steamid' : steamDataResponse['player']['steamid'],
+                'steamavatar' : steamDataResponse['player']['avatarmedium'],
+                'steamurl' : steamDataResponse['player']['profileurl'],
                 'account' : comment.accounts.username,
                 'note' : comment.note,
                 'date' : comment.date.strftime('%A, %b %d')
