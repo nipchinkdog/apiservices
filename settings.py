@@ -194,12 +194,6 @@ SOCIAL_AUTH_EMAIL_VALIDATION_URL = '/email-sent/'
 SOCIAL_AUTH_USERNAME_FORM_HTML = 'username_signup.html'
 
 AUTHENTICATION_BACKENDS = (
-  'social.backends.open_id.OpenIdAuth',
-  'social.backends.google.GoogleOpenId',
-  'social.backends.google.GoogleOAuth2',
-  'social.backends.google.GoogleOAuth',
-  'social.backends.twitter.TwitterOAuth',
-  'social.backends.yahoo.YahooOpenId',
   'social.backends.steam.SteamOpenId',
   'django.contrib.auth.backends.ModelBackend',
 )
