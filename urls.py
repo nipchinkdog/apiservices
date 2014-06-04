@@ -34,6 +34,9 @@ urlpatterns = patterns('',
 
     #! social auth
     url(r'auth', include('social_auth.urls')),
+
+    #! python social auth
+    url('', include('social.apps.django_app.urls', namespace='social'))    
     
 
 )
