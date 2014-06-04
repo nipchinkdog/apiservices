@@ -15,6 +15,9 @@
 				{% if AuthData.ifauth %}
 					<p class="navbar-text navbar-right">
 					 	<small> I said good day, sir! <b>{{ AuthData.username }}</b></small> 
+					 	<small> | </small>
+					 	<small><a href="{% url 'comm_logout' %}" class="navbar-link">Logout</a></small>
+					 	<small><a href="{% url 'socialauth_disconnect' 'steam' %}" class="navbar-link">Disconnect</a></small>
 					</p>
 				{% else %}
 					<p class="navbar-text navbar-right">

@@ -10,9 +10,15 @@ class SteamData(models.Model):
     
     def GetData(self):
         SteamData = {}
-        SteamData['steamid'] =  self.steamid 
-        SteamData['steamavatar'] = self.GetAvatar();
-        return SteamData
+        if self.steamid == '000':
+            SteamData['steamid'] =  self.steamid 
+            SteamData['steamavatar'] = ROOT_URL + '/static/service/media/_src/_d2/anony.png'
+            return SteamData
+        else:
+            SteamData['steamid'] =  self.steamid 
+            SteamData['steamavatar'] = self.GetAvatar();
+            return SteamData
+            
         
     
     def GetAvatar(self):
@@ -37,7 +43,4 @@ class SteamData(models.Model):
             if len(player['response']['players']) > 0:
                 player = player['response']['players'][0]
                 avatar = player.get('avatarmedium')
-                return avatar
-            else:
-                avatar = ROOT_URL + '/static/service/media/_src/_d2/anony.png'
                 return avatar
