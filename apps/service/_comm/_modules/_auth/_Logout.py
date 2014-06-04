@@ -8,6 +8,6 @@ class Logout(View):
     def get(self, request, *args, **kwargs):
             
         #! authentication data
-        initAuth = Authenticate(request)
-        AuthData = initAuth.DestroySession()
-        HttpResponseRedirect(reverse('comm_posts_list'))
+        initAuthenticate = Authenticate(request)
+        AuthData = initAuthenticate.DestroySession()
+        return HttpResponseRedirect(reverse('comm_posts_list'))

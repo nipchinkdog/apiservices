@@ -8,9 +8,6 @@ from apps.service._api_lib._d2._heroes._HeroesParser import *
 #! lib: posts
 from apps.service._api_lib._comm._posts._ProcPosts import *
 
-
-from social_auth.backends.steam import *
-
 class PostsList(View):
 
     heroes = HeroesParser()
@@ -37,10 +34,9 @@ class PostsList(View):
     _template = '_base/index.html'
     def get(self, request, *args, **kwargs):
         
-        #! authentication data
-        initAuth = Authenticate(request)
-        AuthData = initAuth.GetSessionData()
-        
+        initAuthenticate = Authenticate(request)
+        AuthData = initAuthenticate.GetSession()
+                
         return render_to_response(self._template, 
                                   {
                                    #! session

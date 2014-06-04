@@ -78,7 +78,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     
     #! Third Parties ***************************
     #! Social Auth
-    'social_auth.context_processors.social_auth_by_type_backends',
+    'social.apps.django_app.context_processors.backends',
+    'social.apps.django_app.context_processors.login_redirect',    
 )
 
 
@@ -167,10 +168,10 @@ INSTALLED_APPS = (
     
     #! Rest Framework
     'rest_framework',
+    
+    #! Python Social Auth : Django
+    'social.apps.django_app.default',
 
-    #! Social Auth
-    'social_auth',
-        
 )
 
 PASSWORD_HASHERS = (
@@ -185,23 +186,54 @@ PASSWORD_HASHERS = (
 
 
 #! Social Auth Settings *******************************************
-AUTHENTICATION_BACKENDS = (
-    'social_auth.backends.steam.SteamBackend',    
-)
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+SOCIAL_AUTH_STEAM_API_KEY = '9056E2F3B6787E8A6F4E94A7FF03283A'
+SOCIAL_AUTH_STEAM_EXTRA_DATA = ['player']
 
-STEAM_API_KEY = '9056E2F3B6787E8A6F4E94A7FF03283A'
-LOGIN_URL          = '/login-form/'
+LOGIN_URL = '/comm/'
 LOGIN_REDIRECT_URL = '/comm/'
-LOGIN_ERROR_URL    = '/login-error/'
+URL_PATH = ''
+SOCIAL_AUTH_STRATEGY = 'social.strategies.django_strategy.DjangoStrategy'
+SOCIAL_AUTH_STORAGE = 'social.apps.django_app.default.models.DjangoStorage'
+SOCIAL_AUTH_GOOGLE_OAUTH_SCOPE = [
+'https://www.googleapis.com/auth/drive',
+'https://www.googleapis.com/auth/userinfo.profile'
+]
+# SOCIAL_AUTH_EMAIL_FORM_URL = '/signup-email'
+SOCIAL_AUTH_EMAIL_FORM_HTML = 'email_signup.html'
+SOCIAL_AUTH_EMAIL_VALIDATION_FUNCTION = 'example.app.mail.send_validation'
+SOCIAL_AUTH_EMAIL_VALIDATION_URL = '/email-sent/'
+# SOCIAL_AUTH_USERNAME_FORM_URL = '/signup-username'
+SOCIAL_AUTH_USERNAME_FORM_HTML = 'username_signup.html'
 
-SOCIAL_AUTH_DEFAULT_USERNAME = 'new_social_auth_user'
-SOCIAL_AUTH_UID_LENGTH = 16
-SOCIAL_AUTH_ASSOCIATION_HANDLE_LENGTH = 16
-SOCIAL_AUTH_NONCE_SERVER_URL_LENGTH = 16
-SOCIAL_AUTH_ASSOCIATION_SERVER_URL_LENGTH = 16
-SOCIAL_AUTH_ASSOCIATION_HANDLE_LENGTH = 16
-
-SOCIAL_AUTH_ENABLED_BACKENDS = ('steam')
+AUTHENTICATION_BACKENDS = (
+  'social.backends.open_id.OpenIdAuth',
+  'social.backends.google.GoogleOpenId',
+  'social.backends.google.GoogleOAuth2',
+  'social.backends.google.GoogleOAuth',
+  'social.backends.twitter.TwitterOAuth',
+  'social.backends.yahoo.YahooOpenId',
+  'social.backends.steam.SteamOpenId',
+  'django.contrib.auth.backends.ModelBackend',
+)
+SOCIAL_AUTH_PIPELINE = (
+    'social.pipeline.social_auth.social_details',
+    'social.pipeline.social_auth.social_uid',
+    'social.pipeline.social_auth.auth_allowed',
+    'social.pipeline.social_auth.social_user',
+    'social.pipeline.user.get_username',
+    'social.pipeline.mail.mail_validation',
+    'social.pipeline.user.create_user',
+    'social.pipeline.social_auth.associate_user',
+    'social.pipeline.social_auth.load_extra_data',
+    'social.pipeline.user.user_details'
+)
+SOCIAL_AUTH_DISCONNECT_PIPELINE = (
+    'social.pipeline.disconnect.allowed_to_disconnect',
+    'social.pipeline.disconnect.get_entries',
+    'social.pipeline.disconnect.revoke_tokens',
+    'social.pipeline.disconnect.disconnect'
+)
 
 #! Social Auth Settings *******************************************
 

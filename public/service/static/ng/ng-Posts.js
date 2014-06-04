@@ -18,7 +18,10 @@ demoApp.controller('ApiPostsController', function($scope, $state, ApiGetFactory,
         return $scope.more;
 	};
 	
-	$scope.loadApiVote = function(id){
+	$scope.loadApiVote = function(id, e){
+		
+		alert($(e).attr('class'));
+		
 		var url = '/api/comm/votes/writeVotes/' + id + '/';
 		ApiGetFactory.get(url).then(function(data) {
 	    });
@@ -26,7 +29,7 @@ demoApp.controller('ApiPostsController', function($scope, $state, ApiGetFactory,
 
 	//# init
 	$scope.page = 1;
-	$scope.limit = 2;
+	$scope.limit = 5;
 	$scope.more = true;
 	$scope.posts = [];
 	$scope.loadFetchData();

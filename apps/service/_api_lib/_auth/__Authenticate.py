@@ -15,39 +15,14 @@ class Authenticate(models.Model):
 
     def GetSession(self):
         sessionKey = self.request.session.session_key
-        if sessionKey:
-            return sessionKey
-        else:
-            return False
-    
-    def GetSessionData(self):
-        SessionData = {}
-        if self.GetSession():
-            sessionKey = self.GetSession()
+        objSessionExists = Session.objects.filter(session_key=sessionKey).exists()
+        if objSessionExists:
             objSession = Session.objects.get(session_key=sessionKey)
-            uid = objSession.get_decoded().get('_auth_user_id')
-            objUserExists = User.objects.filter(pk=uid).exists()
-            
-            if objUserExists:
-                objUser = User.objects.get(pk=uid)
-                #! steam data
-                initSteamData = SteamData(objUser.id)
-                SteamDataResponse = initSteamData.GetData()
-                SessionData['steamid'] = SteamDataResponse['steamid']
-                SessionData['avatar'] = SteamDataResponse['steamavatar']
-                SessionData['userid'] = objUser.id
-                SessionData['username'] = objUser.username
-                SessionData['ifauth'] = True
-                return SessionData
-            
-            
-            
+            userId = objSession.get_decoded().get('_auth_user_id')
+            initSteamData = SteamData(userId)
+            return initSteamData.GetData()
         else:
-            SessionData['steamid'] = 0
-            SessionData['avatar'] = ROOT_URL + '/static/service/media/_src/_d2/anony.png'
-            SessionData['userid'] = 2
-            SessionData['username'] = 'Anonymous'
-            SessionData['ifauth'] = False
-            return SessionData
-        
-        
+            initSteamData = SteamData(2)
+            return initSteamData.GetData()
+            
+            

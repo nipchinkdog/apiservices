@@ -9,36 +9,32 @@
 
 		<header class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
-				<button class="btn btn-primary btn-sm navbar-btn comm-open-modal-share pull-left"><b>SHARE A HERO PICK STRATEGY</b></button>
 				
-				<div class="pull-right">
-				{% if AuthData.ifauth %}
+				<button class="btn btn-primary btn-sm navbar-btn comm-open-modal-share pull-left"><b>SHARE</b></button>
+				<button class="btn btn-primary btn-sm navbar-btn comm-open-modal-share pull-left"><b>ASK</b></button>
+
+				{% if AuthData.player.steamid == '0' %} <!-- if anonymous -->
 					<p class="navbar-text navbar-right">
-					 	<small> I said good day, sir! <b>{{ AuthData.username }}</b></small> 
-					 	<small> | </small>
-					 	<small><a href="{% url 'comm_logout' %}" class="navbar-link">Logout</a></small>
-					 	<small><a href="{% url 'socialauth_disconnect' 'steam' %}" class="navbar-link">Disconnect</a></small>
+						<a href="{% url 'social:begin' 'steam' %}" class="navbar-link">
+							<img src="{% static "service/media/_src/_d2/sits_small.png"%}" />
+						</a>
 					</p>
 				{% else %}
 					<p class="navbar-text navbar-right">
-						<a href="{% url 'socialauth_begin' 'steam' %}" class="navbar-link">
-							<img src="http://apiservice.pythonanywhere.com/static/service/media/_src/_d2/sits_small.png" />
-						</a>
+						<small>Hi!</small>
+						<small><b>{{ AuthData.player.personaname }}</b></small>
+						<small>|</small>
+						<small>
+							<a href="{% url 'comm_logout' %}">Logout</a>
+						</small>
 					</p>
-					<p class="navbar-text navbar-right"><small>Hi there mate! You might want to login using your steam account.</small></p>
 				{% endif %}
-				</div>
 				
 			</div>
 		</header>
 		
 		<!-- #! Container -->
 		<section class="container">
-			
-			{{ social_auth.backends.steam }}
-			{% for name in social_auth.backends.steam %}
-			    {{ name }}
-			{% endfor %}			
 			
 			<!-- #! list -->
 			{% block 'comm_lists' %}
@@ -47,9 +43,7 @@
 			<!-- #! Modal Post -->
 			<section class="comm-modal-wrpp comm-hide-me">
 				<div class="comm-side-modal-wrpp-close">&nbsp;</div>
-				<div class="comm-side-modal-wrpp">
-					{% include '_inner/post.html' %}
-				</div>
+				<div class="comm-side-modal-wrpp">{% include '_inner/post.html' %}</div>
 			</section>
 
 			<!-- Angular Placeholder -->

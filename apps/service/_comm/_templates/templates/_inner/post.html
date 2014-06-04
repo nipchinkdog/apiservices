@@ -46,6 +46,9 @@
 					<form id="comm-posts-form" role="form" action="{% url 'comm_posts_add' %}" method="post">
 					  	{% csrf_token %}
 						
+						<!-- share types -->
+						<input class="comm-hide-me comm-lane-checkboxes comm-lane-checkboxes-default" checked="checked"  type="checkbox" id="lane-5" name="lanes" value="Combo">
+						
 						<!-- pick types -->
 						<input class="comm-hide-me comm-lane-checkboxes comm-lane-checkboxes-default" checked="checked"  type="checkbox" id="lane-5" name="lanes" value="Combo">
 						<input class="comm-hide-me comm-lane-checkboxes"  type="checkbox" id="lane-3" name="lanes" value="Trilane">
