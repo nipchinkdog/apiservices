@@ -12,8 +12,8 @@ class VotesPost(APIView):
     def get(self, request, format=None, *args, **kwargs):
 
         #! authentication data
-        initAuth = Authenticate(request)
-        AuthData = initAuth.GetSessionData()
+        initAuthenticate = Authenticate(request)
+        AuthData = initAuthenticate.GetSession()
 
         data = {}
         #! 2 anonymous

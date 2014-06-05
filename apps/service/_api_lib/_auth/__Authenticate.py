@@ -12,7 +12,7 @@ class Authenticate(models.Model):
     
     def DestroySession(self):
         return logout(self.request)         
-
+    
     def GetSession(self):
         sessionKey = self.request.session.session_key
         objSessionExists = Session.objects.filter(session_key=sessionKey).exists()

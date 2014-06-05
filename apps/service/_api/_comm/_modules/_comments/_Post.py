@@ -12,8 +12,8 @@ class CommentsPost(APIView):
     def post(self, request, format=None, *args, **kwargs):
 
         #! authentication data
-        initAuth = Authenticate(request)
-        AuthData = initAuth.GetSessionData()
+        initAuthenticate = Authenticate(request)
+        AuthData = initAuthenticate.GetSession()
 
         data = JSONParser().parse(request)
         #! 2 anonymous

@@ -13,10 +13,12 @@ class SteamData(models.Model):
         if objSocialExists:
             steamData  = CommSocialAuthUser.objects.get(user_id=self.uid)
             extraData = simplejson.loads(steamData.extra_data)
+            extraData['userid'] = self.uid
             return extraData
         else:
-            steamData  = CommSocialAuthUser.objects.get(user_id=2)
+            steamData  = CommSocialAuthUser.objects.get(user_id=self.uid)
             extraData = simplejson.loads(steamData.extra_data)
+            extraData['userid'] = self.uid
             return extraData
             
 

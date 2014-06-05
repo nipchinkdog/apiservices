@@ -24,8 +24,8 @@ class PostsAdd(View):
             Posts_Notes = request.POST.get('notes')
 
             #! authentication data
-            initAuth = Authenticate(request)
-            AuthData = initAuth.GetSessionData()
+            initAuthenticate = Authenticate(request)
+            AuthData = initAuthenticate.GetSession()
             
             #! init
             #! 2 anonymous
