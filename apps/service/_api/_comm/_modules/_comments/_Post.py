@@ -22,7 +22,7 @@ class CommentsPost(APIView):
         if serializer.is_valid():
             serializer.save()
             serresponse = serializer.data
-            serresponse['steamid'] = AuthData['steamid']
-            serresponse['steamavatar'] = AuthData['avatar']
+            serresponse['steamid'] = AuthData['player']['steamid']
+            serresponse['steamavatar'] = AuthData['player']['avatar']
             return Response(serresponse)
         return Response(serializer.errors) 
