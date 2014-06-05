@@ -10,10 +10,11 @@ from apps.service._comm._models.__CommPosts import *
 
 class ProcPostsTemplate(object):
     
-    def __init__(self, Posts, Pages=False, Limits=False):
+    def __init__(self, Posts, Pages=False, Limits=False, SessionId=False):
         self.Posts = Posts
         self.Pages = Pages
         self.Limits = Limits
+        self.SessionId = SessionId
         self._GetPaging()
 
     def _GetPaging(self):
@@ -43,7 +44,7 @@ class ProcPostsTemplate(object):
                 #! arrange list by date
                 List.append({
                           'date' : sort['date'].strftime('%A, %b %d'),
-                          'posts' : TplPosts(PostsByDate) #! tpl helper
+                          'posts' : TplPosts(PostsByDate, self.SessionId) #! tpl helper
                 })
            
             return List
@@ -59,6 +60,6 @@ class ProcPosts(ProcPostsTemplate):
         sortPostsDate = CommPosts.objects.values('date').annotate(count=Count('id')).order_by('-id')
         super(ProcPosts,self).__init__(sortPostsDate)         
 
-    def sortByDatePaginated(self, Pages, Limits):
+    def sortByDatePaginated(self, Pages, Limits, SessionId=False):
         sortPostsDate = CommPosts.objects.values('date').annotate(count=Count('id')).order_by('-id')
-        super(ProcPosts,self).__init__(sortPostsDate, Pages, Limits)         
+        super(ProcPosts,self).__init__(sortPostsDate, Pages, Limits, SessionId)         

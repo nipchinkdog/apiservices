@@ -16,9 +16,9 @@ class SteamData(models.Model):
             extraData['userid'] = self.uid
             return extraData
         else:
-            steamData  = CommSocialAuthUser.objects.get(user_id=self.uid)
+            steamData  = CommSocialAuthUser.objects.get(user_id=2)
             extraData = simplejson.loads(steamData.extra_data)
-            extraData['userid'] = self.uid
+            extraData['userid'] = 2
             return extraData
             
 

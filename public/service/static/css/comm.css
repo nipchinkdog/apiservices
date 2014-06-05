@@ -175,12 +175,27 @@ ul.comm-clist-wrapp li {
 	height: 100%;
 	z-index: 100;
 }
+.comm-side-promts-modal-wrpp { 
+	background: #fff;
+	border-left: 1px solid #ddd;
+	padding: 10px 20px;
+	position: fixed; 
+	overflow: scroll;
+	right: 0;
+	top: 0;
+	width: 65%;
+	height: 100%;
+	z-index: 100;
+}
 .comm-modal-wrpp-comments .comm-content-wrapp hr {
 	margin: 5px;
 }
 .comm-modal-wrpp-comments .comm-content-wrapp ul.comm-clist-wrapp {
 	margin: 0 10px;
 }
+
+/* votes */
+.comm-voted { color: #E25041 !important; }
 
 /* hidden */
 .comm-hide-me { display: none; }

@@ -10,19 +10,28 @@ from apps.service._api_lib._comm._posts._TplPictures import *
 from apps.service._comm._models.__CommPostsVotes import *
 from apps.service._comm._models.__CommComments import *
 
-def CountComments(id):
-    count = CommComments.objects.filter(posts_id=id)
+def CountComments(postsId):
+    count = CommComments.objects.filter(posts_id=postsId)
     return len(count)
 
-def CountVotes(id):
-    count = CommPostsVotes.objects.filter(posts_id=id)
+def CountVotes(postsId):
+    count = CommPostsVotes.objects.filter(posts_id=postsId)
     return len(count)
 
 def LimitNotes(s, l=270):
     return s if len(s)<=l else s[0:l-3] + ' ...'
+
+def CountVotesSessionId(postsId, accountsId):
+    if accountsId == 2: #! anonymous session
+        return ''
+    objVotes = CommPostsVotes.objects.filter(posts_id=postsId, accounts_id=accountsId).exists()
+    if objVotes:
+        return 'comm-voted'
+    else:
+        return ''
     
 #! get posts
-def TplPosts(Posts):
+def TplPosts(Posts, SessionId=False):
     List = []
     for post in Posts:
         
@@ -44,7 +53,8 @@ def TplPosts(Posts):
                 'tags' : TplTags(post.tags),
                 'date' : post.date.strftime('%A, %b %d'),
                 'comments' : CountComments(post.id),
-                'votes' : CountVotes(post.id)
+                'votes' : CountVotes(post.id),
+                'votessession' : CountVotesSessionId(post.id, SessionId)
         })
     return List
 

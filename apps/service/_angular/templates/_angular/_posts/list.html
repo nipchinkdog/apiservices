@@ -19,13 +19,8 @@
 			<li class="clearfix row" data-ng-repeat="postinfo in postdate.posts"> <!-- ng -->
 				<div class="col-md-1 comm-prtr">
 					<div class="pull-left comm-rate">
-						<div ng-if="postinfo.steamid != '000'"> <!-- ng if anonymous -->
-							<a data-dir-upvote data-ng-click="loadApiVote(postinfo.id, $event)" class="glyphicon glyphicon-chevron-up"></a> <!-- ng - directive -->
-							<span>{{ postinfo.votes }}</span>
-						</div>
-						<div ng-if="postinfo.steamid == '000'"> <!-- ng if not anonymous -->
-							login
-						</div>							
+						<a data-dir-upvote="{{ postinfo.id }}"  class="glyphicon glyphicon-chevron-up comm-votes {{ postinfo.votessession }} "></a> <!-- ng - directive -->
+						<span>{{ postinfo.votes }}</span>
 					</div>
 					
 					<img class="comm-avt pull-left" title="{{ postinfo.account }}" src="{{ postinfo.steamavatar }}">

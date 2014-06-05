@@ -5,7 +5,7 @@
 	
 	{% include '_base/header.html' %}
 	
-	<body>
+	<body id="comm-auth-verification" data="{{ AuthData.player.steamid }}">
 
 		<header class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
@@ -44,6 +44,26 @@
 			<section class="comm-modal-wrpp comm-hide-me">
 				<div class="comm-side-modal-wrpp-close">&nbsp;</div>
 				<div class="comm-side-modal-wrpp">{% include '_inner/post.html' %}</div>
+			</section>
+			
+			<!-- #! Modal Promts -->
+			<section class="comm-modal-wrpp-promts comm-hide-me">
+				<a class="comm-side-modal-wrpp-close"></a>
+				<div class="comm-side-promts-modal-wrpp">
+					<div class="row">
+					<div class="comm-content-wrapp"> 
+						<div class="col-md-12">
+							<h1>To upvote please login using your steam account.</h1>
+						</div>
+						<div class="clearfix"><hr/></div>
+						<div class="col-md-12">
+							<a href="{% url 'social:begin' 'steam' %}">
+								<img src="{% static "service/media/_src/_d2/sits_small.png"%}" />
+							</a>
+						</div>
+					</div>
+					</div>
+				</div>
 			</section>
 
 			<!-- Angular Placeholder -->

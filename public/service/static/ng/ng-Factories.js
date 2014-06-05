@@ -17,11 +17,27 @@ demoApp.factory('ApiGetFactory', function($http) {
 //#! Post Factory
 demoApp.factory('ApiPostFactory', function($http) {
 	return {
-        post: function(url, formData) {
+        post: function(url, pdata) {
 			return $http({
 				method : 'POST',
 				url : url,
-				data : formData
+				data : pdata
+			}).success(function(data){
+				return data;
+			}).error(function(data){
+				return data;
+			});
+       }
+    };
+});
+
+//#! Post Factory
+demoApp.factory('ApiDeleteFactory', function($http) {
+	return {
+        remove: function(url) {
+			return $http({
+				method : 'DELETE',
+				url : url,
 			}).success(function(data){
 				return data;
 			}).error(function(data){
