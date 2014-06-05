@@ -6,7 +6,6 @@ demoApp.controller('ApiPostsController', function($scope, $state, ApiGetFactory,
 		ApiGetFactory.get(url).then(function(data) {
 			$scope.more = data.length === $scope.limit;
 	        $scope.posts = $scope.posts.concat(data);
-			iflogin = $('#comm-auth-verification').attr('data');
 	    });
     };
     	
@@ -38,6 +37,7 @@ demoApp.controller('ApiPostsController', function($scope, $state, ApiGetFactory,
 	$scope.more = true;
 	$scope.posts = [];
 	$scope.loadFetchData();
+	
 });
 
 //#! directive

@@ -10,11 +10,12 @@ from apps.service._comm._models.__CommPosts import *
 
 class ProcPostsTemplate(object):
     
-    def __init__(self, Posts, Pages=False, Limits=False, SessionId=False):
+    def __init__(self, Posts, Pages=False, Limits=False, SessionId=False, Searching=False):
         self.Posts = Posts
         self.Pages = Pages
         self.Limits = Limits
         self.SessionId = SessionId
+        self.Searching = Searching
         self._GetPaging()
 
     def _GetPaging(self):
@@ -40,7 +41,12 @@ class ProcPostsTemplate(object):
             self.Posts = self.Posts.order_by('-id')[PageStart: PageEnd]
             
             for sort in self.Posts:
-                PostsByDate = CommPosts.objects.filter(date=sort['date']).order_by('-id')
+                
+                if not self.Searching:
+                    PostsByDate = CommPosts.objects.filter(date=sort['date']).order_by('-id')
+                else:
+                    PostsByDate = CommPosts.objects.filter(date=sort['date'], tags__icontains=self.Searching).order_by('-id')
+                
                 #! arrange list by date
                 List.append({
                           'date' : sort['date'].strftime('%A, %b %d'),
@@ -60,6 +66,11 @@ class ProcPosts(ProcPostsTemplate):
         sortPostsDate = CommPosts.objects.values('date').annotate(count=Count('id')).order_by('-id')
         super(ProcPosts,self).__init__(sortPostsDate)         
 
-    def sortByDatePaginated(self, Pages, Limits, SessionId=False):
+    def sortByDatePaginated(self, Pages, Limits, SessionId=False, Searching=False):
         sortPostsDate = CommPosts.objects.values('date').annotate(count=Count('id')).order_by('-id')
-        super(ProcPosts,self).__init__(sortPostsDate, Pages, Limits, SessionId)         
+        super(ProcPosts,self).__init__(sortPostsDate, Pages, Limits, SessionId)     
+
+    def sortBySearch(self, Pages, Limits, Searching, SessionId=False):
+        sortPostsDate = CommPosts.objects.values('date').filter(tags__icontains=Searching).annotate(count=Count('id')).order_by('-id')
+        super(ProcPosts,self).__init__(sortPostsDate, Pages, Limits, SessionId, Searching)         
+            

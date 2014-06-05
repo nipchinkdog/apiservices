@@ -15,6 +15,15 @@ demoApp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 				}
 			}
 		})
+		.state('search', {
+			url : '/search/:wordPara',
+			views : {
+				'viewSearch' : {
+					templateUrl: '/angular/tpl/search/',
+					controller: 'ApiSearchController'
+				}
+			}
+		})
 		.state('posts.comments', {
 			url : '/:id',
 			views : {

@@ -36,12 +36,12 @@
 					<span class="comm-desc pull-left">
 						<div class="clearfix">
 							<small data-ng-repeat="tag in  postinfo.tags"> 
-								<a data-ui-sref="search({wordPara: tag.tags })" class="comm-post-tags">#{{ tag.tags }}</a> 
+								<a href="#/search/Sven" class="comm-post-tags">{{ tag.tags }}</a> 
 							</small> <!-- ng -->	
 						</div>
 						<div class="clearfix">
 							<span class="comm-post-notes">{{ postinfo.notelimit }}</span>
-							<a data-ui-sref="posts.comments({id: postinfo.id })" class="comm-comnt comm-open-modal-comments"><small>{{ postinfo.comments }} comments</small></a>
+							<a data-ui-sref="posts.comments({id:{{ postinfo.id }}})" class="comm-comnt comm-open-modal-comments"><small>{{ postinfo.comments }} comments</small></a>
 						</div>
 					</span>
 				</div>

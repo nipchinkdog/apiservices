@@ -5,6 +5,6 @@ def TplTags(Tags):
         Tags = Tags.split(',')
         for tags in Tags:
             List.append({
-                    'tags' : '#'+tags,
+                    'tags' : tags,
             })
         return List
