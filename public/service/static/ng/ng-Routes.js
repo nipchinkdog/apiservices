@@ -15,8 +15,17 @@ demoApp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 				}
 			}
 		})
+		.state('challenge', {
+			url : '/ch/:idPara',
+			views : {
+				'viewSearch' : {
+					templateUrl: '/angular/tpl/challenge/',
+					controller: 'ApiChallengeController'
+				}
+			}
+		})		
 		.state('search', {
-			url : '/search/:wordPara',
+			url : '/se/:wordPara',
 			views : {
 				'viewSearch' : {
 					templateUrl: '/angular/tpl/search/',
@@ -25,7 +34,7 @@ demoApp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 			}
 		})
 		.state('posts.comments', {
-			url : '/:id',
+			url : '/co/:id',
 			views : {
 				'viewComments' : {
 					templateUrl: '/angular/tpl/comments/',

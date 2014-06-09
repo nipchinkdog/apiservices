@@ -6,6 +6,7 @@ from apps.service._api_lib._auth.__Authenticate import *
 
 #! imports
 from apps.service._comm._models.__CommPosts import *
+from apps.service._comm._models.__CommPostsChall import *
 
 class PostsAdd(View):
     
@@ -14,6 +15,7 @@ class PostsAdd(View):
         if request.POST:
 
             #! init
+            PickPosts_Id = request.POST['postid']
             Posts_Heroes = request.POST.getlist('heroes')
             List_Heroes = ','.join(Posts_Heroes)
             Posts_Lanes = request.POST.getlist('lanes')
@@ -28,8 +30,13 @@ class PostsAdd(View):
             AuthData = initAuthenticate.GetSession()
             
             #! init
-            #! 2 anonymous
-            init_ModelPosts = CommPosts(accounts_id = AuthData['userid'],
+            #! 2 anonymous'
+            
+            multiplier = 99999
+            counter = CommPosts.objects.count()
+            CounterPosts_Id = multiplier + counter
+            
+            init_ModelPosts = CommPosts(id=CounterPosts_Id, accounts_id = AuthData['userid'],
                                   type = 1,
                                   tags = Tags,
                                   heroes = List_Heroes, 
@@ -38,9 +45,10 @@ class PostsAdd(View):
             #! save
             init_ModelPosts.save()
             
-            return HttpResponseRedirect(reverse('comm_posts_list'))
+            if PickPosts_Id:
+                init_ModelPostsChall = CommPostsChall(posts_origin_id = PickPosts_Id, posts_chall_id = CounterPosts_Id)
+                init_ModelPostsChall.save()
                 
-            return render_to_response(self._template, 
-                                      {},
-                                      context_instance=RequestContext(request))
+            
+            return HttpResponseRedirect(reverse('comm_posts_list'))
         

@@ -7,15 +7,17 @@ from apps.service._api_lib._comm._posts._TplPosts import *
 #! imports
 import math
 from apps.service._comm._models.__CommPosts import *
+from apps.service._comm._models.__CommPostsChall import *
 
 class ProcPostsTemplate(object):
     
-    def __init__(self, Posts, Pages=False, Limits=False, SessionId=False, Searching=False):
+    def __init__(self, Posts, Pages=False, Limits=False, SessionId=False, Searching=False, PostsChallenge=False):
         self.Posts = Posts
         self.Pages = Pages
         self.Limits = Limits
         self.SessionId = SessionId
         self.Searching = Searching
+        self.PostsChallenge = PostsChallenge
         self._GetPaging()
 
     def _GetPaging(self):
@@ -39,13 +41,15 @@ class ProcPostsTemplate(object):
             PageStart = PageConfig[0]
             PageEnd = PageConfig[1]
             self.Posts = self.Posts.order_by('-id')[PageStart: PageEnd]
-            
+
             for sort in self.Posts:
                 
-                if not self.Searching:
-                    PostsByDate = CommPosts.objects.filter(date=sort['date']).order_by('-id')
-                else:
+                if self.Searching:
                     PostsByDate = CommPosts.objects.filter(date=sort['date'], tags__icontains=self.Searching).order_by('-id')
+                elif self.PostsChallenge:
+                    PostsByDate = CommPosts.objects.filter(date=sort['date'], pk__in=self.PostsChallenge).order_by('-id')
+                else:
+                    PostsByDate = CommPosts.objects.filter(date=sort['date']).order_by('-id')
                 
                 #! arrange list by date
                 List.append({
@@ -68,9 +72,13 @@ class ProcPosts(ProcPostsTemplate):
 
     def sortByDatePaginated(self, Pages, Limits, SessionId=False, Searching=False):
         sortPostsDate = CommPosts.objects.values('date').annotate(count=Count('id')).order_by('-id')
-        super(ProcPosts,self).__init__(sortPostsDate, Pages, Limits, SessionId)     
+        super(ProcPosts,self).__init__(sortPostsDate, Pages, Limits, SessionId, False, False)     
 
     def sortBySearch(self, Pages, Limits, Searching, SessionId=False):
         sortPostsDate = CommPosts.objects.values('date').filter(tags__icontains=Searching).annotate(count=Count('id')).order_by('-id')
-        super(ProcPosts,self).__init__(sortPostsDate, Pages, Limits, SessionId, Searching)         
+        super(ProcPosts,self).__init__(sortPostsDate, Pages, Limits, SessionId, Searching, False)         
             
+    def sortByChall(self, Pages, Limits, PostId, SessionId=False):
+        PostsChallenge = CommPostsChall.objects.filter(posts_origin_id=PostId).values_list('posts_chall_id', flat=True)
+        sortPostsDate = CommPosts.objects.values('date').filter(id__in=PostsChallenge).annotate(count=Count('id')).order_by('-id')
+        super(ProcPosts,self).__init__(sortPostsDate, Pages, Limits, SessionId, False, PostsChallenge)         

@@ -1,8 +1,9 @@
 //#! controller
-demoApp.controller('ApiPostsController', function($scope, $state, ApiGetFactory, ApiPostFactory, ApiDeleteFactory){	
+demoApp.controller('ApiChallengeController', function($scope, $state, $stateParams, ApiGetFactory, ApiPostFactory, ApiDeleteFactory){	
 
+	$scope.idPara = $stateParams.idPara;
 	$scope.loadFetchData = function(){
-		var url = '/api/comm/posts/showByLimit/' + $scope.page + '/' + $scope.limit+ '/fetch';
+		var url = '/api/comm/posts/showByChallenge/' + $scope.page + '/' + $scope.limit + '/' + $scope.idPara + '/challenge';
 		ApiGetFactory.get(url).then(function(data) {
 			$scope.more = data.length === $scope.limit;
 	        $scope.posts = $scope.posts.concat(data);
@@ -17,7 +18,7 @@ demoApp.controller('ApiPostsController', function($scope, $state, ApiGetFactory,
 	$scope.loadhasMore = function() {
         return $scope.more;
 	};
-	
+
 	$scope.PostApiVote = function(id){
 		var url = '/api/comm/votes/writeVotes/' + id + '/upvote';
 		ApiGetFactory.get(url).then(function(data) {
@@ -30,14 +31,11 @@ demoApp.controller('ApiPostsController', function($scope, $state, ApiGetFactory,
 	    });
 	};
 	
-
 	//# init
 	$scope.page = 1;
 	$scope.limit = 5;
 	$scope.more = true;
 	$scope.posts = [];
 	$scope.loadFetchData();
-	
 });
-
 

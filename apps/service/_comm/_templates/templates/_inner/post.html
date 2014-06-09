@@ -46,8 +46,8 @@
 					<form id="comm-posts-form" role="form" action="{% url 'comm_posts_add' %}" method="post">
 					  	{% csrf_token %}
 						
-						<!-- share types -->
-						<input class="comm-hide-me comm-lane-checkboxes comm-lane-checkboxes-default" checked="checked"  type="checkbox" id="lane-5" name="lanes" value="Combo">
+						<!-- counter picking : countered post id -->
+						<input class="" type="text" id="postid" name="postid" />
 						
 						<!-- pick types -->
 						<input class="comm-hide-me comm-lane-checkboxes comm-lane-checkboxes-default" checked="checked"  type="checkbox" id="lane-5" name="lanes" value="Combo">
@@ -77,7 +77,7 @@
 				<h1>STRENGTH</h1>
 				<div class="comm-prtr-select">
 					{% for h in hstr %}
-					<img data='{"target":"#{{ h.info.name }}"}' title="{{ h.info.name }}" class="comm-selection-img-lazy comm-prtr-selection-btn" data-original="{{ h.avatar.ssm }}	" width="{{ h.psizes.ssm.w }}" height="{{ h.psizes.ssm.h }}" />
+					<img data='{"target":"#{{ h.info.name }}"}' id="comm-hero-pick-{{ h.info.name }}" title="{{ h.info.name }}" class="comm-selection-img-lazy comm-prtr-selection-btn" data-original="{{ h.avatar.ssm }}	" width="{{ h.psizes.ssm.w }}" height="{{ h.psizes.ssm.h }}" />
 					{% endfor %}
 				</div>
 			</div>
@@ -85,7 +85,7 @@
 				<h1>AGILITY</h1>
 				<div class="comm-prtr-select">
 					{% for h in hagi %}
-					<img data='{"target":"#{{ h.info.name }}"}' title="{{ h.info.name }}" class="comm-selection-img-lazy comm-prtr-selection-btn" data-original="{{ h.avatar.ssm }}	" width="{{ h.psizes.ssm.w }}" height="{{ h.psizes.ssm.h }}" />
+					<img data='{"target":"#{{ h.info.name }}"}' id="comm-hero-pick-{{ h.info.name }}" title="{{ h.info.name }}" class="comm-selection-img-lazy comm-prtr-selection-btn" data-original="{{ h.avatar.ssm }}	" width="{{ h.psizes.ssm.w }}" height="{{ h.psizes.ssm.h }}" />
 					{% endfor %}
 				</div>
 			</div>
@@ -93,7 +93,7 @@
 				<h1>INTELLIGENCE</h1>
 				<div class="comm-prtr-select">
 					{% for h in hint %}
-					<img data='{"target":"#{{ h.info.name }}"}' title="{{ h.info.name }}" class="comm-selection-img-lazy comm-prtr-selection-btn" data-original="{{ h.avatar.ssm }}	" width="{{ h.psizes.ssm.w }}" height="{{ h.psizes.ssm.h }}" />
+					<img data='{"target":"#{{ h.info.name }}"}' id="comm-hero-pick-{{ h.info.name }}" title="{{ h.info.name }}" class="comm-selection-img-lazy comm-prtr-selection-btn" data-original="{{ h.avatar.ssm }}	" width="{{ h.psizes.ssm.w }}" height="{{ h.psizes.ssm.h }}" />
 					{% endfor %}
 				</div>
 			</div>

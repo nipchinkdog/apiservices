@@ -9,6 +9,7 @@ from apps.service._api_lib._comm._posts._TplPictures import *
 
 from apps.service._comm._models.__CommPostsVotes import *
 from apps.service._comm._models.__CommComments import *
+from apps.service._comm._models.__CommPostsChall import *
 
 def CountComments(postsId):
     count = CommComments.objects.filter(posts_id=postsId)
@@ -16,6 +17,10 @@ def CountComments(postsId):
 
 def CountVotes(postsId):
     count = CommPostsVotes.objects.filter(posts_id=postsId)
+    return len(count)
+
+def CountChall(postsId):
+    count = CommPostsChall.objects.filter(posts_origin_id=postsId)
     return len(count)
 
 def LimitNotes(s, l=270):
@@ -53,6 +58,7 @@ def TplPosts(Posts, SessionId=False):
                 'tags' : TplTags(post.tags),
                 'date' : post.date.strftime('%A, %b %d'),
                 'comments' : CountComments(post.id),
+                'challenge' : CountChall(post.id),
                 'votes' : CountVotes(post.id),
                 'votessession' : CountVotesSessionId(post.id, SessionId)
         })

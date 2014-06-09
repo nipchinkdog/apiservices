@@ -120,10 +120,9 @@ ul.comm-clist-wrapp li {
 .comm-comnt:hover { color: #ddd; text-decoration: none; }
 .comm-avt {
 	background: #ccc;
-	border-radius: 40px;
 	display: block;
-	width: 40px;
-	height: 40px;
+	width: 48px;
+	height: 43px;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -193,9 +192,23 @@ ul.comm-clist-wrapp li {
 .comm-modal-wrpp-comments .comm-content-wrapp ul.comm-clist-wrapp {
 	margin: 0 10px;
 }
+.comm-content-wrapp ul.comm-clist-wrapp li { position: relative; }
 
 /* votes */
 .comm-voted { color: #E25041 !important; }
+
+
+/* controls */
+.comm-counter { cursor: pointer; }
+.comm-controls-wrpp-left { position: absolute; left: 0; }
+.comm-controls-wrpp { width: 43px; height: 43px; text-align: center; font-size: 1.3em; margin: 0 10px 0 0; }
+.comm-controls-wrpp .comm-controls-counter-count { background: #19B5FE; color: #fff; font-size: .57em; padding: 2px; }
+.comm-controls-left { position: absolute; left: -43; }
+/* small */
+.comm-controls-counter-sm-grey { background: url('../icons/icon-small.png') 0px 0px no-repeat; display: block; width: 20px; height: 20px; margin: 0 auto 5px auto; }
+.comm-controls-counter-sm-grey:hover { background: url('../icons/icon-small.png') -40px 0px no-repeat; display: block; width: 20px; height: 20px; margin: 0 auto 5px auto; }
+/* medium */
+.comm-controls-counter-md-grey { background: url('../icons/icon-medium.png') 0px 0px no-repeat; display: block; width: 30px; height: 30px; margin: 0 auto 5px auto; }
 
 /* hidden */
 .comm-hide-me { display: none; }

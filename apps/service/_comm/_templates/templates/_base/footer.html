@@ -18,8 +18,10 @@
 	<script src="{% static "service/static/ng/ng-Modules.js" %}"></script>
 	<script src="{% static "service/static/ng/ng-Routes.js" %}"></script>
 	<script src="{% static "service/static/ng/ng-Factories.js" %}"></script>
+	<script src="{% static "service/static/ng/ng-Directives.js" %}"></script>
 	<script src="{% static "service/static/ng/ng-Posts.js" %}"></script>
 	<script src="{% static "service/static/ng/ng-Comments.js" %}"></script>
+	<script src="{% static "service/static/ng/ng-Challenge.js" %}"></script>
 	<script src="{% static "service/static/ng/ng-Search.js" %}"></script>
 
 
@@ -79,6 +81,8 @@
 		$('.comm-lane-checkboxes').prop('checked', false);
 		$('.comm-lane-checkboxes-default').prop('checked', true);
 		$('#comm-posts-form-submit-btn').hide();
+		//#! show all hidden hero in counter picking
+		$('.comm-prtr-selection-btn').show();		
 	}
 	
 	//#! pick type selection

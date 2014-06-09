@@ -10,8 +10,9 @@
 		<header class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
 				
-				<button class="btn btn-primary btn-sm navbar-btn comm-open-modal-share pull-left"><b>SHARE</b></button>
-				<button class="btn btn-primary btn-sm navbar-btn comm-open-modal-share pull-left"><b>ASK</b></button>
+				<a class="navbar-brand" href="#"><b>PICK&COUNTER</b></a>					
+				
+				<button class="btn btn-primary btn-sm navbar-btn comm-open-modal-share pull-left"><b>SHARE A PICK</b></button>
 
 				{% if AuthData.player.steamid == '0' %} <!-- if anonymous -->
 					<p class="navbar-text navbar-right">
