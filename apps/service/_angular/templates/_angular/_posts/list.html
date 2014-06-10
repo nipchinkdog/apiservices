@@ -32,9 +32,9 @@
 						
 						<!-- challengers -->
 						<div class="comm-controls-wrpp pull-left"> <!-- ng -->
-							<a data-dir-counterpick="{{ postinfo.id }}" data="{{ postinfo.heroes }}" class="comm-open-modal-share comm-counter comm-controls-counter-sm-grey"></a>
-							<a data-ui-sref="challenge({idPara: postinfo.id })" class="comm-controls-counter-count" ng-if="postinfo.challenge > 0">{{ postinfo.challenge }}</a>
-							<span class="comm-controls-counter-count" ng-if="postinfo.challenge < 1">0</span>
+							<a title="Counter this pick" data-dir-counterpick="{{ postinfo.id }}" data="{{ postinfo.heroes }}" class="comm-open-modal-share comm-counter comm-controls-counter-sm-grey"></a>
+							<a title="Counters" data-ui-sref="challenge({idPara: postinfo.id })" class="comm-controls-counter-count" ng-if="postinfo.challenge > 0">{{ postinfo.challenge }}</a>
+							<span title="Counters" class="comm-controls-counter-count" ng-if="postinfo.challenge < 1">0</span>
 						</div>
 
 						<!-- loop through pics -->
