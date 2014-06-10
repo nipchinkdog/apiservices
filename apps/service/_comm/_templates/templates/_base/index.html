@@ -28,7 +28,7 @@
 				{% else %}
 					<p class="navbar-text navbar-right">
 						<small>Hi!</small>
-						<small><b>{{ AuthData.player.personaname }}</b></small>
+						<small><b>{{ AuthData.player.personaname }}</b> ({{ AuthKarma }})</small>
 						<small>|</small>
 						<small>
 							<a href="{% url 'comm_logout' %}">Logout</a>

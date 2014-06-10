@@ -7,6 +7,9 @@ from apps.service._api_lib._auth.__Authenticate import *
 from apps.service._api_lib._d2._heroes._HeroesParser import *
 #! lib: posts
 from apps.service._api_lib._comm._posts._ProcPosts import *
+#! lib: karma
+from apps.service._api_lib._comm._posts._ProcKarma import *
+
 
 class PostsList(View):
 
@@ -36,11 +39,15 @@ class PostsList(View):
         
         initAuthenticate = Authenticate(request)
         AuthData = initAuthenticate.GetSession()
+        
+        initKarma = ProcKarma(AuthData['userid'])
+        AuthKarma = initKarma.GetKarma()
                 
         return render_to_response(self._template, 
                                   {
                                    #! session
                                    'AuthData' : AuthData,
+                                   'AuthKarma' : AuthKarma,
                                    #! posts
                                    'sorByDatePosts' : self.sortByDatePosts,
                                    #! create init

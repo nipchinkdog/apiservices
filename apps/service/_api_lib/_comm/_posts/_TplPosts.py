@@ -23,6 +23,10 @@ def CountChall(postsId):
     count = CommPostsChall.objects.filter(posts_origin_id=postsId)
     return len(count)
 
+def CountChallTo(postsId):
+    count = CommPostsChall.objects.filter(posts_chall_id=postsId)
+    return len(count)
+
 def LimitNotes(s, l=270):
     return s if len(s)<=l else s[0:l-3] + ' ...'
 
