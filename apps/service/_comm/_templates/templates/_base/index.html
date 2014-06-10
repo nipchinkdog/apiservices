@@ -10,12 +10,14 @@
 		<header class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
 				
-				<a class="navbar-brand" href="#"><b>PICK&COUNTER</b></a>					
+				<a class="navbar-brand" href="#">
+					<b>PICK&COUNTER</b>
+				</a>					
 				
 				<button class="btn btn-primary btn-sm navbar-btn comm-open-modal-share pull-left"><b>SHARE A PICK</b></button>
 				
-				<a href="{% url 'doc_d2_home_api' %}" class="btn btn-link btn-sm navbar-btn pull-left"><b>API</b></a>
-				<a href="{% url 'doc_d2_home_css' %}" class="btn btn-link btn-sm navbar-btn pull-left"><b>CSS</b></a>
+				<a href="{% url 'doc_d2_home_api' %}" class="btn btn-link btn-sm navbar-btn pull-right"><b>API</b></a>
+				<a href="{% url 'doc_d2_home_css' %}" class="btn btn-link btn-sm navbar-btn pull-right"><b>CSS</b></a>
 
 				{% if AuthData.player.steamid == '0' %} <!-- if anonymous -->
 					<p class="navbar-text navbar-right">
@@ -49,6 +51,17 @@
 				<div class="comm-side-modal-wrpp-close">&nbsp;</div>
 				<div class="comm-side-modal-wrpp">{% include '_inner/post.html' %}</div>
 			</section>
+			
+			<!-- #! Modal Promts -->
+			<div class="comm-overlay-promts-wrpp comm-overlay-promt comm-hide-me">
+				<div class="comm-overlay-promts-modal">
+					<h1><b>Hey there! Please sign in to upvote. :)</b></h1>
+					<br/>
+					<a href="{% url 'social:begin' 'steam' %}">
+						<img src="{% static "service/media/_src/_d2/sits_small.png"%}" />
+					</a>
+				</div>
+			</div>	
 			
 			<!-- #! Modal Promts -->
 			<section class="comm-modal-wrpp-promts comm-hide-me">

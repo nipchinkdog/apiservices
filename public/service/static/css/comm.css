@@ -186,6 +186,37 @@ ul.comm-clist-wrapp li {
 	height: 100%;
 	z-index: 100;
 }
+.comm-overlay-promts-wrpp {  
+	background: rgba(255,255,255,0.9);
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+  	width: 100%;
+	z-index: 10;	
+}
+.comm-overlay-promts-modal {
+    /* some styles to position the modal at the center of the page */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    padding: 30px 20px;
+    margin-left: -250px;
+    margin-top: -100px;
+    background: #fff;
+    text-align: center;
+    /* needed styles for the overlay */
+    z-index: 10; /* keep on top of other elements on the page */
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+.comm-overlay-promts-modal h1 { 
+	margin: 0;
+	padding: 5px;
+	font-size: 1.4em; 
+}
+
 .comm-modal-wrpp-comments .comm-content-wrapp hr {
 	margin: 5px;
 }

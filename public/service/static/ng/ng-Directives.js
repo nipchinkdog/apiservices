@@ -9,10 +9,9 @@ demoApp.directive('dirUpvote', function($timeout) {
 			iflogin = $('#comm-auth-verification').attr('data');
 			if(iflogin == '0'){
 				
-				$('.comm-modal-wrpp-promts').show();	
-				$('.comm-side-modal-wrpp-close').on('click', function(){
-					$('.comm-modal-wrpp').hide();
-					$('.comm-modal-wrpp-promts').hide();	
+				$('.comm-overlay-promt').fadeIn('slow').show();	
+				$('.comm-overlay-promt').on('click', function(){
+					$(this).hide();	
 				});
 													
 			}else{
