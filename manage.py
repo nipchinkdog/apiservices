@@ -10,11 +10,11 @@ if __name__ == "__main__":
 
     execute_from_command_line(sys.argv)
 
-
+'''
 #*****************
 #SERVER
 #*****************
-'''
+
 #!/usr/bin/env python2.7
 from django.core.management import execute_manager
 import imp
