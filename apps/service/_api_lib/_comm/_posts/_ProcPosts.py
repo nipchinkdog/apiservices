@@ -77,5 +77,6 @@ class ProcPosts(ProcPostsTemplate):
             
     def sortByChall(self, Pages, Limits, PostId, SessionId=False):
         PostsChallenge = CommPostsChall.objects.filter(posts_origin_id=PostId).values_list('posts_chall_id', flat=True)
+        sortPostsDate = CommPosts.objects.values('date').filter(pk__in=PostsChallenge).annotate(count=Count('id')).order_by('-id')
         PostsByDate = CommPosts.objects.filter(pk__in=PostsChallenge)
         super(ProcPosts,self).__init__(sortPostsDate, PostsByDate, Pages, Limits, SessionId, False, PostsChallenge)         

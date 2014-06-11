@@ -9,8 +9,8 @@ demoApp.directive('dirUpvote', function($timeout) {
 			iflogin = $('#comm-auth-verification').attr('data');
 			if(iflogin == '0'){
 				
-				$('.comm-overlay-promt').fadeIn('slow').show();	
-				$('.comm-overlay-promt').on('click', function(){
+				$('#comm-modal-signin').fadeIn('fast').show();	
+				$('#comm-modal-signin').on('click', function(){
 					$(this).hide();	
 				});
 													
@@ -51,10 +51,10 @@ demoApp.directive('dirCounterpick', function($timeout) {
 			$.each(heroes,function(k, v){
 				$('#comm-hero-pick-'+v).hide();
 			});			
-			$('.comm-modal-wrpp').show();	
-			$('.comm-selection-img-lazy').lazyload({
+			$('#comm-modal-posts').fadeIn('fast').show();	
+			$('.comm-preload-img-lazy').lazyload({
 			    effect : "fadeIn",
-			    threshold : 5
+			    threshold : 3
 			});
 					
         });

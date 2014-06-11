@@ -27,16 +27,17 @@
 
 <script>
 	
+	$('.comm-preload-img-lazyx').lazyload({
+	    effect : "fadeIn",
+	    threshold : 3
+	});
 	//#! modal post/comments
 	$('.comm-open-modal-share').on('click', function(){
-		$('#comm-modal-posts').fadeIn('fast').show();	
-		$('.comm-preload-img-lazy').lazyload({
+		$('.comm-modal-wrpp').show();	
+		$('.comm-selection-img-lazy').lazyload({
 		    effect : "fadeIn",
-		    threshold : 3
+		    threshold : 5
 		});
-	});
-	$('#comm-posts-form-submit-btn-cancel').on('click', function(){
-		$('#comm-modal-posts').fadeOut();	
 	});
 	
 	$('.comm-side-modal-wrpp-close').on('click', function(){
@@ -50,68 +51,86 @@
 		$('.comm-modal-wrpp-comments').show();	
 	});
 	
+	
+	//#! menu selection
+	$('.comm-prtr-selection-menu').on('click', function(event){
+		//#! check if selected
+		var allclss = '.comm-prtr-selection-menu';
+		var clss =  'comm-prtr-selection-menu-selected';
+		$(allclss).removeClass(clss);
+		$(this).addClass(clss);
+	});
+	$('.comm-trgr-selection-menu').on('click', function(){
+		var data = $(this).attr('data');
+		var json = jQuery.parseJSON(data);
+		$('.comm-selection-wrapp').hide();
+		$(json.target).show();
+		$('.comm-posts-img-lazy').lazyload({
+		    effect : "fadeIn",
+		    threshold : 5
+		});
+	});
+	
 	//#! reset
 	function resetAll(){
+		//#! pick type button
+		$('.comm-pick-type').removeClass('btn-success');
+		$('.comm-pick-type-default').addClass('btn-success');
 		//#! hero checkboxes and images
 		$('.comm-prtr-selection-btn').removeClass('comm-prtr-selected');
 		$('.comm-hero-checkboxes').prop('checked', false);
 		//#! pick limit count
 		$('.comm-pick-remain').html(5);
+		//#! pick type tagging
+		$('.comm-lane-checkboxes').prop('checked', false);
+		$('.comm-lane-checkboxes-default').prop('checked', true);
 		$('#comm-posts-form-submit-btn').hide();
 		//#! show all hidden hero in counter picking
 		$('.comm-prtr-selection-btn').show();		
 	}
 	
+	//#! pick type selection
+	$('.comm-pick-type').on('click', function(){
+		resetAll();
+		var limit = $('#comm-pick-limit').val($(this).attr('data'));
+		$('.comm-pick-type').removeClass('btn-success');
+		$(this).addClass('btn-success');
+		$('.comm-pick-remain').html($(this).attr('data'));
+		
+		//#! pick type tagging
+		lanetag = $(this).attr('data');
+		$('.comm-lane-checkboxes').prop('checked', false);		
+		$('#lane-'+lanetag).prop('checked', true);		
+		
+	});
+
 	//#! hero selection
-	$('#comm-posts-form-note-btn').on('click', function(){
-		$('#comm-selection-desc').fadeIn('fast').show();
-		$('#comm-posts-form-submit-btn').hide();
-		$('#comm-posts-form-note-btn').hide();
-	});
-	$('#comm-posts-form-note-btn-cancel').on('click',function(){
-		$('#comm-selection-desc').fadeOut('fast');
-		$('#comm-posts-form-submit-btn').show();
-		$('#comm-posts-form-note-btn').show();
-	});
-	$('#comm-posts-form-note-btn').hide();
 	$('#comm-posts-form-submit-btn').hide();
 	$('.comm-prtr-selection-btn').on('click', function(){
 		//#! check if selected
 		var clss =  'comm-prtr-selected';
 		var data = $(this).attr('data');
 		var json = jQuery.parseJSON(data);
-		var limit = $('#comm-pick-remain');
+		var limit = $('#comm-pick-limit');
 		var limitValue = limit.val();
-		
-		var isvisiblenote = $('#comm-selection-desc').is(":visible");
-		if (isvisiblenote == false) {
 
-			if($(this).hasClass(clss)){
-				$(this).removeClass(clss);
-				$(json.target).prop('checked', false);
-				limit.html( parseInt(limit.html()) + 1);
-	
-				if ( parseInt(limit.html()) == 5 ) {
-					$('#comm-posts-form-note-btn').hide();
-					$('#comm-posts-form-submit-btn').hide();
-				}
-				if ( parseInt(limit.html()) < 5 ) {
-					$('#comm-posts-form-submit-btn').show();
-				}
-	
-			}else{
-				//#! check if zero
-				if ( parseInt(limit.html()) > 0) {
-					$(this).addClass(clss);
-					$(json.target).prop('checked', true);
-					limit.html( parseInt(limit.html()) - 1);
-					$('#comm-posts-form-note-btn').show();
-				}
-				if ( parseInt(limit.html()) < 5) {
-					$('#comm-posts-form-submit-btn').show();
-				}
+		if($(this).hasClass(clss)){
+			$(this).removeClass(clss);
+			$(json.target).prop('checked', false);
+			limit.val( parseInt(limit.val()) + 1);
+			$('.comm-pick-remain').html(limit.val());
+			$('#comm-posts-form-submit-btn').hide();
+		}else{
+			//#! check if zero
+			if (limit.val() > 0) {
+				$(this).addClass(clss);
+				$(json.target).prop('checked', true);
+				limit.val(limit.val() - 1);
+				$('.comm-pick-remain').html(limit.val());	
 			}
-			
+			if (limit.val() == 0) {
+				$('#comm-posts-form-submit-btn').show();
+			}
 		}
 		
 	});

@@ -1,0 +1,78 @@
+<!-- #! Start: form -->
+<form id="comm-posts-form" action="{% url 'comm_posts_add' %}" method="post">
+{% csrf_token %}
+<!-- #! Hidden Inputs -->
+<!-- #! Posts -->
+<input class="comm-hide-me" type="text" id="postid" name="postid" />
+<!-- #! Heroes -->
+{% for h in hall %}
+<input class="comm-hide-me comm-hero-checkboxes"  type="checkbox" id="{{ h.hero }}" name="heroes" value="{{ h.hero }}">
+{% endfor %}
+
+
+	<div class="row comm-select-wrapp">
+		
+		<div class="col-md-12">
+			<h1 class="pull-left"><b>Available Hero Pick (<span id="comm-pick-remain">5</span>)</b></h1>
+			<button id="comm-posts-form-submit-btn" class="btn btn-primary btn-sm col-md-1 pull-right">SUBMIT</button>
+			<button type="button" id="comm-posts-form-note-btn" class="btn btn-primary btn-sm col-md-2 pull-right">ATTACH A NOTE</button>
+			<button type="button" id="comm-posts-form-submit-btn-cancel" class="btn btn-danger btn-sm col-md-1 pull-right">CLOSE</button>
+		</div>
+		
+		<div class="col-md-12"><hr/></div>
+		
+		<div class="col-md-12">
+	
+			<!-- #! notes -->
+			<div id="comm-selection-desc" class="col-md-12 comm-selection-wrapp comm-hide-me">
+				<div class="comm-overlay-posts-modal-note">
+					<div class="col-md-12">
+						<button id="comm-posts-form-submit-note-btn" class="btn btn-primary btn-sm col-md-2 pull-right">SUBMIT</button>
+						<button type="button" id="comm-posts-form-note-btn-cancel" class="btn btn-primary btn-sm col-md-2 pull-right">CANCEL</button>
+					</div>
+					<div class="col-md-12"><hr/></div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<h1>NOTE</h1>
+							<textarea rows="7" class="form-control" name="notes" id="notes" placeholder="You may want to write a short note."></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- #! Pick -->
+			<div id="comm-posts-selection" class="col-md-12 comm-selection-wrapp">
+				<div class="comm-overlay-posts-modal-center">
+					<div class="col-md-4">
+						<h1><b>STRENGTH</b></h1>
+						<div class="comm-prtr-select">
+							{% for h in hstr %}
+							<img data='{"target":"#{{ h.info.name }}"}' id="comm-hero-pick-{{ h.info.name }}" title="{{ h.info.name }}" class="comm-preload-img-lazy comm-prtr-selection-btn" data-original="{{ h.avatar.ssm }}	" width="{{ h.psizes.ssm.w }}" height="{{ h.psizes.ssm.h }}" />
+							{% endfor %}
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h1><b>AGILITY</b></h1>
+						<div class="comm-prtr-select">
+							{% for h in hagi %}
+							<img data='{"target":"#{{ h.info.name }}"}' id="comm-hero-pick-{{ h.info.name }}" title="{{ h.info.name }}" class="comm-preload-img-lazy comm-prtr-selection-btn" data-original="{{ h.avatar.ssm }}	" width="{{ h.psizes.ssm.w }}" height="{{ h.psizes.ssm.h }}" />
+							{% endfor %}
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h1><b>INTELLIGENCE</b></h1>
+						<div class="comm-prtr-select">
+							{% for h in hint %}
+							<img data='{"target":"#{{ h.info.name }}"}' id="comm-hero-pick-{{ h.info.name }}" title="{{ h.info.name }}" class="comm-preload-img-lazy comm-prtr-selection-btn" data-original="{{ h.avatar.ssm }}	" width="{{ h.psizes.ssm.w }}" height="{{ h.psizes.ssm.h }}" />
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>		
+
+<!-- #! End: form -->
+</form>

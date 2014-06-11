@@ -46,14 +46,15 @@
 			{% block 'comm_lists' %}
 			{% endblock 'comm_lists' %}
 
-			<!-- #! Modal Post -->
-			<section class="comm-modal-wrpp comm-hide-me">
-				<div class="comm-side-modal-wrpp-close">&nbsp;</div>
-				<div class="comm-side-modal-wrpp">{% include '_inner/post.html' %}</div>
-			</section>
-			
+			<!-- #! Modal Posts -->
+			<div id="comm-modal-posts" class="comm-overlay-body-wrpp comm-overlay-promt comm-hide-me">
+				<div class="comm-overlay-posts-modal">
+					{% include '_inner/post-exp.html' %}
+				</div>
+			</div>	
+
 			<!-- #! Modal Promts -->
-			<div class="comm-overlay-promts-wrpp comm-overlay-promt comm-hide-me">
+			<div id="comm-modal-signin" class="comm-overlay-body-wrpp comm-overlay-promt comm-hide-me">
 				<div class="comm-overlay-promts-modal">
 					<h1><b>Hey there! Please sign in to upvote. :)</b></h1>
 					<br/>
@@ -63,26 +64,6 @@
 				</div>
 			</div>	
 			
-			<!-- #! Modal Promts -->
-			<section class="comm-modal-wrpp-promts comm-hide-me">
-				<a class="comm-side-modal-wrpp-close"></a>
-				<div class="comm-side-promts-modal-wrpp">
-					<div class="row">
-					<div class="comm-content-wrapp"> 
-						<div class="col-md-12">
-							<h1>To upvote please login using your steam account.</h1>
-						</div>
-						<div class="clearfix"><hr/></div>
-						<div class="col-md-12">
-							<a href="{% url 'social:begin' 'steam' %}">
-								<img src="{% static "service/media/_src/_d2/sits_small.png"%}" />
-							</a>
-						</div>
-					</div>
-					</div>
-				</div>
-			</section>
-
 			<!-- Angular Placeholder -->
 			<div ui-view="viewPosts">&nbsp;</div>
 			<div ui-view="viewSearch">&nbsp;</div>
