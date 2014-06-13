@@ -1,0 +1,122 @@
+	{% verbatim %}
+	
+	<!-- #! Modal Comments -->
+	<section class="comm-modal-wrpp-comments comm-hide-me">
+		<a ui-sref="posts" class="comm-side-modal-wrpp-close"></a>
+		<div class="comm-side-comment-modal-wrpp">
+			<div ui-view='viewComments'>&nbsp;</div> <!-- ng -->
+		</div>
+	</section>
+	
+
+	<!-- Angular -->
+	<!-- loop through posts date -->
+	<div class="comm-content-wrapp" data-ng-repeat="postdate in postsOrigin"> <!-- ng -->
+		<h1>{{ postdate.date }}</h1>
+		<ul class="comm-clist-wrapp">
+			
+			<!-- loop through posts -->
+			<li class="clearfix row" data-ng-repeat="postinfo in postdate.posts"> <!-- ng -->
+				
+				<div class="col-md-1 comm-prtr">
+					
+					<div class="pull-left comm-rate">
+						<a data-dir-upvote="{{ postinfo.id }}"  class="glyphicon glyphicon-chevron-up comm-votes {{ postinfo.votessession }} "></a> <!-- ng - directive -->
+						<span>{{ postinfo.votes }}</span>
+					</div>
+					<img class="comm-avt pull-left" title="{{ postinfo.account }}" src="{{ postinfo.steamavatar }}">
+					
+				</div>
+				<div class="col-md-10">
+					<span class="comm-prtr pull-left">
+						
+						<!-- challengers -->
+						<div class="comm-controls-wrpp pull-left"> <!-- ng -->
+							<a title="Counter this pick" data-dir-counterpick="{{ postinfo.id }}" data="{{ postinfo.heroes }}" class="comm-open-modal-share comm-counter comm-controls-counter-sm-grey"></a>
+							<a title="Counters" data-ui-sref="challenge({idPara: postinfo.id })" class="comm-controls-counter-count" ng-if="postinfo.challenge > 0">{{ postinfo.challenge }}</a>
+							<span title="Counters" class="comm-controls-counter-count" ng-if="postinfo.challenge < 1">0</span>
+						</div>
+
+						<!-- loop through pics -->
+						<div data-ng-repeat="postpic in  postinfo.pic"	class="{{ postpic.css }} pull-left" title="{{ postpic.hero }}" > <!-- ng -->
+						</div>
+						
+					</span>
+					<span class="comm-desc pull-left">
+						<div class="clearfix">
+							<small data-ng-repeat="tag in  postinfo.tags"> 
+								<a data-ui-sref="search({wordPara: tag.tags })" class="comm-post-tags">#{{ tag.tags }}</a> 
+							</small> <!-- ng -->	
+						</div>
+						<div class="clearfix">
+							<span class="comm-post-notes">{{ postinfo.notelimit }}</span>
+							<a data-ui-sref="posts.comments({id: postinfo.id })" class="comm-comnt comm-open-modal-comments"><small>{{ postinfo.comments }} comments</small></a>
+						</div>
+					</span>
+				</div>
+			</li>
+			
+		</ul>
+	</div>
+
+	
+	<div class="clearfix comm-content-wrapp">
+		<hr/>
+	</div>
+	
+	<!-- Angular -->
+	<!-- loop through posts date -->
+	<div class="comm-content-wrapp" data-ng-repeat="postdate in posts"> <!-- ng -->
+		<h1>{{ postdate.date }}</h1>
+		<ul class="comm-clist-wrapp">
+			
+			<!-- loop through posts -->
+			<li class="clearfix row" data-ng-repeat="postinfo in postdate.posts"> <!-- ng -->
+				
+				<div class="col-md-1 comm-prtr">
+					
+					<div class="pull-left comm-rate">
+						<a data-dir-upvote="{{ postinfo.id }}"  class="glyphicon glyphicon-chevron-up comm-votes {{ postinfo.votessession }} "></a> <!-- ng - directive -->
+						<span>{{ postinfo.votes }}</span>
+					</div>
+					<img class="comm-avt pull-left" title="{{ postinfo.account }}" src="{{ postinfo.steamavatar }}">
+					
+				</div>
+				<div class="col-md-10">
+					<span class="comm-prtr pull-left">
+						
+						<!-- challengers -->
+						<div class="comm-controls-wrpp pull-left"> <!-- ng -->
+							<a title="Counter this pick" data-dir-counterpick="{{ postinfo.id }}" data="{{ postinfo.heroes }}" class="comm-open-modal-share comm-counter comm-controls-counter-sm-grey"></a>
+							<a title="Counters" data-ui-sref="challenge({idPara: postinfo.id })" class="comm-controls-counter-count" ng-if="postinfo.challenge > 0">{{ postinfo.challenge }}</a>
+							<span title="Counters" class="comm-controls-counter-count" ng-if="postinfo.challenge < 1">0</span>
+						</div>
+
+						<!-- loop through pics -->
+						<div data-ng-repeat="postpic in  postinfo.pic"	class="{{ postpic.css }} pull-left" title="{{ postpic.hero }}" > <!-- ng -->
+						</div>
+						
+					</span>
+					<span class="comm-desc pull-left">
+						<div class="clearfix">
+							<small data-ng-repeat="tag in  postinfo.tags"> 
+								<a data-ui-sref="search({wordPara: tag.tags })" class="comm-post-tags">#{{ tag.tags }}</a> 
+							</small> <!-- ng -->	
+						</div>
+						<div class="clearfix">
+							<span class="comm-post-notes">{{ postinfo.notelimit }}</span>
+							<a data-ui-sref="posts.comments({id: postinfo.id })" class="comm-comnt comm-open-modal-comments"><small>{{ postinfo.comments }} comments</small></a>
+						</div>
+					</span>
+				</div>
+			</li>
+			
+		</ul>
+	</div>
+	
+	<br/><br/>
+	<button class="btn btn-sm btn-primary" data-ng-show="loadhasMore()" data-ng-click="loadApiPostsCtrl()">
+		show more
+	</button>
+
+	{% endverbatim %}

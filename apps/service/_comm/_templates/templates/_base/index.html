@@ -20,11 +20,7 @@
 				<a href="{% url 'doc_d2_home_css' %}" class="btn btn-link btn-sm navbar-btn pull-right"><b>CSS</b></a>
 
 				{% if AuthData.player.steamid == '0' %} <!-- if anonymous -->
-					<p class="navbar-text navbar-right">
-						<a href="{% url 'social:begin' 'steam' %}" class="navbar-link">
-							<img src="{% static "service/media/_src/_d2/sits_small.png"%}" />
-						</a>
-					</p>
+					<a href="{% url 'social:begin' 'steam' %}" class="btn btn-success btn-sm navbar-btn comm-open-modal-share pull-right"><b>Sign in through STEAM</b></a>
 				{% else %}
 					<p class="navbar-text navbar-right">
 						<small>Hi!</small>

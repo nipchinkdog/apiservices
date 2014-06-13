@@ -80,3 +80,8 @@ class ProcPosts(ProcPostsTemplate):
         sortPostsDate = CommPosts.objects.values('date').filter(pk__in=PostsChallenge).annotate(count=Count('id')).order_by('-id')
         PostsByDate = CommPosts.objects.filter(pk__in=PostsChallenge)
         super(ProcPosts,self).__init__(sortPostsDate, PostsByDate, Pages, Limits, SessionId, False, PostsChallenge)         
+
+    def sortById(self, Pages, Limits, PostId, SessionId=False):
+        sortPostsDate = CommPosts.objects.values('date').filter(pk=PostId).annotate(count=Count('id')).order_by('-id')
+        PostsByDate = CommPosts.objects.filter(pk=PostId)
+        super(ProcPosts,self).__init__(sortPostsDate, PostsByDate, Pages, Limits, SessionId, False, False)         
