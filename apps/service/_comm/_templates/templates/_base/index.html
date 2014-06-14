@@ -52,11 +52,9 @@
 			<!-- #! Modal Promts -->
 			<div id="comm-modal-signin" class="comm-overlay-body-wrpp comm-overlay-promt comm-hide-me">
 				<div class="comm-overlay-promts-modal">
-					<h1><b>Hey there! Please sign in to upvote. :)</b></h1>
+					<h1><b>Hey there! Please sign in to proceed. :)</b></h1>
 					<br/>
-					<a href="{% url 'social:begin' 'steam' %}">
-						<img src="{% static "service/media/_src/_d2/sits_small.png"%}" />
-					</a>
+					<a href="{% url 'social:begin' 'steam' %}" class="btn btn-success btn-sm navbar-btn comm-open-modal-share"><b>Sign in through STEAM</b></a>
 				</div>
 			</div>	
 			

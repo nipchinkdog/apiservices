@@ -1,3 +1,4 @@
+'''
 #!/usr/bin/env python
 import os
 import sys
@@ -28,5 +29,5 @@ import settings
 
 if __name__ == "__main__":
     execute_manager(settings)
-'''
+
  
