@@ -24,6 +24,15 @@ demoApp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 				}
 			}
 		})		
+		.state('author', {
+			url : '/ath/:idPara',
+			views : {
+				'viewSearch' : {
+					templateUrl: '/angular/tpl/author/',
+					controller: 'ApiAuthorController'
+				}
+			}
+		})		
 		.state('search', {
 			url : '/se/:wordPara',
 			views : {

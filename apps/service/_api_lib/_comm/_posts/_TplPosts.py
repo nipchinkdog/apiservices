@@ -38,7 +38,11 @@ def CountVotesSessionId(postsId, accountsId):
         return 'comm-voted'
     else:
         return ''
-    
+
+def NoteWordCount(note):
+    words = ''.join(c if c.isalnum() else ' ' for c in note).split()
+    return len(words) 
+
 #! get posts
 def TplPosts(Posts, SessionId=False):
     List = []
@@ -54,8 +58,10 @@ def TplPosts(Posts, SessionId=False):
                 'steamid' : steamDataResponse['player']['steamid'],
                 'steamavatar' : steamDataResponse['player']['avatarmedium'],
                 'steamurl' : steamDataResponse['player']['profileurl'],
+                'accountid' : post.accounts_id,
                 'account' : post.accounts.username,
                 'note' : post.note,
+                'notewords' : NoteWordCount(post.note),
                 'notelimit' : LimitNotes(post.note),
                 'heroes' : post.heroes,
                 'pic' : TplPictures(post.heroes),
