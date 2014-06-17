@@ -6,5 +6,5 @@ from django.conf.urls import url
 from apps.service._comm._modules._pages._Pages import *
 
 urlpatterns = patterns('',
-    url(r'^about/$', PagesAbout.as_view(), name='comm_about_pages'),
+    url(r'^#/about$', PagesAbout.as_view(), name='comm_about_pages'),
 )

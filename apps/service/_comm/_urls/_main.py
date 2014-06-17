@@ -6,5 +6,5 @@ urlpatterns = patterns('',
     url(r'', include('apps.service._comm._urls._posts')),
     url(r'', include('apps.service._comm._urls._comments')),
     url(r'', include('apps.service._comm._urls._auth')),
-    url(r'pg/', include('apps.service._comm._urls._pages')),
+    url(r'', include('apps.service._comm._urls._pages')),
 )

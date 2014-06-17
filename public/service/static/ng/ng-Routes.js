@@ -6,15 +6,6 @@ demoApp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 	
 	$urlRouterProvider.otherwise("/posts");
 	$stateProvider
-		.state('pages', {
-			url : '/pg',
-			views : {
-				'' : {
-					templateUrl: '',
-					controller: ''
-				}
-			}
-		})
 		.state('posts', {
 			url : '/posts',
 			views : {
@@ -57,6 +48,15 @@ demoApp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 				'viewComments' : {
 					templateUrl: '/angular/tpl/comments/',
 					controller: 'ApiCommentsController'
+				}
+			}
+		})
+		.state('pages', {
+			url : '/about',
+			views : {
+				'viewPosts' : {
+					templateUrl: '/angular/tpl/about/',
+					controller: ''
 				}
 			}
 		});
