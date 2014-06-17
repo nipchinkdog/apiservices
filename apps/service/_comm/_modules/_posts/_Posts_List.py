@@ -44,8 +44,7 @@ class PostsList(View):
         AuthKarma = initKarma.GetKarma()
                 
         return render_to_response(self._template, 
-                                  {
-                                   #! session
+                                  {#! session
                                    'AuthData' : AuthData,
                                    'AuthKarma' : AuthKarma,
                                    #! posts

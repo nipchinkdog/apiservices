@@ -73,16 +73,13 @@
 			<!-- loop through posts -->
 			<li class="clearfix row" data-ng-repeat="postinfo in postdate.posts"> <!-- ng -->
 				
-				<div class="col-md-1 comm-prtr">
-					
+				<div class="col-md-12">
+
 					<div class="pull-left comm-rate">
 						<a data-dir-upvote="{{ postinfo.id }}"  class="glyphicon glyphicon-chevron-up comm-votes {{ postinfo.votessession }} "></a> <!-- ng - directive -->
 						<span>{{ postinfo.votes }}</span>
 					</div>
-					<img class="comm-avt pull-left" title="{{ postinfo.account }}" src="{{ postinfo.steamavatar }}">
-					
-				</div>
-				<div class="col-md-10">
+
 					<span class="comm-prtr pull-left">
 						
 						<!-- challengers -->
@@ -104,8 +101,11 @@
 							</small> <!-- ng -->	
 						</div>
 						<div class="clearfix">
-							<span class="comm-post-notes">{{ postinfo.notelimit }}</span>
+							<a data-ui-sref="posts.comments({id: postinfo.id })" class="comm-post-notes" ng-if="postinfo.notewords > 2">{{ postinfo.notewords }} words note to read</a>
+							<a data-ui-sref="posts.comments({id: postinfo.id })" class="comm-post-notes" ng-if="postinfo.notewords == 1">{{ postinfo.notewords }} word note to read</span>
 							<a data-ui-sref="posts.comments({id: postinfo.id })" class="comm-comnt comm-open-modal-comments"><small>{{ postinfo.comments }} comments</small></a>
+							<span class="comm-comnt"><small>|</small></span>
+							<a data-ui-sref="posts.comments({id: postinfo.id })" class="comm-comnt comm-open-modal-comments"><small>Leave a comment</small></a>
 						</div>
 					</span>
 				</div>

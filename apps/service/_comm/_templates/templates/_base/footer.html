@@ -30,11 +30,27 @@
 	
 	//#! modal post/comments
 	$('.comm-open-modal-share').on('click', function(){
-		$('#comm-modal-posts').fadeIn('fast').show();	
-		$('.comm-preload-img-lazy').lazyload({
-		    effect : "fadeIn",
-		    threshold : 3
-		});
+
+			// check if login user
+			iflogin = $('#comm-auth-verification').attr('data');
+			if(iflogin == '0'){
+				
+				$('#comm-modal-signin').fadeIn('fast').show();	
+				$('#comm-modal-signin').on('click', function(){
+					$(this).hide();	
+				});
+													
+			}else{
+
+				$('#comm-modal-posts').fadeIn('fast').show();	
+				$('.comm-preload-img-lazy').lazyload({
+				    effect : "fadeIn",
+				    threshold : 3
+				});
+			
+			}
+
+		
 	});
 	$('#comm-posts-form-submit-btn-cancel').on('click', function(){
 		$('#comm-modal-posts').fadeOut();	
@@ -133,8 +149,6 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-50736671-1', 'pythonanywhere.com');
   ga('send', 'pageview');
-
 </script>

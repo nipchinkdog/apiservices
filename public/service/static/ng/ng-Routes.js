@@ -7,6 +7,15 @@ demoApp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 	$urlRouterProvider.otherwise("/posts");
 	$stateProvider
 		.state('posts', {
+			url : '/pg',
+			views : {
+				'' : {
+					templateUrl: '',
+					controller: ''
+				}
+			}
+		})
+		.state('posts', {
 			url : '/posts',
 			views : {
 				'viewPosts' : {

@@ -294,3 +294,24 @@ padding-left: 5px;
 .btn { border-radius: 0px; }
 
 button.comm-pick-type { padding-top: 30px; padding-bottom: 30px; }
+
+/* #! pages */
+.comm-pages { 
+	color: #888888; 
+}
+.comm-pages ul, .comm-pages ol { 
+	margin: 0; 
+	padding: 0;
+}
+.comm-pages h1 { 
+	font: 2em 'RobotoRegular';
+	font-weight: normal;
+	padding: 15px 0;
+	line-height: normal; 
+}
+.comm-pages p { 
+	color: #444444;
+	font: 1.2em 'RobotoRegular';
+	padding: 10px 0;
+	line-height: 1.4em; 
+}

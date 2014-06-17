@@ -40,8 +40,8 @@ def CountVotesSessionId(postsId, accountsId):
         return ''
 
 def NoteWordCount(note):
-    words = ''.join(c if c.isalnum() else ' ' for c in note).split()
-    return len(words) 
+    words = ''.join(c if c.isalnum() else '' for c in note).split()
+    return len(words)
 
 #! get posts
 def TplPosts(Posts, SessionId=False):

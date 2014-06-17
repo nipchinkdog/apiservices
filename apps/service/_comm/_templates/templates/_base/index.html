@@ -16,6 +16,7 @@
 				
 				<button class="btn btn-primary btn-sm navbar-btn comm-open-modal-share pull-left"><b>SHARE A PICK</b></button>
 				
+				<a href="{% url 'comm_about_pages' %}" class="btn btn-link btn-sm navbar-btn pull-right"><b>ABOUT PICK&COUNTER</b></a>
 				<a href="{% url 'doc_d2_home_api' %}" class="btn btn-link btn-sm navbar-btn pull-right"><b>API</b></a>
 				<a href="{% url 'doc_d2_home_css' %}" class="btn btn-link btn-sm navbar-btn pull-right"><b>CSS</b></a>
 
@@ -37,6 +38,11 @@
 		
 		<!-- #! Container -->
 		<section class="container">
+			
+			<!-- #! pages -->
+			{% block 'comm_pages' %}
+			{% endblock 'comm_pages' %}
+			<!-- #! end pages -->
 			
 			<!-- #! list -->
 			{% block 'comm_lists' %}
