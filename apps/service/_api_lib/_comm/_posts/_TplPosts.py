@@ -27,7 +27,7 @@ def CountChallTo(postsId):
     count = CommPostsChall.objects.filter(posts_chall_id=postsId)
     return len(count)
 
-def LimitNotes(s, l=270):
+def LimitNotes(s, l=50):
     return s if len(s)<=l else s[0:l-3] + ' ...'
 
 def CountVotesSessionId(postsId, accountsId):
@@ -40,8 +40,20 @@ def CountVotesSessionId(postsId, accountsId):
         return ''
 
 def NoteWordCount(note):
+    import math
     words = ''.join(c if c.isalnum() else '' for c in note).split()
-    return len(words)
+    avgWordRead = 180 #! words per minute
+    wordsSuffix = ['read the note attached', ' min read'] #! suffixes
+    wordsCount = len(words)
+    wordsRead = ( ( wordsCount / avgWordRead ) * 60 ) / 60
+    #wordsRead = math.floor(wordsRead)
+    if wordsCount > 0:
+        if wordsRead < 1: #! seconds read
+            return str(wordsSuffix[0])
+        elif wordsRead >= 1: #! minute read
+            return wordsRead + str(wordsSuffix[1])
+    else:
+        return ''
 
 #! get posts
 def TplPosts(Posts, SessionId=False):
