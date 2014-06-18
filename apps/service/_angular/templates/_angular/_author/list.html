@@ -49,7 +49,7 @@
 							</small> <!-- ng -->	
 						</div>
 						<div class="clearfix">
-							<span class="comm-post-notes">{{ postinfo.notelimit }}</span>
+							<span data-ui-sref="posts.comments({id: postinfo.id })" class="comm-post-notes">{{ postinfo.notelimit }}</span>
 							<a data-ui-sref="posts.comments({id: postinfo.id })" class="comm-comnt comm-open-modal-comments"><small>{{ postinfo.comments }} comments</small></a>
 						</div>
 					</span>
@@ -101,11 +101,8 @@
 							</small> <!-- ng -->	
 						</div>
 						<div class="clearfix">
-							<a data-ui-sref="posts.comments({id: postinfo.id })" class="comm-post-notes" ng-if="postinfo.notewords > 2">{{ postinfo.notewords }} words note to read</a>
-							<a data-ui-sref="posts.comments({id: postinfo.id })" class="comm-post-notes" ng-if="postinfo.notewords == 1">{{ postinfo.notewords }} word note to read</span>
+							<span data-ui-sref="posts.comments({id: postinfo.id })" class="comm-post-notes">{{ postinfo.notelimit }}</span>
 							<a data-ui-sref="posts.comments({id: postinfo.id })" class="comm-comnt comm-open-modal-comments"><small>{{ postinfo.comments }} comments</small></a>
-							<span class="comm-comnt"><small>|</small></span>
-							<a data-ui-sref="posts.comments({id: postinfo.id })" class="comm-comnt comm-open-modal-comments"><small>Leave a comment</small></a>
 						</div>
 					</span>
 				</div>
