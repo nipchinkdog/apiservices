@@ -1,11 +1,25 @@
 //#! directive : upvote
-demoApp.directive('dirUpvote', function($timeout) {
+demoApp.directive('dirCounterpick', function($timeout) {
   return {
     link: function(scope, element, attrs) {
       element.bind('click', function() {
         $timeout(function() {
 
+			//#! open modal	
+			var postid =  attrs.dirCounterpick;
+			var heroes = element.attr('data').split(',');
+			$('#postid').val(postid);
+			$.each(heroes,function(k, v){
+				$('#comm-hero-pick-'+v).hide();
+			});			
+			$('#comm-modal-posts').fadeIn('fast').show();	
+			$('.comm-preload-img-lazy').lazyload({
+			    effect : "fadeIn",
+			    threshold : 3
+			});
+			
 			// check if login user
+			/*
 			iflogin = $('#comm-auth-verification').attr('data');
 			if(iflogin == '0'){
 				
@@ -30,6 +44,7 @@ demoApp.directive('dirUpvote', function($timeout) {
 				});
 				
 			}
+			*/
 			
         });
       });
@@ -38,10 +53,10 @@ demoApp.directive('dirUpvote', function($timeout) {
 });
 
 //#! directive : counter pick
-demoApp.directive('dirCounterpick', function($timeout) {
+demoApp.directive('dirUpvote', function($timeout) {
   return {
     link: function(scope, element, attrs) {
-      element.bind('click', function() {
+		element.bind('click', function() {
         $timeout(function() {
 
 

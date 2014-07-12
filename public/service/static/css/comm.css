@@ -64,7 +64,7 @@ a:focus {
 }
 ul.comm-clist-wrapp {  
 	margin: 0 0 0 20px;
-	padding: 10px 0;
+	padding: 0 0;
 }
 ul.comm-clist-wrapp li {
 	list-style: none;
@@ -89,7 +89,12 @@ ul.comm-clist-wrapp li {
 }
 
 .comm-select-wrapp {  }
-.comm-select-wrapp .form-control { font: 1.1em 'RobotoRegular'; padding: 20px 10px; border-radius: 0; }
+.comm-select-wrapp .form-control { 
+	border: 1px solid #DDDDDD;
+	font: .9em 'RobotoRegular'; 
+	padding: 20px 10px; 
+	border-radius: 0; 
+}
 .comm-select-wrapp textarea.form-control { padding: 10px 10px; }
 .comm-select-wrapp h1 {
 	color: #888;
@@ -164,13 +169,13 @@ ul.comm-clist-wrapp li {
 }
 .comm-side-comment-modal-wrpp { 
 	background: #fff;
-	border-left: 1px solid #ddd;
+	box-shadow: 0 0 3px rgba(0,0,0,0.2);
 	padding: 10px 20px;
 	position: fixed; 
 	overflow: scroll;
 	right: 0;
 	top: 0;
-	width: 65%;
+	width: 40%;
 	height: 100%;
 	z-index: 100;
 }

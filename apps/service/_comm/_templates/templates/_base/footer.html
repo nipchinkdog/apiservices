@@ -31,24 +31,30 @@
 	//#! modal post/comments
 	$('.comm-open-modal-share').on('click', function(){
 
-			// check if login user
-			iflogin = $('#comm-auth-verification').attr('data');
-			if(iflogin == '0'){
-				
-				$('#comm-modal-signin').fadeIn('fast').show();	
-				$('#comm-modal-signin').on('click', function(){
-					$(this).hide();	
-				});
-													
-			}else{
+			$('#comm-modal-posts').fadeIn('fast').show();	
+			$('.comm-preload-img-lazy').lazyload({
+			    effect : "fadeIn",
+			    threshold : 3
+			});
 
-				$('#comm-modal-posts').fadeIn('fast').show();	
-				$('.comm-preload-img-lazy').lazyload({
-				    effect : "fadeIn",
-				    threshold : 3
-				});
+			// check if login user
+			//iflogin = $('#comm-auth-verification').attr('data');
+			//if(iflogin == '0'){
+				
+			//	$('#comm-modal-signin').fadeIn('fast').show();	
+			//	$('#comm-modal-signin').on('click', function(){
+			//		$(this).hide();	
+			//	});
+													
+			//}else{
+
+			//	$('#comm-modal-posts').fadeIn('fast').show();	
+			//	$('.comm-preload-img-lazy').lazyload({
+			//	    effect : "fadeIn",
+			//	    threshold : 3
+			//	});
 			
-			}
+			//}
 
 		
 	});
