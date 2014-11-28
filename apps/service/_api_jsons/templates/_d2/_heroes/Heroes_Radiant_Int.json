@@ -55,6 +55,13 @@
 					 "div": "Radiant" 
 					}
 				],
+	"Oracle" :	[
+					{
+					 "info": "Oracle" ,
+					 "type": "Int" ,
+					 "div": "Radiant" 
+					}
+				],
 	"Puck" :	[
 					{
 					 "name": "Puck" ,
@@ -93,6 +100,13 @@
 	"Storm_Spirit" :	[
 					{
 					 "name": "Storm_Spirit" ,
+					 "type": "Int" ,
+					 "div": "Radiant" 
+					}
+				],
+	"Techies" :	[
+					{
+					 "info": "Techies" ,
 					 "type": "Int" ,
 					 "div": "Radiant" 
 					}

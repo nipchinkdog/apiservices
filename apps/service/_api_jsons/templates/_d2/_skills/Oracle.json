@@ -1,0 +1,29 @@
+{
+	"Oracle"	 :  [
+		{ 
+			"sk1": [
+				{
+				"name" : "Fortunes End"
+				,"desc" : "Gathers Oracle's power into a bolt of scouring energy that, when released, damages, stops movement, and purges enemies of buffs in an area around the target. Can be channeled for up to 2.5 seconds. The stop duration is equal to the time spent channeling."
+				}
+			],
+			"sk2": [
+				{
+				"name" : "Fates Edict"
+				,"desc" : "Oracle enraptures a target, disarming them and granting them 100% magic damage resistance, yet also increasing any damage taken from other damage types. Can be cast on allies and enemies."
+				}
+			],
+			"sk3": [
+				{
+				"name" : "Purifying Flames"
+				,"desc" : "Burns away impurities, dealing heavy magic damage to the target before causing them to regenerate health over time. The amount of health regenerated over its duration exceeds the amount of initial damage. Can be cast on enemies and allies."
+				}
+			],
+			"sk4": [
+				{
+				"name" : "False Promise"
+				,"desc" : "Temporarily alters an ally's destiny, rendering them invisible while moving, attacking, or using abilities, and delaying any healing or damage taken until False Promise ends. Any healing that is delayed by False Promise is doubled. Removes any negative status effects when applied."
+				}
+			]		}
+	]
+}
