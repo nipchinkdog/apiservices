@@ -3,7 +3,7 @@
 		{ 
 			"sk1": [
 				{
-				"name" : "Mist Coil"
+				"name" : "Death Coil"
 				,"desc" : "Abaddon releases a coil of deathly mist that can damage an enemy unit or heal a friendly unit at the cost of some of Abaddon's health."
 				}
 			],
@@ -15,7 +15,7 @@
 			],
 			"sk3": [
 				{
-				"name" : "Curse of Avernus"
+				"name" : "Frostmourne"
 				,"desc" : "Abaddon strikes an enemy with chilling curse on each attack, causing all units who attack the slowed enemy to gain increased movement speed, along with faster attack speed, for a limited time."
 				}
 			],

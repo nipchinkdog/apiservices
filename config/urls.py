@@ -24,6 +24,9 @@ urlpatterns = patterns('',
     #! comm
     url(r'^comm/', include('apps.service._comm._urls._main')),
     
+    #! cv
+    url(r'^cv/', include('apps.service._cv._urls._main')),
+    
     #! python social auth
     url('', include('social.apps.django_app.urls', namespace='social'))    
     
