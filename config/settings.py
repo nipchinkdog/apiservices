@@ -75,11 +75,11 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.tz',
     'django.contrib.messages.context_processors.messages',
     'django.core.context_processors.request',
-    
+
     #! Third Parties ***************************
     #! Social Auth
     'social.apps.django_app.context_processors.backends',
-    'social.apps.django_app.context_processors.login_redirect',    
+    'social.apps.django_app.context_processors.login_redirect',
 )
 
 
@@ -117,9 +117,9 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.transaction.TransactionMiddleware',
-    
+
     #'apps.intent.assets.middleware.pagestats.StatsMiddleware',
-    #'debug_toolbar.middleware.DebugToolbarMiddleware', 
+    #'debug_toolbar.middleware.DebugToolbarMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
@@ -146,29 +146,30 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    
-    
-    #! Application    
+
+    #! Portfolio
+    'apps.service._html_portfolio',
+    #! Application
     'apps.service._templates',
     'apps.service._api',
     'apps.service._api_jsons',
-        
+
         #! Community
         'apps.service._comm',
         'apps.service._comm._templates',
-    
+
     #! Angular
     'apps.service._angular',
 
     #! Auth
     'apps.service._auth',
-    
+
 
     #! Third Parties ***************************
-    
+
     #! Rest Framework
     'rest_framework',
-    
+
     #! Python Social Auth : Django
     'social.apps.django_app.default',
 

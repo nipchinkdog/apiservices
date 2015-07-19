@@ -18,7 +18,7 @@ urlpatterns = patterns('',
     # url(r'^admin/', include(admin.site.urls)),
 
     #! portfolio
-    url(r'^porfolio/', include('apps.service._html_portfolio.urls')),
+    url(r'^portfolio/', include('apps.service._html_portfolio.urls')),
 
     #! angular templates
     url(r'^angular/', include('apps.service._angular.urls._main')),
