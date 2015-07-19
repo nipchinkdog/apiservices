@@ -1,11 +1,12 @@
+# -*- coding: utf-8 -*-
 #! variables: ROOT_URL etc
 from apps.service._imports.Settings_init import *
 from apps.service._imports.Views_init import *
 
 
-class DocCss(View):
+class _Html_Portfolio(View):
 
-    _template = '_doc/_d2/index-doc-css.html'
+    _template = '_html_portfolio_index.html'
 
     def get(self, request):
         return render_to_response(self._template,

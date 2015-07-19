@@ -114,13 +114,13 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'django.core.context_processors.tz',
     'django.contrib.messages.context_processors.messages',
-    'django.core.context_processors.request',    
+    'django.core.context_processors.request',
 
     #! Third Parties ***************************
     #! Social Auth
     'social.apps.django_app.context_processors.backends',
-    'social.apps.django_app.context_processors.login_redirect',    
-    
+    'social.apps.django_app.context_processors.login_redirect',
+
 )
 
 TEMPLATE_DIRS = (
@@ -138,26 +138,28 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    
-    #! Application    
+
+    #! Portfolio
+    'apps.service._html_portfolio',
+    #! Application
     'apps.service._templates',
     'apps.service._api',
     'apps.service._api_jsons',
-        
+
         #! Community
         'apps.service._comm',
         'apps.service._comm._templates',
-    
+
     #! Angular
     'apps.service._angular',
-    
+
 
     #! Third Parties
     'rest_framework',
 
     #! Python Social Auth : Django
     'social.apps.django_app.default',
-    
+
 )
 
 
